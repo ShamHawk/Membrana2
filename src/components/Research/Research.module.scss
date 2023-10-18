@@ -1,0 +1,61 @@
+@import "@/assets/styles/variables.scss";
+@import "@/assets/styles/index.scss";
+
+.Container {
+    background-color: #000;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.Box {
+    max-width: 1354px;
+    height: 540px;
+    margin: 0 auto;
+    background-color: #000;
+    background-image: url("../../assets/img/bg-research.svg");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 36px;
+    border: 1px solid #7d7d7d;
+}
+
+.TitleContainer {
+    display: flex;
+}
+
+.Title {
+    padding: 48px 0 0 48px;
+    font-family: $font-base;
+    font-weight: normal;
+    color: #fff;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 85%;
+}
+
+.SoundIcon {
+    width: 52px;
+    height: 32px;
+    margin: 122px 17px 0 0;
+}
+
+.Text {
+    padding: 80px 0 0 48px;
+    font-family: $font-base;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #fff;
+}
+
+.SubText {
+    padding: 0 0 0 48px;
+    color: #fff;
+    font-family: $font-base;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: normal;
+}

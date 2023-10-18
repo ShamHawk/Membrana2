@@ -1,0 +1,27 @@
+@import "@/assets/styles/variables.scss";
+@import "@/assets/styles/index.scss";
+
+.Container {
+    max-width: 1440px;
+    background-color: #030303;
+    margin: 0 auto;
+}
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.RequestBtn {
+    font-family: Manrope, sans-serif;
+    padding: 8px 45px;
+    cursor: pointer;
+    color: white;
+    align-items: center;
+    border-radius: 16px;
+    background: #5f43e3;
+}

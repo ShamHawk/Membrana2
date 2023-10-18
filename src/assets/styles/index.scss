@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0 !important;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("../fonts/Manrope-Regular.woff") format("woff"),
+        url("../fonts/Manrope-Regular.woff2") format("woff2");
+    font-weight: 400;
+}
