@@ -20,14 +20,18 @@
   margin-bottom: 48px;
 
   h2 {
+    height: 272px;
     color: transparent;
     font-size: 80px;
     line-height: 68px;
     font-weight: 400;
-    background: conic-gradient(from -87deg at 8.22% 55.88%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg);
+    background-image: conic-gradient(from -87deg at 8.22% 55.88%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg);
+    background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-position: top;
+    background-repeat: no-repeat;
   }
 }
 
