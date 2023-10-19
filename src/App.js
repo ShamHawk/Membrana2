@@ -3,7 +3,7 @@ import { Research } from "./components/Research/Research";
 import { WorkLifeBalance } from "./components/WorkLifeBalance/WorkLifeBalance";
 import { Protection } from "./components/Protection/Protection";
 import { Spam } from "./components/Spam/Spam";
-import { AdvertisementBlock } from "./components/AdvertisementBlock/AdvertisementBlock";
+// import { AdvertisementBlock } from "./components/AdvertisementBlock/AdvertisementBlock";
 
 function App() {
     return (
@@ -13,7 +13,7 @@ function App() {
             <WorkLifeBalance />
             <Protection />
             <Spam />
-            <AdvertisementBlock />
+            {/*<AdvertisementBlock />*/}
         </div>
     );
 }
