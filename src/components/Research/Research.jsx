@@ -1,26 +1,34 @@
-import Styles from "./Research.module.scss";
-import soundIcon from "../../assets/img/soundIcon.svg";
+import Styles from './Research.module.scss';
+import soundIcon from '../../assets/img/soundIcon.svg';
+import Container from '../ui/Container/Container';
 
 const Research = () => {
-    return (
-        <div className={Styles.Container}>
-            <div className={Styles.Box}>
-                <div className={Styles.TitleContainer}>
-                    <h2 className={Styles.Title}>
-                        Наша команда Future Crew провела исследование
-                        по&nbsp;угрозам на&nbsp;мобильных устройствах
-                    </h2>
-                    <img className={Styles.SoundIcon} src={soundIcon} alt="" />
-                </div>
-                <div className={Styles.ContentContainer}>
-                    <p className={Styles.Text}>За 3 месяца мы выявили:</p>
-                    <h2 className={Styles.SubText}>
-                        7000 потенциально опасных адресов
-                    </h2>
-                </div>
+  return (
+    <Container>
+      <div className={Styles.Block}>
+        <div className={Styles.Box}>
+          <div className={Styles.WrapperTop}>
+            <div className={Styles.Left}>
+              <h2 className={Styles.Title}>
+                Наша команда Future Crew провела исследование
+                <br /> по угрозам на мобильных устройствах
+              </h2>
             </div>
+            <div className={Styles.Right}>
+              <p className={Styles.SubTitle}>
+                В среднем за день наш сервис блокировал: 1670 — реклам, 494 — трекера, 110 — вредоносных программ*
+              </p>
+              <p className={Styles.Text}>*Исследование проводилось на 67 sim-картах membrana, Центр инноваций Future Crew.</p>
+            </div>
+          </div>
+          <div className={Styles.Bottom}>
+            <p>За 3 месяца мы выявили:</p>
+            <h3>7000 потенциально опасных адресов</h3>
+          </div>
         </div>
-    );
+      </div>
+    </Container>
+  );
 };
 
 export { Research };

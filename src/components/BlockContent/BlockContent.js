@@ -3,13 +3,13 @@ import Container from '@components/ui/Container/Container';
 
 import Styles from './BlockContent.module.scss';
 
-const BlockContent = ({ title, text, img, widthImg, heightImg, titleHeight }) => {
+const BlockContent = ({ title, text, img, widthImg, heightImg, titleHeight, gradient }) => {
   return (
     <Container>
       <div className={Styles.Block}>
         <div className={Styles.Left}>
           <div className={Styles.Title}>
-            <h2 style={{ height: titleHeight }}>{title}</h2>
+            <h2 style={{ height: titleHeight, backgroundImage: gradient }}>{title}</h2>
           </div>
           <div className={Styles.Text}>
             <p>{text}</p>
