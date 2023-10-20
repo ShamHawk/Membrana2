@@ -4,6 +4,8 @@ import BlockContent from '@components/BlockContent/BlockContent';
 
 import Styles from '@assets/styles/Home.module.scss';
 import Container from './components/ui/Container/Container';
+import FormBlock from "./components/FormBlock/FormBlock";
+import FaqBlock from "./components/FaqBlock/FaqBlock";
 
 const blockContentArr = [
   {
@@ -43,6 +45,8 @@ function App() {
               titleHeight={item.titleHeight}
             />
           ))}
+          <FormBlock/>
+          <FaqBlock/>
         </div>
       </Container>
     </main>
