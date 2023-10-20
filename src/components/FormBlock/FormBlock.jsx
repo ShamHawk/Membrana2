@@ -17,22 +17,19 @@ const BlockContent = () => {
                 </div>
                 <div className={Styles.Form}>
                     <div className={Styles.FormContainer}>
-                        <input className={Styles.FormInput}/>
+                        <input type={"text"} placeholder={'Контактное лицо*'} className={Styles.FormInput}/>
                     </div>
                     <div className={Styles.FormContainer}>
-                        <input className={Styles.FormInput}/>
+                        <input type={"text"} placeholder={'Номер для связи*'} className={Styles.FormInput}/>
                     </div>
                     <div className={Styles.FormContainer}>
-                        <input className={Styles.FormInput}/>
+                        <input type={"text"} placeholder={'Название компании или ИНН*'} className={Styles.FormInput}/>
                     </div>
                     <div className={Styles.FormContainer}>
-                        <input className={Styles.FormInput}/>
+                        <input type={"text"} placeholder={'Количество сотрудников*'} className={Styles.FormInput}/>
                     </div>
                     <div className={Styles.FormContainer}>
-                        <input className={Styles.FormInput}/>
-                    </div>
-                    <div className={Styles.FormContainer}>
-                        <input className={Styles.FormInput}/>
+                        <input type={"text"} placeholder={'Комментарий'} className={Styles.FormInput}/>
                     </div>
                 </div>
             </div>

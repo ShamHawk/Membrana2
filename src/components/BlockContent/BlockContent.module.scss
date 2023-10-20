@@ -3,29 +3,33 @@
 
 .Block {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-family: $font-base;
   height: 100vh;
-
+  width: 100%;
 }
 
 .Left {
   display: flex;
   flex-direction: column;
+  width: 65%;
+  margin-right: 5%;
+}
+
+.Right {
+  width: 30%;
 }
 
 .Title {
-  max-width: 900px;
   margin-bottom: 48px;
+  max-width: 900px;
 
   h2 {
-    height: 272px;
     color: transparent;
     font-size: 80px;
     line-height: 68px;
     font-weight: 400;
-    background-image: conic-gradient(from -87deg at 8.22% 55.88%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg);
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -37,7 +41,7 @@
 
 .Text {
   max-width: 500px;
-  margin-left: 30%;
+  margin-left: 20%;
 
   p {
     font-size: 18px;
