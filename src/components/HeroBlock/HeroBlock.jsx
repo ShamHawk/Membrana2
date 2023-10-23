@@ -15,17 +15,25 @@ const HeroBlock = () => {
           <source src='/video/hero-video.mp4' type='video/mp4'></source>
         </video>
       )}
-      <Container>
-        {smallMobileWidth && (
+      {smallMobileWidth && (
+        <Container>
           <div className={Styles.Wrapper}>
-            <img src={'/Membrana.svg'} alt={'Membrana'} />
+            {/*<img src={'/Membrana.svg'} alt={'Membrana'} />*/}
+            <h2 className={Styles.Title}>Membrana</h2>
+            <p className={Styles.SubTitle}>
+              Премиум-связь
+              <br /> и сервис для бизнеса
+            </p>
+            <div className={Styles.Stick}></div>
           </div>
-        )}
+        </Container>
+      )}
+      {!smallMobileWidth && (
         <p className={Styles.SubTitle}>
           Премиум-связь
           <br /> и сервис для бизнеса
         </p>
-      </Container>
+      )}
     </div>
   );
 };
