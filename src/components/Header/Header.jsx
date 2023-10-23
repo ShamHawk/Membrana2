@@ -1,5 +1,4 @@
 import Styles from './Header.module.scss';
-import logo from '../../assets/img/logo.svg';
 import Container from '../ui/Container/Container';
 
 const Header = () => {
@@ -7,7 +6,10 @@ const Header = () => {
     <div className={Styles.Header}>
       <Container>
         <div className={Styles.Wrapper}>
-          <img src={logo} alt='Logo' className='logo' />
+          <div className={Styles.Logo}>
+            <img className={Styles.LogoIcon} src={'/logo/logo.svg'} alt='Logo icon' />
+            <img className={Styles.LogoText} src={'/logo/logo-text.svg'} alt='Logo text' />
+          </div>
           <a className={Styles.Btn}>оставить заявку</a>
         </div>
       </Container>

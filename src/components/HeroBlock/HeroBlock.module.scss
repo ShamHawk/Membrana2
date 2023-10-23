@@ -28,8 +28,18 @@
 .SubTitle {
     position: absolute;
     top: 50%;
-    right: 38%;
+    right: 25%;
     color: #fff;
-    font-size: 20px;
+    font-size: 16px;
     opacity: 0.8;
+    text-align: center;
+
+
+    @media (min-width: $media-tablet) {
+        position: absolute;
+        top: 50%;
+        right: 38%;
+        font-size: 20px;
+        text-align: left;
+    }
 }

@@ -10,6 +10,8 @@ import FormBlock from './components/FormBlock/FormBlock';
 import FaqBlock from './components/FaqBlock/FaqBlock';
 import Footer from './components/Footer/Footer';
 
+import '@assets/styles/index.scss';
+
 const blockContentArr = [
   {
     title: 'данные и конфиденциальная информация под защитой',
@@ -79,25 +81,25 @@ function App() {
     <main className={Styles.Block}>
       {/*<Header />*/}
       <HeroBlock />
-      <Research />
+      {/*<Research />*/}
       <Container>
         <div>
-          <h1 className={Styles.Title}>
-            Ваш work-life balance <br /> под защитой
-          </h1>
-          {blockContentArr.map((item) => (
-            <BlockContent
-              title={item.title}
-              text={item.text}
-              img={item.img}
-              widthImg={item.imgWidth}
-              heightImg={item.imgHeight}
-              titleHeight={item.titleHeight}
-              gradient={item.gradient}
-            />
-          ))}
+          {/*<h1 className={Styles.Title}>*/}
+          {/*  Ваш work-life balance <br /> под защитой*/}
+          {/*</h1>*/}
+          {/*{blockContentArr.map((item) => (*/}
+          {/*  <BlockContent*/}
+          {/*    title={item.title}*/}
+          {/*    text={item.text}*/}
+          {/*    img={item.img}*/}
+          {/*    widthImg={item.imgWidth}*/}
+          {/*    heightImg={item.imgHeight}*/}
+          {/*    titleHeight={item.titleHeight}*/}
+          {/*    gradient={item.gradient}*/}
+          {/*  />*/}
+          {/*))}*/}
           {/*<FormBlock/>*/}
-          <FaqBlock />
+          {/*<FaqBlock />*/}
         </div>
       </Container>
       <SoundButton />
