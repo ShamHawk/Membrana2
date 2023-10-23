@@ -8,6 +8,7 @@ import { Header } from './components/Header/Header';
 import SoundButton from './components/ui/SoundButton/SoundButton';
 import FormBlock from "./components/FormBlock/FormBlock";
 import FaqBlock from "./components/FaqBlock/FaqBlock";
+import Footer from "./components/Footer/Footer";
 
 const blockContentArr = [
   {
@@ -87,7 +88,7 @@ function App() {
       <Research />
       <Container>
         <div>
-          <h1 className={Styles.Title}>Ваш work-life balance под защитой</h1>
+          <h1 className={Styles.Title}>Ваш work-life balance <br/> под защитой</h1>
           {blockContentArr.map((item) => (
             <BlockContent
               title={item.title}
@@ -104,6 +105,7 @@ function App() {
         </div>
       </Container>
       <SoundButton />
+      <Footer/>
     </main>
   );
 }

@@ -8,11 +8,11 @@
 }
 
 .Block {
-     display: flex;
+    display: flex;
+    margin-bottom: 120px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     font-family: $font-base;
     height: 100vh;
 }
@@ -64,13 +64,16 @@
 .Faq {
 
     .FaqBlock {
-        margin-bottom: 24px;
+
         width: 519px;
         display: flex;
         justify-content:center;
         .FaqText {
             width: 100%;
-            padding: 16px;
+            color: white;
+
+            border-top: 1px solid rgba(255, 255, 255, 0.60);
+            padding: 24px 0px;
         }
     }
 }

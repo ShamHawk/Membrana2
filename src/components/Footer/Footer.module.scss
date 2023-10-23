@@ -1,0 +1,29 @@
+@import "@/assets/styles/variables.scss";
+@import "@/assets/styles/index.scss";
+
+.Container {
+  max-width: 1440px;
+  background-color: #030303;
+  margin: 0 auto;
+}
+
+.Block {
+  display: flex;
+  margin-bottom: 120px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-base;
+}
+
+.LeftLink,.RightLink {
+  display: flex;
+  font-size: 16px;
+  gap: 10px;
+}
+.Footer {
+  display: flex;
+  gap: 100px;
+  justify-content: space-between;
+  color: white;
+}
