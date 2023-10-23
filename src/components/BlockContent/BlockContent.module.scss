@@ -2,36 +2,52 @@
 
 .Block {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   font-family: $font-base;
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  margin-bottom: 32px;
 
   @media (min-width: $media-tablet) {
-
+    flex-direction: row;
+    height: 100vh;
+   gap: 0;
   }
 }
 
 .Left {
   display: flex;
   flex-direction: column;
-  width: 65%;
-  margin-right: 5%;
+  width: 100%;
+  order: -1;
+
+  @media (min-width: $media-tablet) {
+    width: 65%;
+    margin-right: 5%;
+  }
 }
 
 .Right {
-  width: 30%;
+  @media (min-width: $media-tablet) {
+    width: 30%;
+  }
 }
 
 .Title {
-  margin-bottom: 48px;
-  max-width: 900px;
+  margin-bottom: 24px;
+  max-width: 310px;
+
+  @media (min-width: $media-tablet) {
+    margin-bottom: 48px;
+    max-width: 900px;
+  }
 
   h2 {
     color: transparent;
-    font-size: 80px;
-    line-height: 68px;
+    font-size: 32px;
+    line-height: 25.6px;
     font-weight: 400;
     background-size: 100%;
     background-clip: text;
@@ -39,19 +55,33 @@
     -webkit-text-fill-color: transparent;
     background-position: top;
     background-repeat: no-repeat;
+
+    @media (min-width: $media-tablet) {
+      font-size: 80px;
+      line-height: 68px;
+    }
   }
 }
 
 .Text {
-  max-width: 500px;
-  margin-left: 20%;
+  max-width: 300px;
+  margin-bottom: 16px;
+
+  @media (min-width: $media-tablet) {
+    max-width: 500px;
+    margin: 0;
+  }
 
   p {
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     color: #fff;
     opacity: 0.5;
+
+    @media (min-width: $media-tablet) {
+      font-size: 18px;
+    }
   }
 }

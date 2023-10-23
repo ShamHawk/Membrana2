@@ -1,8 +1,6 @@
 import HeroBlock from './components/HeroBlock/HeroBlock';
 import { Research } from './components/Research/Research';
 import BlockContent from '@components/BlockContent/BlockContent';
-
-import Styles from '@assets/styles/Home.module.scss';
 import Container from './components/ui/Container/Container';
 import { Header } from './components/Header/Header';
 import SoundButton from './components/ui/SoundButton/SoundButton';
@@ -11,6 +9,7 @@ import FaqBlock from './components/FaqBlock/FaqBlock';
 import Footer from './components/Footer/Footer';
 
 import '@assets/styles/index.scss';
+import Styles from '@assets/styles/Home.module.scss';
 
 const blockContentArr = [
   {
@@ -84,11 +83,10 @@ function App() {
       {/*<Research />*/}
       <Container>
         <div>
-          <h1 className={Styles.Title}>
-            Ваш work-life balance <br /> под защитой
-          </h1>
-          {blockContentArr.map((item) => (
+          <h1 className={Styles.Title}>Membrana защитит ваши данные</h1>
+          {blockContentArr.map((item,index) => (
             <BlockContent
+              key={index}
               title={item.title}
               text={item.text}
               img={item.img}

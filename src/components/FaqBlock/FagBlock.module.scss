@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
     font-family: $font-base;
-    height: 100vh;
+    height: fit-content;
 }
 
 .Title {
@@ -43,7 +43,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     text-align: center;
 
     p {
@@ -58,28 +57,39 @@
 }
 
 .Faq {
+margin-bottom: 120px;
     .FaqBlock {
         width: 519px;
         display: flex;
         flex-direction:column;
         justify-content:center;
+        border-top: 1px solid rgba(255, 255, 255, 0.60);
         color: white;
+
         .FaqTitle {
             display: flex;
             cursor: pointer;
             .FaqText {
                 width: 100%;
-                border-top: 1px solid rgba(255, 255, 255, 0.60);
                 padding: 24px 0px;
             }
+
             .IconBg {
                 display: flex;
-                //background-color: white;
-                //.PlusIcon {
-                //
-                //}
+                align-items: center;
             }
+        }
 
+        .Content {
+            overflow:hidden
+        }
+
+        .FaqTitle:hover {
+            .plusIcon {
+                fill: white;
+                transition: fill .4s;
+            }
         }
     }
 }
+

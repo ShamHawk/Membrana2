@@ -2,8 +2,11 @@ import React from 'react';
 import Container from '@components/ui/Container/Container';
 
 import Styles from './BlockContent.module.scss';
+import { useWindowSize } from '../../hooks/useWindowSize';
 
-const BlockContent = ({ title, text, img, widthImg, heightImg, titleHeight, gradient }) => {
+const BlockContent = ({ title, text, img, widthImg, heightImg, gradient }) => {
+  const { mobileWidth } = useWindowSize();
+
   return (
     <Container>
       <div className={Styles.Block}>
@@ -16,7 +19,7 @@ const BlockContent = ({ title, text, img, widthImg, heightImg, titleHeight, grad
           </div>
         </div>
         <div className={Styles.Right}>
-          <img src={img} width={widthImg} height={heightImg} alt='img' />
+          <img src={img} width={mobileWidth ? 215 : widthImg} height={mobileWidth ? 215 : heightImg} alt='img' />
         </div>
       </div>
     </Container>
