@@ -6,9 +6,9 @@ import Styles from '@assets/styles/Home.module.scss';
 import Container from './components/ui/Container/Container';
 import { Header } from './components/Header/Header';
 import SoundButton from './components/ui/SoundButton/SoundButton';
-import FormBlock from "./components/FormBlock/FormBlock";
-import FaqBlock from "./components/FaqBlock/FaqBlock";
-import Footer from "./components/Footer/Footer";
+import FormBlock from './components/FormBlock/FormBlock';
+import FaqBlock from './components/FaqBlock/FaqBlock';
+import Footer from './components/Footer/Footer';
 
 const blockContentArr = [
   {
@@ -82,7 +82,9 @@ function App() {
       <Research />
       <Container>
         <div>
-          <h1 className={Styles.Title}>Ваш work-life balance <br/> под защитой</h1>
+          <h1 className={Styles.Title}>
+            Ваш work-life balance <br /> под защитой
+          </h1>
           {blockContentArr.map((item) => (
             <BlockContent
               title={item.title}
@@ -94,12 +96,12 @@ function App() {
               gradient={item.gradient}
             />
           ))}
-          <FormBlock/>
-          <FaqBlock/>
+          {/*<FormBlock/>*/}
+          <FaqBlock />
         </div>
       </Container>
       <SoundButton />
-      <Footer/>
+      <Footer />
     </main>
   );
 }
