@@ -9,7 +9,7 @@ const BlockContent = ({ title, text, img, widthImg, heightImg, titleHeight, grad
       <div className={Styles.Block}>
         <div className={Styles.Left}>
           <div className={Styles.Title}>
-            <h2 style={{ height: titleHeight, backgroundImage: gradient }}>{title}</h2>
+            <h2 style={{ backgroundImage: gradient }}>{title}</h2>
           </div>
           <div className={Styles.Text}>
             <p>{text}</p>

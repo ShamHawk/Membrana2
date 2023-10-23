@@ -14,7 +14,6 @@ const blockContentArr = [
     img: '/content-img-1.png',
     imgWidth: 494,
     imgHeight: 440,
-    titleHeight: 272,
     gradient:
       'conic-gradient(from -87deg at 8.22% 55.88%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg)',
     id: 1,
@@ -26,7 +25,6 @@ const blockContentArr = [
     img: '/content-img-2.png',
     imgWidth: 494,
     imgHeight: 440,
-    titleHeight: 204,
     gradient:
       'conic-gradient(from 268deg at 14.78% 38.24%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg)',
     id: 2,
@@ -37,7 +35,6 @@ const blockContentArr = [
     img: '/content-img-3.png',
     imgWidth: 398,
     imgHeight: 398,
-    titleHeight: 152,
     gradient:
       'conic-gradient(from -82deg at 0% 59.78%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg)',
     id: 3,
@@ -48,7 +45,6 @@ const blockContentArr = [
     img: '/content-img-4.png',
     imgWidth: 501,
     imgHeight: 397,
-    titleHeight: 200,
     gradient:
       'conic-gradient(from 253deg at 9.08% 32.29%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg)',
     id: 4,
@@ -59,7 +55,6 @@ const blockContentArr = [
     img: '/content-img-5.png',
     imgWidth: 378,
     imgHeight: 428,
-    titleHeight: 68,
     gradient:
       'conic-gradient(from -24deg at 28.82% 8.82%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg)',
     id: 5,
@@ -70,7 +65,6 @@ const blockContentArr = [
     img: '/content-img-6.png',
     imgWidth: 554,
     imgHeight: 554,
-    titleHeight: 136,
     gradient:
       'conic-gradient(from -82deg at 5.73% 50.66%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg)',
     id: 6,
