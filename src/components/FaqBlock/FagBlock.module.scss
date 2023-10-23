@@ -57,23 +57,29 @@
     }
 }
 
-//.Subtitle {
-//
-//}
-
 .Faq {
-
     .FaqBlock {
-
         width: 519px;
         display: flex;
+        flex-direction:column;
         justify-content:center;
-        .FaqText {
-            width: 100%;
-            color: white;
+        color: white;
+        .FaqTitle {
+            display: flex;
+            cursor: pointer;
+            .FaqText {
+                width: 100%;
+                border-top: 1px solid rgba(255, 255, 255, 0.60);
+                padding: 24px 0px;
+            }
+            .IconBg {
+                display: flex;
+                //background-color: white;
+                //.PlusIcon {
+                //
+                //}
+            }
 
-            border-top: 1px solid rgba(255, 255, 255, 0.60);
-            padding: 24px 0px;
         }
     }
 }
