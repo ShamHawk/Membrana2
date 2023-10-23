@@ -13,6 +13,16 @@ function SoundButton() {
   }, []);
 
   const toggleSound = () => {
+    const audio = document.getElementById('audio');
+
+    if (audio) {
+      if (isSoundOn) {
+        audio.pause();
+      } else {
+        audio.play();
+      }
+    }
+
     setIsSoundOn((prev) => !prev);
     setShowText(false);
   };
@@ -24,6 +34,14 @@ function SoundButton() {
         <div className={Styles.BtnInner}>
           <div className={Styles.BtnContent}>
             <img src={isSoundOn ? '/sound/sound-on.svg' : '/sound/sound-off.svg'} alt={isSoundOn ? 'Sound On' : 'Sound Off'} />
+            <audio id='audio' loop>
+              <source
+                src='https://storage.yandexcloud.net/cdn.tsekh.design/Membrana/mts_ambience_loop.ogg'
+                type='audio/ogg; codecs=vorbis'
+              />
+              <source src='https://storage.yandexcloud.net/cdn.tsekh.design/Membrana/mts_ambience_loop.mp3' type='audio/mpeg' />
+              <source src='https://storage.yandexcloud.net/cdn.tsekh.design/Membrana/mts_ambience_loop.mp3' type='audio/mp3' />
+            </audio>
           </div>
           <div className={Styles.BtnGradient}></div>
         </div>
