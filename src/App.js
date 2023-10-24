@@ -79,7 +79,7 @@ function App() {
     <main className={Styles.Block}>
       {/*<Header />*/}
       <HeroBlock />
-      {/*<Research />*/}
+      <Research />
       <Container>
         <div>
           <div className={Styles.Title}>
