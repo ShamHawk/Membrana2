@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <div className={Styles.Header}>
-      <Container>
+      <Container className={Styles.Container}>
         <div className={Styles.Wrapper}>
           <div className={Styles.Logo} onClick={scrollToTop}>
             <img className={Styles.LogoIcon} src={'/logo/logo.svg'} alt='Logo icon' />

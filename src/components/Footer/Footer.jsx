@@ -15,10 +15,10 @@ const BlockContent = () => {
               }
               target={'_blank'}
             >
-              Политика обработки файлов cookie
+              Политика обработки персональных данных
             </a>
             <a href={'https://futurecrew.ru/soglasie_na_obrabotky_personalnyh_dannyh.pdf'} target={'_blank'}>
-              Политика обработки персональных данных
+              Политика обработки файлов cookie
             </a>
           </div>
           <div className={Styles.RightLink}>
