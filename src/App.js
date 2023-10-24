@@ -2,7 +2,6 @@ import HeroBlock from './components/HeroBlock/HeroBlock';
 import { Research } from './components/Research/Research';
 import BlockContent from '@components/BlockContent/BlockContent';
 import Container from './components/ui/Container/Container';
-import { Header } from './components/Header/Header';
 import SoundButton from './components/ui/SoundButton/SoundButton';
 import FormBlock from './components/FormBlock/FormBlock';
 import FaqBlock from './components/FaqBlock/FaqBlock';
