@@ -1,45 +1,92 @@
 @import "@/assets/styles/variables.scss";
-@import "@/assets/styles/index.scss";
-
-.Container {
-    max-width: 1440px;
-    background-color: #030303;
-    margin: 0 auto;
-}
 
 .Block {
     display: flex;
-    margin-bottom: 120px;
+    margin-bottom: 90px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: $font-base;
     height: fit-content;
+
+    @media (min-width: $media-tablet) {
+        margin-bottom: 120px;
+    }
 }
 
 .Title {
-    max-width: 1068px;
-    margin-bottom: 32px;
     text-align: center;
+    max-width: 300px;
+    margin: 0 auto 32px auto;
+    height: fit-content;
+
+    @media (min-width: $media-tablet) {
+        max-width: 650px;
+    }
 
     h2 {
-        height: 170px;
         color: transparent;
-        font-size: 80px;
-        line-height: 68px;
+        font-size: 40px;
+        line-height: 34px;
         font-weight: 400;
-        background-image: conic-gradient(from -87deg at 8.22% 55.88%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg);
         background-size: 100%;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-position: top;
         background-repeat: no-repeat;
+
+
+        @media (min-width: $media-tablet) {
+            font-size: 80px;
+            line-height: 68px;
+        }
+
+        @media (min-width: $media-tablet-landscape) {
+            font-size: 100px;
+            line-height: 85px;
+        }
+    }
+}
+
+.TitleOne {
+    @media (min-width: $media-tablet-landscape) {
+        max-width: 1150px;
+    }
+
+    h2 {
+        background-image: conic-gradient(from -82deg at 0% 59.78%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg);
+    }
+}
+
+.TitleTwo {
+    margin-bottom: 38px;
+
+    @media (min-width: $media-tablet) {
+        margin-bottom: 60px;
+    }
+
+    @media (min-width: $media-tablet-landscape) {
+        max-width: 900px;
+    }
+
+    h2 {
+        background-image: conic-gradient(from -77deg at -7.48% 50%, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg);
+        line-height: 40px;
+
+
+        @media (min-width: $media-tablet) {
+            line-height: 74px;
+        }
+
+        @media (min-width: $media-tablet-landscape) {
+            line-height: 97px;
+        }
     }
 }
 
 .Subtitle {
-    margin-bottom: 60px;
+    margin-bottom: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,19 +94,28 @@
 
     p {
         max-width: 500px;
-        font-size: 18px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        color: #fff;
-        opacity: 0.5;
+        color: #868686;
+
+
+        @media (min-width: $media-tablet) {
+            font-size: 18px;
+        }
     }
 }
 
 .Faq {
-margin-bottom: 120px;
+    margin-bottom: 120px;
+    width: 100%;
+
+    @media (min-width: $media-tablet-landscape) {
+        max-width: 536px;
+    }
+
     .FaqBlock {
-        width: 519px;
         display: flex;
         flex-direction:column;
         justify-content:center;
@@ -69,6 +125,7 @@ margin-bottom: 120px;
         .FaqTitle {
             display: flex;
             cursor: pointer;
+
             .FaqText {
                 width: 100%;
                 padding: 24px 0px;

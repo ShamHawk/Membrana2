@@ -19,7 +19,10 @@ const BlockContent = ({ title, text, img, widthImg, heightImg, gradient }) => {
           </div>
         </div>
         <div className={Styles.Right}>
-          <img src={img} width={mobileWidth ? 215 : widthImg} height={mobileWidth ? 215 : heightImg} alt='img' />
+          <div className={Styles.Image} style={{ maxWidth: mobileWidth ? 215 : widthImg, maxHeight: mobileWidth ? 215 : heightImg }}>
+            {/*<img src={img} width={mobileWidth ? 215 : widthImg} height={mobileWidth ? 215 : heightImg} alt='img' />*/}
+            <img src={img} alt='img' />
+          </div>
         </div>
       </div>
     </Container>

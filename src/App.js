@@ -83,8 +83,10 @@ function App() {
       {/*<Research />*/}
       <Container>
         <div>
-          <h1 className={Styles.Title}>Membrana защитит ваши данные</h1>
-          {blockContentArr.map((item,index) => (
+          <div className={Styles.Title}>
+            <h1>Membrana защитит ваши данные</h1>
+          </div>
+          {blockContentArr.map((item, index) => (
             <BlockContent
               key={index}
               title={item.title}
@@ -96,7 +98,7 @@ function App() {
               gradient={item.gradient}
             />
           ))}
-          {/*<FormBlock/>*/}
+          {/*<FormBlock />*/}
           <FaqBlock />
         </div>
       </Container>

@@ -5,8 +5,8 @@ import Styles from './Footer.module.scss';
 
 const BlockContent = () => {
   return (
-    <div className={Styles.Footer}>
-      <Container>
+    <Container className={Styles.Container}>
+      <div className={Styles.Footer}>
         <div className={Styles.Wrapper}>
           <div className={Styles.LeftLink}>
             <a
@@ -28,8 +28,8 @@ const BlockContent = () => {
             <p>© 2023. Все права защищены</p>
           </div>
         </div>
-      </Container>
-    </div>
+      </div>
+    </Container>
   );
 };
 
