@@ -1,5 +1,13 @@
+@import "@/assets/styles/variables.scss";
+
 .Container {
   margin: 0 auto;
-  max-width: 1354px;
+  width: 100%;
+  max-width: 1360px;
   padding: 0 20px;
+
+  @media (min-width: $media-tablet) {
+    max-width: 1440px;
+    padding: 0 60px;
+  }
 }

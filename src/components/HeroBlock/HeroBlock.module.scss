@@ -5,34 +5,33 @@
     width: 100%;
     height: 100vh;
     position: relative;
-    padding: 170px 0 0 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
     @media (min-width: 440px) {
         padding: 0;
-
-        &::before {
-            content: '';
-            position: absolute;
-            right: 10%;
-            bottom: 0;
-            width: 900px;
-            height: 900px;
-            border-radius: 899px;
-            background: #2D2D2D;
-            filter: blur(300px);
-        }
+        //
+        //&::before {
+        //    content: '';
+        //    position: absolute;
+        //    right: 10%;
+        //    bottom: 0;
+        //    width: 900px;
+        //    height: 900px;
+        //    border-radius: 899px;
+        //    background: #2D2D2D;
+        //    filter: blur(300px);
+        //}
     }
 }
 
 .Wrapper {
+    width: 100%;
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     text-align: center;
+    top: 52%;
+    left: 0;
 }
 
 .Video {
@@ -80,5 +79,26 @@
     width: 1px;
     height: 90px;
     background: #fff;
-    margin-top: 62px;
+    opacity: 0.5;
+    margin-top: 39px;
+    overflow: hidden;
+}
+
+.SmallerStick {
+    width: 1px;
+    height: 35px;
+    background-image: linear-gradient(0deg, rgba(255,255,255,1) 0%,rgba(135,135,135,1) 100%);
+    border-color: transparent;
+    animation: moveStickAnimation 5s infinite;
+}
+
+@keyframes moveStickAnimation {
+    0% {
+        transform: translateY(-40px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
 }

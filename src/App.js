@@ -2,7 +2,6 @@ import HeroBlock from './components/HeroBlock/HeroBlock';
 import { Research } from './components/Research/Research';
 import BlockContent from '@components/BlockContent/BlockContent';
 import Container from './components/ui/Container/Container';
-import { Header } from './components/Header/Header';
 import SoundButton from './components/ui/SoundButton/SoundButton';
 import FormBlock from './components/FormBlock/FormBlock';
 import FaqBlock from './components/FaqBlock/FaqBlock';
@@ -80,11 +79,13 @@ function App() {
     <main className={Styles.Block}>
       {/*<Header />*/}
       <HeroBlock />
-      {/*<Research />*/}
+      <Research />
       <Container>
         <div>
-          <h1 className={Styles.Title}>Membrana защитит ваши данные</h1>
-          {blockContentArr.map((item,index) => (
+          <div className={Styles.Title}>
+            <h1>Membrana защитит ваши данные</h1>
+          </div>
+          {blockContentArr.map((item, index) => (
             <BlockContent
               key={index}
               title={item.title}
@@ -96,7 +97,7 @@ function App() {
               gradient={item.gradient}
             />
           ))}
-          {/*<FormBlock/>*/}
+          {/*<FormBlock />*/}
           <FaqBlock />
         </div>
       </Container>

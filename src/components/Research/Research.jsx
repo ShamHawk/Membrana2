@@ -1,29 +1,72 @@
-import Styles from './Research.module.scss';
-import soundIcon from '../../assets/img/soundIcon.svg';
 import Container from '../ui/Container/Container';
 
+import Styles from './Research.module.scss';
+import { useEffect, useState } from 'react';
+
+const arrAnimation = [
+  {
+    subTitle: '65 млрд рублей',
+    text: 'ущерб от IT-преступлений в России в 2022 г.',
+  },
+  {
+    subTitle: 'на 65%',
+    text: 'выросло число кибератак на российские информационные системы в 2023 г.',
+  },
+  {
+    subTitle: 'каждые 39 секунд',
+    text: 'в мире происходит атака на инфраструктуру кибербезопасности бизнеса',
+  },
+  {
+    subTitle: '300 000',
+    text: 'новых вредоносных программ создаётся ежедневно',
+  },
+  {
+    subTitle: '92%',
+    text: 'вредоносных программ распространяется через e-mail',
+  },
+  {
+    subTitle: '4,1 млн',
+    text: 'интернет-сайтов заражены вредоносным ПО',
+  },
+];
+
 const Research = () => {
+  const [index, setIndex] = useState(0);
+  const [opacity, setOpacity] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setOpacity(0);
+      setTimeout(() => {
+        setIndex((prevIndex) => (prevIndex + 1) % arrAnimation.length);
+        setOpacity(1);
+      }, 500);
+    }, 3000);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, []);
+
   return (
     <Container>
       <div className={Styles.Block}>
         <div className={Styles.Box}>
           <div className={Styles.WrapperTop}>
             <div className={Styles.Left}>
-              <h2 className={Styles.Title}>
-                Наша команда Future Crew провела исследование
-                <br /> по угрозам на мобильных устройствах
-              </h2>
+              <h2 className={Styles.Title}>Кибератаки на бизнес: масштабы и потери</h2>
             </div>
             <div className={Styles.Right}>
-              <p className={Styles.SubTitle}>
-                В среднем за день наш сервис блокировал: 1670 — реклам, 494 — трекера, 110 — вредоносных программ*
+              <p className={Styles.SubTitle} style={{ opacity: opacity, transition: 'opacity 1s ease' }}>
+                {arrAnimation[index].subTitle}
               </p>
-              <p className={Styles.Text}>*Исследование проводилось на 67 sim-картах membrana, Центр инноваций Future Crew.</p>
+              <p className={Styles.Text} style={{ opacity: opacity, transition: 'opacity 1s ease' }}>
+                {arrAnimation[index].text}
+              </p>
             </div>
           </div>
-          <div className={Styles.Bottom}>
-            <p>За 3 месяца мы выявили:</p>
-            <h3>7000 потенциально опасных адресов</h3>
+          <div className={Styles.WrapperBottom}>
+            <p>*По данным Packetlabs и «Ведомостей»</p>
           </div>
         </div>
       </div>
