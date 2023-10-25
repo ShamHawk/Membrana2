@@ -21,7 +21,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 800px;
+  //max-width: 800px;
   order: -1;
 
   @media (min-width: 400px) {
@@ -35,9 +35,7 @@
 }
 
 .Right {
-  @media (min-width: $media-tablet) {
-    width: 39%;
-  }
+  width: 60%;
 }
 
 .Title {
@@ -47,7 +45,7 @@
 
   @media (min-width: $media-tablet) {
     margin-bottom: 36px;
-    max-width: 900px;
+    max-width: 100%;
   }
 
   @media (min-width: $media-tablet-landscape) {
