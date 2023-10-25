@@ -11,12 +11,11 @@ const HeroBlock = () => {
     <div className={Styles.Block}>
       <Header />
       <video autoPlay={true} loop muted className={Styles.Video}>
-        <source src='/video/hero-video.mp4' type='video/mp4'></source>
+        <source src='video/hero-video.mp4' type='video/mp4'></source>
       </video>
       <div className={Styles.Wrapper}>
         <p className={Styles.SubTitle}>
-          Премиум-связь
-          <br /> и сервис для бизнеса
+          Премиум-связь <br />и защита данных команды
         </p>
         {smallMobileWidth && (
           <div className={Styles.Stick}>
