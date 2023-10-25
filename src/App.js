@@ -3,7 +3,6 @@ import { Research } from './components/Research/Research';
 import BlockContent from '@components/BlockContent/BlockContent';
 import Container from './components/ui/Container/Container';
 import SoundButton from './components/ui/SoundButton/SoundButton';
-import FormBlock from './components/FormBlock/FormBlock';
 import FaqBlock from './components/FaqBlock/FaqBlock';
 import Footer from './components/Footer/Footer';
 
@@ -25,7 +24,7 @@ const blockContentArr = [
   {
     title: (<span>спамеры больше <br/> не отвлекут<br/> от важных дел</span>),
     text: 'Membrana проверяет звонки от посторонних и блокирует спам. В приложении можно посмотреть историю вызовов, на которые ответил секретарь, и прочитать расшифровку разговоров',
-    img: './content-img-2.png',
+    img: 'content-img-2.png',
     imgWidth: 494,
     imgHeight: 440,
     gradient:
@@ -33,7 +32,7 @@ const blockContentArr = [
     id: 2,
   },
   {
-    title: (<span>реклама исчезнет<br /> <span style={{lineHeight: '85px'}}>по вашему желанию</span></span>),
+    title: (<span>реклама исчезнет<br /> по вашему желанию</span>),
     text: 'Сервис «Чистый интернет» блокирует рекламный контент на сайтах. Всего есть два режима: «Классический» блокирует рекламу на популярных сайтах, а «усиленный» вообще всю рекламу.',
     img: 'content-img-3.png',
     imgWidth: 398,
@@ -45,7 +44,7 @@ const blockContentArr = [
   {
     title: 'виртуальный секретарь ответит на звонки за вас',
     text: 'Искусственный интеллект возьмёт заботы на себя: отсечёт спам сразу, ответит на звонки, когда вы заняты, проанализирует содержание разговоров, и если дело срочное — соединит с вами',
-    img: '/content-img-4.png',
+    img: 'content-img-4.png',
     imgWidth: 501,
     imgHeight: 397,
     gradient:
@@ -55,7 +54,7 @@ const blockContentArr = [
   {
     title: 'маскировка IP',
     text: 'C Membrana вы можете пользоваться необходимыми ресурсами и не беспокоиться, что ваши данные окажутся у неизвестной компании',
-    img: '/content-img-5.png',
+    img: 'content-img-5.png',
     imgWidth: 378,
     imgHeight: 428,
     gradient:
@@ -65,7 +64,7 @@ const blockContentArr = [
   {
     title: (<span>премиум-связь<br/> с безлимитами</span>),
     text: 'Безлимитный интернет, безлимитные звонки на номера МТС и 5000 минут для других операторов. А также расширенный пакет для раздачи интернета на другие устройства',
-    img: '/content-img-6.png',
+    img: 'content-img-6.png',
     imgWidth: 554,
     imgHeight: 554,
     gradient:

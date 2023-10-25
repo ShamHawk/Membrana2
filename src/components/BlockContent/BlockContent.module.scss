@@ -35,7 +35,11 @@
 }
 
 .Right {
-  width: 60%;
+  width: 100%;
+
+  @media (min-width: $media-tablet) {
+    width: 60%;
+  }
 }
 
 .Title {
