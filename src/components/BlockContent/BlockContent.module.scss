@@ -44,7 +44,7 @@
 
 .Title {
   margin-bottom: 24px;
-  max-width: 310px;
+  max-width: 325px;
   width: 100%;
 
   @media (min-width: $media-tablet) {
@@ -81,7 +81,7 @@
 }
 
 .Text {
-  max-width: 300px;
+  max-width: 350px;
   margin-bottom: 16px;
 
   @media (min-width: $media-tablet) {
@@ -104,6 +104,7 @@
 }
 
 .Image {
+  margin: 0 auto;
 
   img {
     width: 100%;

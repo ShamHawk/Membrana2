@@ -14,15 +14,16 @@ const BlockContent = () => {
                 'https://moskva.mts.ru/about/investoram-i-akcioneram/korporativnoe-upravlenie/dokumenti-pao-mts/politika-obrabotka-personalnih-dannih-v-pao-mts'
               }
               target={'_blank'}
+              rel='noopener'
             >
               Политика обработки персональных данных
             </a>
-            <a href={'https://futurecrew.ru/soglasie_na_obrabotky_personalnyh_dannyh.pdf'} target={'_blank'}>
+            <a href={'https://futurecrew.ru/soglasie_na_obrabotky_personalnyh_dannyh.pdf'} target={'_blank'} rel='noopener'>
               Политика обработки файлов cookie
             </a>
           </div>
           <div className={Styles.RightLink}>
-            <a href={'https://futurecrew.ru/'} target={'_blank'}>
+            <a href={'https://futurecrew.ru/'} target={'_blank'} rel='noopener'>
               Продукт разработан командой FutureCrew
             </a>
             <p>© 2023. Все права защищены</p>

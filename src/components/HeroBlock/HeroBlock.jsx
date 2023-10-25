@@ -15,8 +15,7 @@ const HeroBlock = () => {
       </video>
       <div className={Styles.Wrapper}>
         <p className={Styles.SubTitle}>
-          Премиум-связь
-          <br /> и сервис для бизнеса
+          Премиум-связь <br />и защита данных команды
         </p>
         {smallMobileWidth && (
           <div className={Styles.Stick}>
