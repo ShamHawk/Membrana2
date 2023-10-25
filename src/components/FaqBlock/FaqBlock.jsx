@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import Container from '@components/ui/Container/Container';
 
 import Styles from './FagBlock.module.scss';
-import FagItem from './FaqItem/FagItem';
-import Ticker from '../ui/Ticker/Ticker';
-import classNames from 'classnames';
+import FagItem from "./FaqItem/FagItem";
+import classNames from "classnames";
 const SDFag = [
   {
     title: 'Как подключить Membrana?',
