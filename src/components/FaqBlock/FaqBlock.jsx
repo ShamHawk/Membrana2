@@ -3,7 +3,6 @@ import Container from '@components/ui/Container/Container';
 
 import Styles from './FagBlock.module.scss';
 import FagItem from "./FaqItem/FagItem";
-import Ticker from "../ui/Ticker/Ticker";
 const SDFag = [
     {
         title: "Как подключить Membrana?",
