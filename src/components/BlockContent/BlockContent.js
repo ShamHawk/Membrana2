@@ -8,7 +8,6 @@ const BlockContent = ({ title, text, img, widthImg, heightImg, gradient }) => {
   const { mobileWidth } = useWindowSize();
 
   return (
-    <Container>
       <div className={Styles.Block}>
         <div className={Styles.Left}>
           <div className={Styles.Title}>
@@ -25,7 +24,6 @@ const BlockContent = ({ title, text, img, widthImg, heightImg, gradient }) => {
           </div>
         </div>
       </div>
-    </Container>
   );
 };
 
