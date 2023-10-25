@@ -10,6 +10,8 @@
 .Title {
   max-width: 300px;
   margin: 0 auto 56px auto !important;
+  z-index: 2;
+  position: relative;
 
   @media (min-width: $media-tablet) {
     margin: 0;
