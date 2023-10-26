@@ -3,12 +3,12 @@ import { Research } from './components/Research/Research';
 import BlockContent from '@components/BlockContent/BlockContent';
 import Container from './components/ui/Container/Container';
 import SoundButton from './components/ui/SoundButton/SoundButton';
-import FormBlock from './components/FormBlock/FormBlock';
 import FaqBlock from './components/FaqBlock/FaqBlock';
 import Footer from './components/Footer/Footer';
 
 import '@assets/styles/index.scss';
 import Styles from '@assets/styles/Home.module.scss';
+import FormBlock from "./components/FormBlock/FormBlock";
 
 const blockContentArr = [
   {
@@ -143,7 +143,7 @@ function App() {
           <div className={Styles.Title}>
             <h1>Membrana защитит ваши данные</h1>
           </div>
-          {blockContentArr.map((item, index) => (
+          {blockContentArr.map((item , index) => (
             <BlockContent
               key={index}
               title={item.title}
@@ -156,7 +156,7 @@ function App() {
               gradient={item.gradient}
             />
           ))}
-          {/*<FormBlock />*/}
+          <FormBlock />
           <FaqBlock />
         </div>
       </Container>
