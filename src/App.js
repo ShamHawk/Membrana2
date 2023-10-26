@@ -22,7 +22,7 @@ const blockContentArr = [
     imgWidth: 494,
     imgHeight: 440,
     gradient:
-      'conic-gradient(from 254deg at 5.35% 34.76%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg)',
+      'conic-gradient(from 254deg at 1.35% 34.76%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg)',
     id: 1,
   },
 
@@ -44,7 +44,7 @@ const blockContentArr = [
     imgWidth: 494,
     imgHeight: 440,
     gradient:
-      'conic-gradient(from 268deg at 14.78% 38.24%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg)',
+      'conic-gradient(from 268deg at 4% 34.24%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg)',
     id: 2,
   },
   {
@@ -82,11 +82,11 @@ const blockContentArr = [
     imgWidth: 501,
     imgHeight: 397,
     gradient:
-      'conic-gradient(from 253deg at 9.08% 32.29%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg)',
+      'conic-gradient(from 253deg at 5% 32.29%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg)',
     id: 4,
   },
   {
-    title: 'маскировка IP',
+    title: <span className={Styles.TitleString_4}>маскировка IP</span>,
     text: (
       <span>
         C Membrana вы можете пользоваться
@@ -121,7 +121,7 @@ const blockContentArr = [
     imgWidth: 554,
     imgHeight: 554,
     gradient:
-      'conic-gradient(from -82deg at 5.73% 50.66%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg)',
+      'conic-gradient(from -82deg at 2.73% 50.66%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg)',
     id: 6,
   },
 ];

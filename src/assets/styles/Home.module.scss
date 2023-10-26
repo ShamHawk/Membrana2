@@ -59,3 +59,16 @@
     line-height: 86px;
   }
 }
+
+
+.TitleString_4 {
+  line-height: 40px;
+
+  @media (min-width: $media-tablet) {
+    line-height: 50px;
+  }
+
+  @media (min-width: $media-tablet-landscape) {
+    line-height: 95px;
+  }
+}
