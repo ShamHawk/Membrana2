@@ -14,8 +14,8 @@ const Header = () => {
       <Container className={Styles.Container}>
         <div className={Styles.Wrapper}>
           <div className={Styles.Logo} onClick={scrollToTop}>
-            <img className={Styles.LogoIcon} src={'logo/logo.svg'} alt='Logo icon' />
-            <img className={Styles.LogoText} src={'logo/logo-text.svg'} alt='Logo text' />
+            <img className={Styles.LogoIcon} src={'img/logo/logo.svg'} alt='Logo icon' width={'100%'} height={'100%'} />
+            <img className={Styles.LogoText} src={'img/logo/logo-text.svg'} alt='Logo text' />
           </div>
           <a className={Styles.Btn}>оставить заявку</a>
         </div>

@@ -18,7 +18,8 @@ const blockContentArr = [
         На работе, в отпуске, в командировках наш сервис будет отслеживать угрозы и блокировать запуск вредоносных и подозрительных скриптов
       </span>
     ),
-    img: 'content-img-1.png',
+    img: 'img/content-img-1.png',
+    imgMobile: 'img/content-img-mobile-1.png',
     imgWidth: 494,
     imgHeight: 440,
     gradient:
@@ -40,7 +41,8 @@ const blockContentArr = [
         <br /> и прочитать расшифровку разговоров
       </span>
     ),
-    img: 'content-img-2.png',
+    img: 'img/content-img-2.png',
+    imgMobile: 'img/content-img-mobile-2.png',
     imgWidth: 494,
     imgHeight: 440,
     gradient:
@@ -62,7 +64,8 @@ const blockContentArr = [
         <br /> Делаем сёрфинг приятным и безопасным
       </span>
     ),
-    img: 'content-img-3.png',
+    img: 'img/content-img-3.png',
+    imgMobile: 'img/content-img-mobile-3.png',
     imgWidth: 398,
     imgHeight: 398,
     gradient:
@@ -78,7 +81,8 @@ const blockContentArr = [
         <br /> и если дело срочное — соединит с вами
       </span>
     ),
-    img: 'content-img-4.png',
+    img: 'img/content-img-4.png',
+    imgMobile: 'img/content-img-mobile-4.png',
     imgWidth: 501,
     imgHeight: 397,
     gradient:
@@ -95,7 +99,8 @@ const blockContentArr = [
         <br /> компании
       </span>
     ),
-    img: 'content-img-5.png',
+    img: 'img/content-img-5.png',
+    imgMobile: 'img/content-img-mobile-5.png',
     imgWidth: 378,
     imgHeight: 428,
     gradient:
@@ -117,7 +122,8 @@ const blockContentArr = [
         <br /> для раздачи интернета на другие устройства
       </span>
     ),
-    img: 'content-img-6.png',
+    img: 'img/content-img-6.png',
+    imgMobile: 'img/content-img-mobile-6.png',
     imgWidth: 554,
     imgHeight: 554,
     gradient:
@@ -143,6 +149,7 @@ function App() {
               title={item.title}
               text={item.text}
               img={item.img}
+              imgMobile={item.imgMobile}
               widthImg={item.imgWidth}
               heightImg={item.imgHeight}
               titleHeight={item.titleHeight}

@@ -33,7 +33,7 @@ function SoundButton() {
       <div className={Styles.Btn} onClick={toggleSound}>
         <div className={Styles.BtnInner}>
           <div className={Styles.BtnContent}>
-            <img src={isSoundOn ? 'sound/sound-on.svg' : 'sound/sound-off.svg'} alt={isSoundOn ? 'Sound On' : 'Sound Off'} />
+            <img src={isSoundOn ? 'img/sound/sound-on.svg' : 'img/sound/sound-off.svg'} alt={isSoundOn ? 'Sound On' : 'Sound Off'} />
             <audio id='audio' loop>
               <source
                 src='https://storage.yandexcloud.net/cdn.tsekh.design/Membrana/mts_ambience_loop.ogg'
