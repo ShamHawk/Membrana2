@@ -13,7 +13,7 @@ import { useRef } from 'react';
 
 const blockContentArr = [
   {
-    title: <span>конфиденциальная информация под защитой</span>,
+    title: <span>Конфиденциальная <br/> информация <br/> под защитой</span>,
     text: [
       <span>
         На работе, в отпуске, в командировках
@@ -40,7 +40,7 @@ const blockContentArr = [
   {
     title: (
       <span>
-        спамеры больше <br /> не отвлекут
+        Спамеры больше <br /> не отвлекут
         <br /> от важных дел
       </span>
     ),
@@ -68,7 +68,7 @@ const blockContentArr = [
   {
     title: (
       <span>
-        реклама исчезнет
+        Реклама исчезнет
         <br /> <span className={Styles.TitleString_3}>по вашему желанию</span>
       </span>
     ),
@@ -99,7 +99,7 @@ const blockContentArr = [
     id: 3,
   },
   {
-    title: 'виртуальный секретарь ответит на звонки за вас',
+    title: 'Виртуальный секретарь ответит на звонки за вас',
     text: [
       <span>
         Искусственный интеллект возьмёт
@@ -124,7 +124,7 @@ const blockContentArr = [
     id: 4,
   },
   {
-    title: <span className={Styles.TitleString_4}>маскировка IP</span>,
+    title: <span className={Styles.TitleString_4}>Маскировка IP</span>,
     text: [
       <span>
         C Membrana вы можете пользоваться
@@ -135,8 +135,7 @@ const blockContentArr = [
       <span>
         C Membrana вы можете пользоваться
         <br /> необходимыми ресурсами и не беспокоиться,
-        <br /> что ваши данные окажутся у неизвестной
-        <br /> компании
+        <br /> что ваши данные окажутся у неизвестной компании
       </span>,
     ],
     img: 'img/content-img-5.png',
@@ -150,7 +149,7 @@ const blockContentArr = [
   {
     title: (
       <span>
-        премиум-связь
+        Премиум-связь
         <br /> с безлимитами
       </span>
     ),
