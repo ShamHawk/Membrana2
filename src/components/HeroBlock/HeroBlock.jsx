@@ -4,12 +4,12 @@ import { useWindowSize } from '../../hooks/useWindowSize';
 import Styles from './HeroBlock.module.scss';
 import Container from '../ui/Container/Container';
 
-const HeroBlock = () => {
+const HeroBlock = ({ formBlockRef }) => {
   const { smallMobileWidth } = useWindowSize();
 
   return (
     <div className={Styles.Block}>
-      <Header />
+      <Header formBlockRef={formBlockRef} />
       <video autoPlay={true} loop muted className={Styles.Video}>
         <source src='video/hero-video.mp4' type='video/mp4'></source>
       </video>

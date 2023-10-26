@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer';
 import '@assets/styles/index.scss';
 import Styles from '@assets/styles/Home.module.scss';
 import FormBlock from './components/FormBlock/FormBlock';
+import { useRef } from 'react';
 
 const blockContentArr = [
   {
@@ -180,10 +181,12 @@ const blockContentArr = [
 ];
 
 function App() {
+  const formBlockRef = useRef(null);
+
   return (
     <main className={Styles.Block}>
       {/*<Header />*/}
-      <HeroBlock />
+      <HeroBlock formBlockRef={formBlockRef} />
       <Research />
       <Container>
         <div>
@@ -203,7 +206,7 @@ function App() {
               gradient={item.gradient}
             />
           ))}
-          <FormBlock />
+          <FormBlock formBlockRef={formBlockRef} />
           <FaqBlock />
         </div>
       </Container>
