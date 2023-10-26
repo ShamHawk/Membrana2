@@ -5,7 +5,7 @@ import Styles from './BlockContent.module.scss';
 import { useWindowSize } from '../../hooks/useWindowSize';
 
 const BlockContent = ({ title, text, img, imgMobile, widthImg, heightImg, gradient }) => {
-  const { mobileWidth } = useWindowSize();
+  const { mobileWidth, smallMobileWidth } = useWindowSize();
 
   return (
     <div className={Styles.Block}>
@@ -14,7 +14,7 @@ const BlockContent = ({ title, text, img, imgMobile, widthImg, heightImg, gradie
           <h2 style={{ backgroundImage: gradient }}>{title}</h2>
         </div>
         <div className={Styles.Text}>
-          <p>{text}</p>
+          <p>{mobileWidth ? text[0] : text[1]}</p>
         </div>
       </div>
       <div className={Styles.Right}>
