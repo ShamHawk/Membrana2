@@ -112,7 +112,7 @@
     width: 100%;
 
     @media (min-width: $media-tablet-landscape) {
-        max-width: 536px;
+        max-width: 590px;
     }
 
     .FaqBlock {
@@ -120,7 +120,7 @@
         flex-direction:column;
         justify-content:center;
         border-top: 1px solid rgba(255, 255, 255, 0.60);
-        color: white;
+        color: #868686;
 
         .FaqTitle {
             display: flex;
@@ -150,3 +150,8 @@
     }
 }
 
+
+.ListNum {
+    color: #868686;
+    list-style-type: decimal;
+}
