@@ -4,7 +4,7 @@ import Container from '@components/ui/Container/Container';
 import Styles from './BlockContent.module.scss';
 import { useWindowSize } from '../../hooks/useWindowSize';
 
-const BlockContent = ({ title, text, img, imgMobile, widthVideo, heightVideo, gradient, video }) => {
+const BlockContent = ({ title, text, widthVideo, heightVideo, gradient, video, circlePosition, circleSize }) => {
   const { mobileWidth, smallMobileWidth } = useWindowSize();
 
   return (
@@ -28,6 +28,17 @@ const BlockContent = ({ title, text, img, imgMobile, widthVideo, heightVideo, gr
           <source src={video} type='video/mp4'></source>
         </video>
       </div>
+      <div
+        className={Styles.Circle}
+        style={{
+          top: circlePosition && circlePosition[0],
+          right: circlePosition && circlePosition[1],
+          bottom: circlePosition && circlePosition[2],
+          left: circlePosition && circlePosition[3],
+          width: circleSize && circleSize[0],
+          height: circleSize && circleSize[1],
+        }}
+      ></div>
     </div>
   );
 };
