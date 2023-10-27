@@ -57,8 +57,8 @@
     &::before {
         position: absolute;
         content: '';
-        bottom: -105%;
-        right: -90%;
+        top: -25%;
+        right: -60%;
         border-radius: 666px;
         opacity: 0.6;
         background: #5841DF;
@@ -69,7 +69,8 @@
         -ms-filter: blur(130.50294494628906px);
         filter: blur(130.50294494628906px);
         width: 666px;
-        height: 666px;
+        height: 400px;
+        z-index: 0;
 
 
         @media (min-width: 500px) {
@@ -79,7 +80,8 @@
 
 
         @media (min-width: $media-tablet) {
-            bottom: -220%;
+            top: auto;
+            bottom: -75%;
             right: -40%;
             border-radius: 1531px;
             opacity: 0.6;
@@ -94,7 +96,7 @@
         }
 
         @media (min-width: $media-tablet-landscape) {
-            bottom: -1400px;
+            bottom: -1200px;
             right: auto;
             left: -400px;
         }
@@ -107,6 +109,8 @@
     align-items: flex-start;
     justify-content: space-between;
     //margin-bottom: 24px;
+    position: relative;
+    z-index: 2;
 
     @media (min-width: $media-tablet) {
         margin-bottom: 36px;
@@ -161,6 +165,8 @@
     font-size: 40px;
     line-height: 34px;
     max-width: 240px;
+    position: relative;
+    z-index: 2;
 
     //background-image: conic-gradient(from 267deg at 6.96% 50%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg);
     background-image:  conic-gradient(from 255deg at 0.92% 38.56%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg);
@@ -192,6 +198,8 @@
     line-height: 27px;
     color: #D9D9D9;
     margin-bottom: 16px;
+    position: relative;
+    z-index: 2;
 
     @media (min-width: $media-tablet) {
         font-size: 40px;
@@ -214,6 +222,8 @@
 .Text {
     font-size: 18px;
     line-height: normal;
+    position: relative;
+    z-index: 12;
 
     @media (min-width: $media-tablet) {
         font-size: 20px;
@@ -226,6 +236,8 @@
         color: #8884A0;
         font-size: 16px;
         max-width: 190px;
+        position: relative;
+        z-index: 10;
 
         @media (min-width: $media-tablet) {
             max-width: 100%;

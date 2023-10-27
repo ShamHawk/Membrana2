@@ -50,6 +50,8 @@
 }
 
 .TitleOne {
+    position: relative;
+    z-index: 3;
     @media (min-width: $media-tablet-landscape) {
         max-width: 1150px;
     }
