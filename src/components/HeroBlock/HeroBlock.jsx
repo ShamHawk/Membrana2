@@ -4,15 +4,14 @@ import Styles from './HeroBlock.module.scss';
 import { useEffect, useState } from 'react';
 
 const HeroBlock = ({ formBlockRef }) => {
-  const { smallMobileWidth, desktopWidth, mobileWidth } = useWindowSize();
+  const { smallMobileWidth, desktopWidth, windowWidth } = useWindowSize();
   const [srcVideo, setSrcVideo] = useState(null);
 
   useEffect(() => {
-    // Генерируем временную метку
     const timestamp = Date.now();
     const videoUrl = smallMobileWidth ? `video/hero-video-mobile.mp4?v=${timestamp}` : `video/hero-video.mp4?v=${timestamp}`;
 
-    if (smallMobileWidth) {
+    if (windowWidth > 440) {
       setSrcVideo(
         <video autoPlay={true} loop muted className={Styles.Video}>
           <source src={videoUrl} type='video/mp4'></source>
@@ -25,7 +24,7 @@ const HeroBlock = ({ formBlockRef }) => {
         </video>,
       );
     }
-  }, [mobileWidth]);
+  }, [windowWidth]);
 
   return (
     <div className={Styles.Block}>
