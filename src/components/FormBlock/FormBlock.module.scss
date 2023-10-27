@@ -13,7 +13,7 @@
 .Title {
     text-align: center;
     margin: 0 auto 32px auto;
-    max-width: 310px;
+    //max-width: 1210px;
     width: 100%;
 
     @media (min-width: $media-tablet) {
@@ -44,7 +44,9 @@
         }
     }
 }
-
+.Title_one {
+    max-width: 1200px!important;
+}
 .Title_two {
 
     @media (min-width: $media-tablet-landscape) {
