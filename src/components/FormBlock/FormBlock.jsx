@@ -37,23 +37,7 @@ const BlockContent = ({ formBlockRef }) => {
               {windowWidth <= 500 ?  <p>Заполните форму — и мы с вами <br/> свяжемся. Покажем возможности <br/> для компаний и организуем  <br/>демо Membrana</p> : <p>Заполните форму — и мы с вами  свяжемся. Покажем возможности <br/> для компаний и организуем демо Membrana</p>}
           </div>
         </div>
-        {/*<div className={Styles.Form}>*/}
-        {/*    <div className={Styles.FormContainer}>*/}
-        {/*        <input type={"text"} placeholder={'Контактное лицо*'} className={Styles.FormInput}/>*/}
-        {/*    </div>*/}
-        {/*    <div className={Styles.FormContainer}>*/}
-        {/*        <input type={"text"} placeholder={'Номер для связи*'} className={Styles.FormInput}/>*/}
-        {/*    </div>*/}
-        {/*    <div className={Styles.FormContainer}>*/}
-        {/*        <input type={"text"} placeholder={'Название компании или ИНН*'} className={Styles.FormInput}/>*/}
-        {/*    </div>*/}
-        {/*    <div className={Styles.FormContainer}>*/}
-        {/*        <input type={"text"} placeholder={'Количество сотрудников*'} className={Styles.FormInput}/>*/}
-        {/*    </div>*/}
-        {/*    <div className={Styles.FormContainer}>*/}
-        {/*        <input type={"text"} placeholder={'Комментарий'} className={Styles.FormInput}/>*/}
-        {/*    </div>*/}
-        {/*</div>*/}
+
           <div className={Styles.FormWrapper}>
         <div className='form-container'>
           <div
