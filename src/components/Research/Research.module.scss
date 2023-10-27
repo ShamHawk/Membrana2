@@ -18,6 +18,7 @@
             border-radius: 899px;
             background: #2D2D2D;
             filter: blur(300px);
+            transform: translate3d(0, 0, 0);
             z-index: 0;
         }
 
@@ -31,7 +32,7 @@
             height: 899px;
             border-radius: 1119px;
             background: #070707;
-
+            transform: translate3d(0, 0, 0);
             filter: blur(110px);
             z-index: 0;
         }
@@ -62,6 +63,7 @@
         opacity: 0.6;
         background: #5841DF;
         -webkit-filter: blur(130.50294494628906px);
+        transform: translate3d(0, 0, 0);
         z-index: 10;
         -moz-filter: blur(130.50294494628906px);
         -ms-filter: blur(130.50294494628906px);
@@ -87,6 +89,7 @@
             filter: blur(300px);
             -webkit-filter: blur(300px);
             -moz-filter: blur(300px);
+
             -ms-filter: blur(300px);
         }
 
@@ -157,7 +160,7 @@
     font-weight: normal;
     font-size: 40px;
     line-height: 34px;
-    max-width: 232px;
+    max-width: 240px;
 
     //background-image: conic-gradient(from 267deg at 6.96% 50%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg);
     background-image:  conic-gradient(from 255deg at 0.92% 38.56%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg);
