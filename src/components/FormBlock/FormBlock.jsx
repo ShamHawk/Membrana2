@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Container from '@components/ui/Container/Container';
 
 import Styles from './FormBlock.module.scss';
+import classNames from "classnames";
 
 const BlockContent = ({ formBlockRef }) => {
   useEffect(() => {
@@ -18,11 +19,20 @@ const BlockContent = ({ formBlockRef }) => {
   return (
     <Container>
       <div className={Styles.Block} ref={formBlockRef}>
+        <div className={classNames(Styles.Title, Styles.Title_one)}>
+          <h2>Ваши данные —<br/>
+            это ваша собственность</h2>
+        </div>
+        <div className={classNames(Styles.Subtitle, Styles.Subtitle_one)}>
+          <p>Мы гарантируем, что они не используются для монетизации и не передаются третьим лицам.</p>
+        </div>
+
+
         <div className={Styles.HeadBlock}>
-          <div className={Styles.Title}>
-            <h2>Защитите себя и команду</h2>
+          <div className={classNames(Styles.Title, Styles.Title_two)}>
+            <h2>Позаботьтесь о команде</h2>
           </div>
-          <div className={Styles.Subtitle}>
+          <div className={classNames(Styles.Subtitle, Styles.Subtitle_twoz)}>
             <p>Заполните контактную информацию, мы свяжемся с вами, расскажем про продукт, покажем Демо.</p>
           </div>
         </div>
