@@ -13,7 +13,11 @@ import { useRef } from 'react';
 
 const blockContentArr = [
   {
-    title: <span>Конфиденциальная <br/> информация <br/> под защитой</span>,
+    title: (
+      <span>
+        Конфиденциальная <br /> информация <br /> под защитой
+      </span>
+    ),
     text: [
       <span>
         На работе, в отпуске, в командировках
@@ -28,10 +32,11 @@ const blockContentArr = [
         <br /> и подозрительных скриптов
       </span>,
     ],
-    img: 'img/content-img-1.png',
-    imgMobile: 'img/content-img-mobile-1.png',
-    imgWidth: 494,
-    imgHeight: 440,
+    // img: 'img/content-img-1.png',
+    // imgMobile: 'img/content-img-mobile-1.png',
+    videoWidth: 494,
+    videoHeight: 440,
+    video: 'video/block/content-video-1.mp4',
     gradient:
       'conic-gradient(from 254deg at 1.35% 34.76%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg)',
     id: 1,
@@ -57,10 +62,11 @@ const blockContentArr = [
         <br /> ответил секретарь,и прочитать расшифровку разговоров
       </span>,
     ],
-    img: 'img/content-img-2.png',
-    imgMobile: 'img/content-img-mobile-2.png',
-    imgWidth: 494,
-    imgHeight: 440,
+    // img: 'img/content-img-2.png',
+    // imgMobile: 'img/content-img-mobile-2.png',
+    videoWidth: 494,
+    videoHeight: 440,
+    video: 'video/block/content-video-2.mp4',
     gradient:
       'conic-gradient(from 268deg at 4% 34.24%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg)',
     id: 2,
@@ -90,10 +96,11 @@ const blockContentArr = [
         <br /> страниц. Делаем сёрфинг приятным и безопасным
       </span>,
     ],
-    img: 'img/content-img-3.png',
-    imgMobile: 'img/content-img-mobile-3.png',
-    imgWidth: 398,
-    imgHeight: 398,
+    // img: 'img/content-img-3.png',
+    // imgMobile: 'img/content-img-mobile-3.png',
+    videoWidth: 398,
+    videoHeight: 398,
+    video: 'video/block/content-video-3.mp4',
     gradient:
       'conic-gradient(from -82deg at 0% 59.78%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg)',
     id: 3,
@@ -115,10 +122,11 @@ const blockContentArr = [
         <br /> срочное — соединит с вами
       </span>,
     ],
-    img: 'img/content-img-4.png',
-    imgMobile: 'img/content-img-mobile-4.png',
-    imgWidth: 501,
-    imgHeight: 397,
+    // img: 'img/content-img-4.png',
+    // imgMobile: 'img/content-img-mobile-4.png',
+    videoWidth: 501,
+    videoHeight: 397,
+    video: 'video/block/content-video-4.mp4',
     gradient:
       'conic-gradient(from 253deg at 5% 32.29%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg)',
     id: 4,
@@ -138,10 +146,12 @@ const blockContentArr = [
         <br /> что ваши данные окажутся у неизвестной компании
       </span>,
     ],
-    img: 'img/content-img-5.png',
-    imgMobile: 'img/content-img-mobile-5.png',
-    imgWidth: 378,
-    imgHeight: 428,
+    // img: 'img/content-img-5.png',
+    // imgMobile: 'img/content-img-mobile-5.png',
+    videoWidth: 378,
+    videoHeight: 428,
+    video: 'video/block/content-video-5.mp4',
+
     gradient:
       'conic-gradient(from -24deg at 28.82% 8.82%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg)',
     id: 5,
@@ -169,10 +179,11 @@ const blockContentArr = [
         <br /> для раздачи интернета на другие устройства
       </span>,
     ],
-    img: 'img/content-img-6.png',
-    imgMobile: 'img/content-img-mobile-6.png',
-    imgWidth: 554,
-    imgHeight: 554,
+    // img: 'img/content-img-6.png',
+    // imgMobile: 'img/content-img-mobile-6.png',
+    videoWidth: 554,
+    videoHeight: 554,
+    video: 'video/block/content-video-6.mp4',
     gradient:
       'conic-gradient(from -82deg at 2.73% 50.66%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg)',
     id: 6,
@@ -197,10 +208,11 @@ function App() {
               key={index}
               title={item.title}
               text={item.text}
-              img={item.img}
-              imgMobile={item.imgMobile}
-              widthImg={item.imgWidth}
-              heightImg={item.imgHeight}
+              // img={item.img}
+              // imgMobile={item.imgMobile}
+              video={item.video}
+              widthVideo={item.videoWidth}
+              heightVideo={item.videoHeight}
               titleHeight={item.titleHeight}
               gradient={item.gradient}
             />

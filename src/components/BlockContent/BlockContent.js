@@ -4,7 +4,7 @@ import Container from '@components/ui/Container/Container';
 import Styles from './BlockContent.module.scss';
 import { useWindowSize } from '../../hooks/useWindowSize';
 
-const BlockContent = ({ title, text, img, imgMobile, widthImg, heightImg, gradient }) => {
+const BlockContent = ({ title, text, img, imgMobile, widthVideo, heightVideo, gradient, video }) => {
   const { mobileWidth, smallMobileWidth } = useWindowSize();
 
   return (
@@ -18,12 +18,15 @@ const BlockContent = ({ title, text, img, imgMobile, widthImg, heightImg, gradie
         </div>
       </div>
       <div className={Styles.Right}>
-        <div className={Styles.Image} style={{ maxWidth: mobileWidth ? 215 : widthImg, maxHeight: mobileWidth ? 215 : heightImg }}>
-          <picture>
-            <source media='(max-width: 500px)' srcSet={imgMobile} />
-            <img src={img} alt='img' />
-          </picture>
-        </div>
+        <video
+          autoPlay={true}
+          loop
+          muted
+          className={Styles.Video}
+          style={{ maxWidth: mobileWidth ? 215 : widthVideo, maxHeight: mobileWidth ? 215 : heightVideo }}
+        >
+          <source src={video} type='video/mp4'></source>
+        </video>
       </div>
     </div>
   );
