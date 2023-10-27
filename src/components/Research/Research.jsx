@@ -54,7 +54,7 @@ const Research = () => {
         <div className={Styles.Box}>
           <div className={Styles.WrapperTop}>
             <div className={Styles.Left}>
-              <h2 className={Styles.Title}>Кибератаки на бизнес: масштабы и <span>потери</span></h2>
+              <h2 className={Styles.Title}>Кибератаки <br/> на бизнес:<br/> масштабы и потери</h2>
             </div>
             <div className={Styles.Right}>
               {arrAnimation.map((obj,index) => {
