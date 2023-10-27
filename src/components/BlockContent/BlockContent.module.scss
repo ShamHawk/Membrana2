@@ -44,10 +44,11 @@
 }
 
 .Right {
-  width: 100%;
+margin: 0 auto;
 
   @media (min-width: $media-tablet) {
     width: 60%;
+    margin: 0;
   }
 }
 
