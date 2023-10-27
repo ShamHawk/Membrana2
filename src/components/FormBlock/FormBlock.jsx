@@ -17,11 +17,9 @@ const BlockContent = ({ formBlockRef }) => {
   }, []);
 
   return (
-    <Container>
       <div className={Styles.Block} ref={formBlockRef}>
         <div className={classNames(Styles.Title, Styles.Title_one)}>
-          <h2>Ваши данные —<br/>
-            это ваша собственность</h2>
+          <h2>Ваши данные —<br/> это ваша собственность</h2>
         </div>
         <div className={classNames(Styles.Subtitle, Styles.Subtitle_one)}>
           <p>Мы гарантируем, что они не используются для монетизации и не передаются третьим лицам.</p>
@@ -54,10 +52,16 @@ const BlockContent = ({ formBlockRef }) => {
         {/*    </div>*/}
         {/*</div>*/}
         <div className='form-container'>
-          <div id='digital_highway' data-product='PL0146' data-vitrine='membrana' data-region='77'></div>
+          <div
+              id='digital_highway'
+              data-bo-theme={"dark"}
+              data-product='PL0146'
+              // data-bo-custom-styles="tb"
+              data-vitrine='membrana'
+              data-region='77'/>
         </div>
       </div>
-    </Container>
+
   );
 };
 
