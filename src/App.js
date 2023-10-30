@@ -34,7 +34,7 @@ const blockContentArr = [
     ],
     videoWidth: 494,
     videoHeight: 440,
-    video: 'video/block/content-video-1.mp4',
+    video: 'https://storage.yandexcloud.net/cdn.tsekh.design/Membrana/benefits/1_Privacy-Secure.mp4#t=0.001',
     gradient:
       'conic-gradient(from 254deg at 1.35% 34.76%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg)',
     id: 1,
@@ -64,7 +64,7 @@ const blockContentArr = [
     ],
     videoWidth: 494,
     videoHeight: 440,
-    video: 'video/block/content-video-2.mp4',
+    video: 'https://storage.yandexcloud.net/cdn.tsekh.design/Membrana/benefits/2_Prem-Cnnctn.mp4#t=0.001',
     gradient:
       'conic-gradient(from 268deg at 4% 34.24%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg)',
     id: 2,
@@ -98,7 +98,7 @@ const blockContentArr = [
     ],
     videoWidth: 398,
     videoHeight: 398,
-    video: 'video/block/content-video-3.mp4',
+    video: 'https://storage.yandexcloud.net/cdn.tsekh.design/Membrana/benefits/3_Complete-Anonymity.mp4#t=0.001',
     gradient:
       'conic-gradient(from -82deg at 0% 59.78%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg)',
     id: 3,
@@ -124,7 +124,7 @@ const blockContentArr = [
     ],
     videoWidth: 501,
     videoHeight: 397,
-    video: 'video/block/content-video-4.mp4',
+    video: 'https://storage.yandexcloud.net/cdn.tsekh.design/Membrana/benefits/4_VPN%20(1).mp4#t=0.001',
     gradient:
       'conic-gradient(from 253deg at 5% 32.29%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg)',
     id: 4,
@@ -146,7 +146,7 @@ const blockContentArr = [
     ],
     videoWidth: 378,
     videoHeight: 428,
-    video: 'video/block/content-video-5.mp4',
+    video: 'https://storage.yandexcloud.net/cdn.tsekh.design/Membrana/benefits/5_User-Care.mp4#t=0.001',
     gradient:
       'conic-gradient(from -24deg at 28.82% 8.82%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg)',
     id: 5,
@@ -178,7 +178,7 @@ const blockContentArr = [
     ],
     videoWidth: 554,
     videoHeight: 554,
-    video: 'video/block/content-video-6.mp4',
+    video: 'https://storage.yandexcloud.net/cdn.tsekh.design/Membrana/benefits/8_VirtSecret.mp4#t=0.001',
     gradient:
       'conic-gradient(from -82deg at 2.73% 50.66%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg)',
     id: 6,

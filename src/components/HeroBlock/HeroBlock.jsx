@@ -9,18 +9,28 @@ const HeroBlock = ({ formBlockRef }) => {
 
   useEffect(() => {
     const timestamp = Date.now();
-    const videoUrl = smallMobileWidth ? `video/hero-video-mobile.mp4?v=${timestamp}` : `video/hero-video.mp4?v=${timestamp}`;
+    // const videoUrl = smallMobileWidth ? `video/hero-video-mobile.mp4?v=${timestamp}` : `video/hero-video.mp4?v=${timestamp}`;
 
     if (windowWidth > 440) {
       setSrcVideo(
         <video autoPlay='1' playsInline preload={'metadata'} loop muted className={Styles.Video}>
-          <source src={videoUrl} type='video/mp4'></source>
+          <source
+            src={
+              'https://storage.yandexcloud.net/cdn.tsekh.design/Membrana/benefits/%5BVer-9-New%5DMTS-Membrana-MainScreen_2880x1600_slow_szh2.mp4#t=0.001'
+            }
+            type='video/mp4'
+          ></source>
         </video>,
       );
     } else {
       setSrcVideo(
         <video autoPlay='1' playsInline preload={'metadata'} loop muted className={Styles.Video}>
-          <source src={videoUrl} type='video/mp4'></source>
+          <source
+            src={
+              'https://storage.yandexcloud.net/cdn.tsekh.design/Membrana/benefits/%5BVer-9-1_Mob%5DMTS-Membrana-MainScreen_750x1200_slow_szh.mp4#t=0.001'
+            }
+            type='video/mp4'
+          ></source>
         </video>,
       );
     }
