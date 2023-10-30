@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 export const useWindowSize = () => {
-  const [windowWidth, setWindowWidth] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(null);
 
   const mobile = 440;
   const tablet = 768;
@@ -13,6 +13,8 @@ export const useWindowSize = () => {
     };
 
     setWindowWidth(window.innerWidth);
+
+    handleResize();
 
     window.addEventListener('resize', handleResize);
 
