@@ -196,7 +196,7 @@
         border-radius: 899px;
         background: #000;
         filter: blur(300px);
-        -webkit-transform: translate3d(0,0,0);
+        //-webkit-transform: translate3d(0,0,0);
         width: 899px;
         height: 899px;
 
@@ -214,7 +214,7 @@
         border-radius: 899px;
         background: #000;
         filter: blur(300px);
-        transform: translate3d(0, 0, 0);
+        //transform: translate3d(0, 0, 0);
         width: 899px;
         height: 899px;
     }
