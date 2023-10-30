@@ -6,16 +6,16 @@ import {useEffect} from "react";
 
 const BlockContent = ({ formBlockRef }) => {
     const { windowWidth } = useWindowSize();
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://digitalb2b.mts.ru/widget/app.js';
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const script = document.createElement('script');
+  //   script.src = 'https://digitalb2b.mts.ru/widget/app.js';
+  //   script.async = true;
+  //   document.body.appendChild(script);
+  //
+  //   return () => {
+  //     document.body.removeChild(script);
+  //   };
+  // }, []);
 
   return (
       <div className={Styles.Block} ref={formBlockRef}>
@@ -39,16 +39,16 @@ const BlockContent = ({ formBlockRef }) => {
         </div>
 
           <div className={Styles.FormWrapper}>
-        <div className='form-container'>
-          <div
-            id='digital_highway'
-            data-bo-theme={'dark'}
-            data-product='PL0146'
-            // data-bo-custom-styles="tb"
-            data-vitrine='membrana'
-            data-region='77'
-          />
-        </div>
+        {/*<div className='form-container'>*/}
+        {/*  <div*/}
+        {/*    id='digital_highway'*/}
+        {/*    data-bo-theme={'dark'}*/}
+        {/*    data-product='PL0146'*/}
+        {/*    // data-bo-custom-styles="tb"*/}
+        {/*    data-vitrine='membrana'*/}
+        {/*    data-region='77'*/}
+        {/*  />*/}
+        {/*</div>*/}
       </div>
     </div>
   );
