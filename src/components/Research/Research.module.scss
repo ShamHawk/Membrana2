@@ -228,6 +228,10 @@
 }
 
 .WrapperBottom {
+    a {
+        text-decoration: underline;
+        color: inherit;
+    }
     p {
         color: #8884A0;
         font-size: 16px;

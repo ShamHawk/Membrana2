@@ -55,7 +55,7 @@ const Research = () => {
             </div>
           </div>
           <div className={Styles.WrapperBottom}>
-            <p>*По данным Packetlabs и «Ведомостей»</p>
+            <p>*По данным <a href="https://www.packetlabs.net/posts/239-cybersecurity-statistics-2023/">Packetlabs</a> и <a href="https://www.vedomosti.ru/technology/news/2023/03/03/965181-chislo-kiberatak">«Ведомостей»</a></p>
           </div>
         </div>
       </div>

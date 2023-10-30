@@ -14,7 +14,7 @@ const BlockContent = () => {
       content: (
         <div>
           <p>Чтобы стать абонентом Membrana, вам нужно:</p>{' '}
-          <ol style={{ listStyle: 'decimal', margin: '0', padding: '0 0 0 15px' }}>
+          <ol style={{marginLeft:"-15px"}}>
             <li>Получить приглашение со&nbsp;ссылкой на&nbsp;скачивание и&nbsp;реферальным кодом от&nbsp;действующего абонента Membrana</li>
             <li>Скачать приложение Membrana</li>
             <li>Активировать реферальный код-приглашение</li>
@@ -57,7 +57,7 @@ const BlockContent = () => {
           <span>В&nbsp;приложении Membrana при заказе вы&nbsp;сможете выбрать вариант eSIM.</span>
           <br /> <span>Как её оформить:</span>
           <br />{' '}
-          <ol style={{ listStyle: 'decimal', margin: '0', padding: '0 0 0 15px' }}>
+          <ol style={{ marginLeft:"-15px" }}>
             <li>Авторизоваться через Госуслуги</li> <li>Подписать договор электронной подписью в&nbsp;приложении Госключ</li>{' '}
             <li>Получить QR-код на&nbsp;установку eSIM</li>
           </ol>
