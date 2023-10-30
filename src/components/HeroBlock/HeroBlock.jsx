@@ -13,13 +13,13 @@ const HeroBlock = ({ formBlockRef }) => {
 
     if (windowWidth > 440) {
       setSrcVideo(
-        <video autoPlay={true} loop muted className={Styles.Video}>
+        <video autoPlay='1' playsInline preload={'metadata'} loop muted className={Styles.Video}>
           <source src={videoUrl} type='video/mp4'></source>
         </video>,
       );
     } else {
       setSrcVideo(
-        <video autoPlay={true} loop muted className={Styles.Video}>
+        <video autoPlay='1' playsInline preload={'metadata'} loop muted className={Styles.Video}>
           <source src={videoUrl} type='video/mp4'></source>
         </video>,
       );
