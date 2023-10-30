@@ -116,7 +116,7 @@ const BlockContent = () => {
       ),
     },
     {
-      title: 'Как работает секретарь в Membrana?',
+      title: <span>Как работает секретарь в&nbsp;Membrana?</span>,
       content: (
         <div>
           <p>
