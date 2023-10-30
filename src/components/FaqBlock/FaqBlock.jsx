@@ -23,23 +23,23 @@ const BlockContent = () => {
       ),
     },
     {
-      title: 'Какой пакет интернета, минут и SMS входит в Membrana',
+      title: <span>Какой пакет интернета, минут и&nbsp;SMS входит в&nbsp;Membrana</span>,
       content: (
         <div>
           <ol style={{ listStyle: 'disc', margin: '0', padding: '0 0 0 20px' }}>
-            <li>Безлимитный интернет и раздача через точку доступа</li> <li>Безлимитные звонки на МТС</li>{' '}
-            <li>5000 минут на звонки абонентам других операторов</li> <li>1000 SMS</li>
+            <li>Безлимитный интернет и&nbsp;раздача через точку доступа</li> <li>Безлимитные звонки на&nbsp;МТС</li>{' '}
+            <li>5000 минут на&nbsp;звонки абонентам других операторов</li> <li>1000 SMS</li>
           </ol>
         </div>
       ),
     },
     {
       title: 'Есть ли раздача интернета?',
-      content: <div>Да, в пакет входит 100 ГБ в сутки.</div>,
+      content: <div>Да, в&nbsp;пакет входит 100&nbsp;ГБ в&nbsp;сутки.</div>,
     },
     {
       title: 'Какая зона покрытия?',
-      content: <div>Сейчас та же, что и у МТС.</div>,
+      content: <div>Сейчас та&nbsp;же, что и&nbsp;у&nbsp;МТС.</div>,
     },
     {
       title: 'Какие условия в роуминге?',
@@ -54,18 +54,18 @@ const BlockContent = () => {
       title: 'Есть ли eSIM? Как его получить?',
       content: (
         <div>
-          <span>В приложении Membrana при заказе вы сможете выбрать вариант eSIM.</span>
+          <span>В&nbsp;приложении Membrana при заказе вы&nbsp;сможете выбрать вариант eSIM.</span>
           <br /> <span>Как её оформить:</span>
           <br />{' '}
           <ol style={{ listStyle: 'decimal', margin: '0', padding: '0 0 0 15px' }}>
-            <li>Авторизоваться через Госуслуги</li> <li>Подписать договор электронной подписью в приложении Госключ</li>{' '}
-            <li>Получить QR-код на установку eSIM</li>
+            <li>Авторизоваться через Госуслуги</li> <li>Подписать договор электронной подписью в&nbsp;приложении Госключ</li>{' '}
+            <li>Получить QR-код на&nbsp;установку eSIM</li>
           </ol>
         </div>
       ),
     },
     {
-      title: 'Как перейти в Membrana со своим номером?',
+      title: <span>Как перейти в&nbsp;Membrana со&nbsp;своим номером?</span>,
       content: (
         <div>
           В&nbsp;приложении Membrana при заказе есть отдельная ветка для перехода со&nbsp;своим номером. Для абонентов МТС это будет просто
@@ -78,8 +78,8 @@ const BlockContent = () => {
       content: <div>Да, конечно.</div>,
     },
     {
-      title: 'Приложение Membrana создано для iOS и Android? Где его скачать?',
-      content: <div>Да, для iOS и Android. Приложение будет доступно в Google Play и App Store после запуска.</div>,
+      title: <span>Приложение Membrana создано для iOS и&nbsp;Android? Где его скачать?</span>,
+      content: <div>Да, для iOS и&nbsp;Android. Приложение будет доступно в&nbsp;Google Play и&nbsp;App Store после запуска.</div>,
     },
     {
       title: 'Что если мне нужны два номера?',
@@ -127,7 +127,7 @@ const BlockContent = () => {
             и&nbsp;реальных диалогах.
           </p>
           <br />
-          <b>Как секретарь анализирует входящий вызов:</b>
+          <strong>Как секретарь анализирует входящий вызов:</strong>
           <ol style={{ listStyle: 'disc', margin: '0', padding: '0 0 0 20px' }}>
             <li>
               Понимает, есть&nbsp;ли звонящий в&nbsp;контактах, а&nbsp;если нет, то&nbsp;самостоятельно анализирует, может&nbsp;ли владелец

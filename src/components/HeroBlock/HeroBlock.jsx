@@ -2,6 +2,7 @@ import Header from '../Header/Header';
 import { useWindowSize } from '../../hooks/useWindowSize';
 import Styles from './HeroBlock.module.scss';
 import { useEffect, useState } from 'react';
+import { TailSpin } from 'react-loader-spinner';
 
 const HeroBlock = ({ formBlockRef }) => {
   const { smallMobileWidth, desktopWidth, windowWidth } = useWindowSize();
@@ -42,7 +43,6 @@ const HeroBlock = ({ formBlockRef }) => {
       <video autoPlay='1' playsInline preload={'metadata'} loop muted className={Styles.Video}>
         {srcVideo}
       </video>
-      ,
       <div className={Styles.Wrapper}>
         <p className={Styles.SubTitle}>
           Премиум-связь <br />и защита данных команды
