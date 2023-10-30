@@ -19,10 +19,11 @@ const BlockContent = ({ title, text, widthVideo, heightVideo, gradient, video, c
       </div>
       <div className={Styles.Right}>
         <video
-          autoPlay={true}
+          autoPlay='1'
           loop
           controls={false}
-          playsinline
+          playsInline
+          preload={'metadata'}
           muted
           className={Styles.Video}
           style={{ maxWidth: mobileWidth ? 215 : widthVideo, maxHeight: mobileWidth ? 215 : heightVideo }}
