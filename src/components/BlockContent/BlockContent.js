@@ -21,6 +21,8 @@ const BlockContent = ({ title, text, widthVideo, heightVideo, gradient, video, c
         <video
           autoPlay={true}
           loop
+          controls={false}
+          playsinline
           muted
           className={Styles.Video}
           style={{ maxWidth: mobileWidth ? 215 : widthVideo, maxHeight: mobileWidth ? 215 : heightVideo }}
