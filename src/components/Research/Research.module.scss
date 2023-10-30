@@ -16,7 +16,6 @@
             width: 800px;
             height: 800px;
             border-radius: 899px;
-            background: #2D2D2D;
             filter: blur(300px);
             transform: translate3d(0, 0, 0);
             z-index: 0;
@@ -113,7 +112,7 @@
     z-index: 2;
 
     @media (min-width: $media-tablet) {
-        margin-bottom: 36px;
+        //margin-bottom: 36px;
     }
 
     @media (min-width: $media-tablet-landscape) {
@@ -123,7 +122,7 @@
 
 .Left {
     margin-bottom: 56px;
-
+    padding-right: 20px;
     @media (min-width: $media-tablet) {
         margin-bottom: 72px;
     }
@@ -220,27 +219,26 @@
 }
 
 .Text {
-    font-size: 18px;
+    font-size: 16px;
     line-height: normal;
     position: relative;
     z-index: 12;
 
-    @media (min-width: $media-tablet) {
-        font-size: 20px;
-    }
+
 }
 
 .WrapperBottom {
-    margin-top: 16px;
     p {
         color: #8884A0;
         font-size: 16px;
         max-width: 190px;
+        margin-top: 26px;
         position: relative;
         z-index: 10;
 
-        @media (min-width: $media-tablet) {
+        @media (min-width: $media-tablet-landscape) {
             max-width: 100%;
+            margin-top: -20px;
         }
     }
 }
