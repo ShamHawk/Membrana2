@@ -34,7 +34,6 @@ const Research = () => {
           <div className={Styles.WrapperTop}>
             <div className={Styles.Left}>
               <h2 className={Styles.Title}>
-
                 Кибератаки <br/>
                 на&nbsp;бизнес:<br/>
                 масштабы
@@ -55,7 +54,7 @@ const Research = () => {
             </div>
           </div>
           <div className={Styles.WrapperBottom}>
-            <p>*По данным <a href="https://www.packetlabs.net/posts/239-cybersecurity-statistics-2023/">Packetlabs</a> и <a href="https://www.vedomosti.ru/technology/news/2023/03/03/965181-chislo-kiberatak">«Ведомостей»</a></p>
+            <p>*По данным <a target={'_blank'} href="https://www.packetlabs.net/posts/239-cybersecurity-statistics-2023/">Packetlabs</a> и <a target={'_blank'} href="https://www.vedomosti.ru/technology/news/2023/03/03/965181-chislo-kiberatak">«Ведомостей»</a></p>
           </div>
         </div>
       </div>

@@ -100,7 +100,7 @@ const BlockContent = () => {
       ),
     },
     {
-      title: <span>В&nbsp;каких странах находятся сервера для смены&nbsp;IP?</span>,
+      title: <span>В&nbsp;каких странах находятся сервера для&nbsp; смены&nbsp;IP?</span>,
       content: <div>Три страны на выбор: Польша, Германия, Турция.</div>,
     },
     {

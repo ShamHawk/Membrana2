@@ -12,7 +12,7 @@ const HeroBlock = ({ formBlockRef }) => {
     // const timestamp = Date.now();
     // const videoUrl = smallMobileWidth ? `video/hero-video-mobile.mp4?v=${timestamp}` : `video/hero-video.mp4?v=${timestamp}`;
 
-    console.log(windowWidth);
+    // console.log(windowWidth);
 
     if (windowWidth !== null) {
       if (windowWidth > 440) {
