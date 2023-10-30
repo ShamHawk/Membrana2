@@ -152,7 +152,7 @@
         opacity: 0.6;
         background: #5841DF;
         filter: blur(212.5px);
-        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0,0,0);
         width: 1696px;
         height: 522px;
 
@@ -171,7 +171,7 @@
         border-radius: 579px;
         background: #DF96FF;
         filter: blur(300px);
-        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0,0,0);
         width: 500px;
         height: 500px;
 
@@ -196,7 +196,7 @@
         border-radius: 899px;
         background: #000;
         filter: blur(300px);
-        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0,0,0);
         width: 899px;
         height: 899px;
 
