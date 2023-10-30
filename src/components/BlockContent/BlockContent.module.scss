@@ -47,7 +47,7 @@
 
 .Right {
 margin: 0 auto;
-
+align-self: flex-start;
   @media (min-width: $media-tablet) {
     width: 60%;
     margin: 0;
