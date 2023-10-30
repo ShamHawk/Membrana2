@@ -8,18 +8,21 @@
 
     @media (min-width: 440px) {
         padding: 0;
-        //
-        //&::before {
-        //    content: '';
-        //    position: absolute;
-        //    right: 10%;
-        //    bottom: 0;
-        //    width: 900px;
-        //    height: 900px;
-        //    border-radius: 899px;
-        //    background: #2D2D2D;
-        //    filter: blur(300px);
-        //}
+
+
+        @media (min-width: $media-tablet-landscape) {
+            &::before {
+                content: '';
+                position: absolute;
+                right: -10%;
+                bottom: 10%;
+                width: 899px;
+                height: 899px;
+                border-radius: 899px;
+                background: #2D2D2D;
+                filter: blur(300px);
+            }
+        }
     }
 }
 
