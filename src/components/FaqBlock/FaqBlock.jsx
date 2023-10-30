@@ -14,7 +14,7 @@ const BlockContent = () => {
       content: (
         <div>
           <p>Чтобы стать абонентом Membrana, вам нужно:</p>{' '}
-          <ol style={{marginLeft:"-15px"}}>
+          <ol style={{ marginLeft: '-15px' }}>
             <li>Получить приглашение со&nbsp;ссылкой на&nbsp;скачивание и&nbsp;реферальным кодом от&nbsp;действующего абонента Membrana</li>
             <li>Скачать приложение Membrana</li>
             <li>Активировать реферальный код-приглашение</li>
@@ -34,7 +34,7 @@ const BlockContent = () => {
       ),
     },
     {
-      title: 'Есть ли раздача интернета?',
+      title: <span>Есть&nbsp;ли раздача интернета?</span>,
       content: <div>Да, в&nbsp;пакет входит 100&nbsp;ГБ в&nbsp;сутки.</div>,
     },
     {
@@ -42,7 +42,7 @@ const BlockContent = () => {
       content: <div>Сейчас та&nbsp;же, что и&nbsp;у&nbsp;МТС.</div>,
     },
     {
-      title: 'Какие условия в роуминге?',
+      title: <span>Какие условия в&nbsp;роуминге?</span>,
       content: (
         <div>
           В&nbsp;приложении Membrana вы&nbsp;сможете узнать цены в&nbsp;конкретной стране и&nbsp;заранее рассчитать свои траты
@@ -51,13 +51,13 @@ const BlockContent = () => {
       ),
     },
     {
-      title: 'Есть ли eSIM? Как его получить?',
+      title: <span>Есть&nbsp;ли eSIM? Как его получить?</span>,
       content: (
         <div>
           <span>В&nbsp;приложении Membrana при заказе вы&nbsp;сможете выбрать вариант eSIM.</span>
           <br /> <span>Как её оформить:</span>
           <br />{' '}
-          <ol style={{ marginLeft:"-15px" }}>
+          <ol style={{ marginLeft: '-15px' }}>
             <li>Авторизоваться через Госуслуги</li> <li>Подписать договор электронной подписью в&nbsp;приложении Госключ</li>{' '}
             <li>Получить QR-код на&nbsp;установку eSIM</li>
           </ol>
@@ -74,7 +74,7 @@ const BlockContent = () => {
       ),
     },
     {
-      title: 'На Membrana могут перейти абоненты других операторов?',
+      title: <span>На&nbsp;Membrana могут перейти абоненты других операторов?</span>,
       content: <div>Да, конечно.</div>,
     },
     {
@@ -82,7 +82,7 @@ const BlockContent = () => {
       content: <div>Да, для iOS и&nbsp;Android. Приложение будет доступно в&nbsp;Google Play и&nbsp;App Store после запуска.</div>,
     },
     {
-      title: 'Что если мне нужны два номера?',
+      title: <span>Что если мне нужны два номера?</span>,
       content: (
         <div>
           Для заказа второго номера Membrana вы&nbsp;можете воспользоваться одним из&nbsp;5&nbsp;реферальных кодов, выданных вместе
@@ -100,11 +100,11 @@ const BlockContent = () => {
       ),
     },
     {
-      title: 'В каких странах находятся сервера для смены IP?',
+      title: <span>В&nbsp;каких странах находятся сервера для смены&nbsp;IP?</span>,
       content: <div>Три страны на выбор: Польша, Германия, Турция.</div>,
     },
     {
-      title: 'Что такое приоритетное подключение?',
+      title: <span>Что такое приоритетное подключение?</span>,
       content: (
         <div>
           При подключении смартфона к&nbsp;базовым станциям&nbsp;&mdash; как в&nbsp;какой-то точке в&nbsp;городе, так
@@ -154,7 +154,7 @@ const BlockContent = () => {
       ),
     },
     {
-      title: 'Сколько дополнительных номеров? Как ими пользоваться?',
+      title: <span>Сколько дополнительных номеров? Как ими пользоваться?</span>,
       content: (
         <div>
           Вы&nbsp;можете по&nbsp;очереди подключить до&nbsp;3&nbsp;дополнительных номеров. Используйте их&nbsp;для регистрации
