@@ -137,50 +137,50 @@
     }
 }
 
-.FormWrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-
-    &:before {
-        position: absolute;
-        content: '';
-        top: -100px;
-        left: -200px;
-        border-radius: 1696px;
-        opacity: 0.6;
-        background: #5841DF;
-        filter: blur(212.5px);
-        -webkit-transform: translate3d(0,0,0);
-        width: 1696px;
-        height: 522px;
-
-        @media (min-width: $media-tablet) {
-            top: -250px;
-            left: -100px;
-            height: 722px;
-        }
-    }
-
-    &:after {
-        position: absolute;
-        content: '';
-        top: 0;
-        right: -430px;
-        border-radius: 579px;
-        background: #DF96FF;
-        filter: blur(300px);
-        -webkit-transform: translate3d(0,0,0);
-        width: 500px;
-        height: 500px;
-
-        @media (min-width: $media-tablet) {
-            top: -200px;
-            right: -200px;
-        }
-    }
-}
+//.FormWrapper {
+//    position: relative;
+//    width: 100%;
+//    height: 100%;
+//    z-index: 0;
+//
+//    &:before {
+//        position: absolute;
+//        content: '';
+//        top: -100px;
+//        left: -200px;
+//        border-radius: 1696px;
+//        opacity: 0.6;
+//        background: #5841DF;
+//        filter: blur(212.5px);
+//        -webkit-transform: translate3d(0,0,0);
+//        width: 1696px;
+//        height: 522px;
+//
+//        @media (min-width: $media-tablet) {
+//            top: -250px;
+//            left: -100px;
+//            height: 722px;
+//        }
+//    }
+//
+//    &:after {
+//        position: absolute;
+//        content: '';
+//        top: 0;
+//        right: -430px;
+//        border-radius: 579px;
+//        background: #DF96FF;
+//        filter: blur(300px);
+//        -webkit-transform: translate3d(0,0,0);
+//        width: 500px;
+//        height: 500px;
+//
+//        @media (min-width: $media-tablet) {
+//            top: -200px;
+//            right: -200px;
+//        }
+//    }
+//}
 
 //.FormBlur {
 //    position: absolute;
