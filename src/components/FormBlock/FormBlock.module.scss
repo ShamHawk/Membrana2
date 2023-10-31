@@ -188,34 +188,5 @@
     left: 0;
     width: 100%;
 
-    &::before {
-        position: absolute;
-        content: '';
-        bottom: 500px;
-        left: -200px;
-        border-radius: 899px;
-        background: #000;
-        filter: blur(300px);
-        -webkit-transform: translate3d(0,0,0);
-        width: 899px;
-        height: 899px;
 
-        @media (min-width: $media-tablet) {
-            bottom: 0;
-            left: 200px;
-        }
-    }
-
-    &::after {
-        position: absolute;
-        content: '';
-        bottom: 100px;
-        right: -300px;
-        border-radius: 899px;
-        background: #000;
-        filter: blur(300px);
-        transform: translate3d(0, 0, 0);
-        width: 899px;
-        height: 899px;
-    }
 }
