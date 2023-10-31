@@ -12,13 +12,14 @@
             content: '';
             position: absolute;
             right: -40%;
-            top: -160%;
+            top: -70%;
             width: 800px;
             height: 800px;
             border-radius: 899px;
             filter: blur(300px);
+            background: #2D2D2D;
             transform: translate3d(0, 0, 0);
-            z-index: 0;
+            z-index: 1;
         }
 
 
