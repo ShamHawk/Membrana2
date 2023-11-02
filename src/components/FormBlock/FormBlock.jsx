@@ -30,11 +30,12 @@ const BlockContent = ({ formBlockRef }) => {
 
         <div className={Styles.HeadBlock}>
           <div className={classNames(Styles.Title, Styles.Title_two)}>
-            <h2>Позаботьтесь <br/> о команде</h2>
+            <h2>Вступайте в закрытый <br/> клуб Membrana</h2>
           </div>
           <div className={classNames(Styles.Subtitle, Styles.Subtitle_twoz)}>
 
-              {windowWidth <= 500 ?  <p>Заполните форму — и мы с вами <br/> свяжемся. Покажем возможности <br/> для компаний и организуем  <br/>демо Membrana</p> : <p>Заполните форму — и мы с вами  свяжемся. Покажем возможности <br/> для компаний и организуем демо Membrana</p>}
+              {/*{windowWidth <= 500 ?  <p>Заполните форму — и мы с вами <br/> свяжемся. Покажем возможности <br/> для компаний и организуем  <br/>демо Membrana</p> : <p>Заполните форму — и мы с вами  свяжемся. Покажем возможности <br/> для компаний и организуем демо Membrana</p>}*/}
+
           </div>
         </div>
 

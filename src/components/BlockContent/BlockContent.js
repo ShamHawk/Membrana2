@@ -1,8 +1,9 @@
 import React from 'react';
-import Container from '@components/ui/Container/Container';
+
 
 import Styles from './BlockContent.module.scss';
 import { useWindowSize } from '../../hooks/useWindowSize';
+
 
 const BlockContent = ({ title, text, widthVideo, heightVideo, gradient, video, circlePosition, circleSize }) => {
   const { mobileWidth, smallMobileWidth } = useWindowSize();

@@ -163,7 +163,7 @@
     font-family: $font-base;
     font-weight: normal;
     font-size: 40px;
-    line-height: 34px;
+    line-height: 41px;
     max-width: 240px;
     position: relative;
     z-index: 2;
@@ -180,7 +180,7 @@
 
     @media (min-width: $media-tablet) {
         font-size: 60px;
-        line-height: 54px;
+        line-height: 60px;
         max-width: 350px;
     }
 
@@ -189,7 +189,7 @@
     }
 
     span {
-        line-height: 70px;
+        line-height: 60px;
     }
 }
 
@@ -202,7 +202,7 @@
     z-index: 2;
 
     @media (min-width: $media-tablet) {
-        font-size: 40px;
+        font-size: 32px;
         line-height: 34px;
         background-image: conic-gradient(from 194deg at 27.44% 100%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg);
         color: transparent;
@@ -243,7 +243,7 @@
 
         @media (min-width: $media-tablet-landscape) {
             max-width: 100%;
-            margin-top: -20px;
+            margin-top: 20px;
         }
     }
 }

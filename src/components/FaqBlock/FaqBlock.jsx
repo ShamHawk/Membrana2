@@ -209,7 +209,7 @@ const BlockContent = () => {
   const [activeItem, setActiveItem] = useState(null);
   const handleItemClick = (index) => {
     if (activeItem === index) {
-      setActiveItem(null); // Закрываем текущий элемент при повторном клике
+      setActiveItem(null);
     } else {
       setActiveItem(index);
     }

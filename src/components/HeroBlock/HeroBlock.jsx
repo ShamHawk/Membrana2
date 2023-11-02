@@ -2,7 +2,6 @@ import Header from '../Header/Header';
 import { useWindowSize } from '../../hooks/useWindowSize';
 import Styles from './HeroBlock.module.scss';
 import { useEffect, useState } from 'react';
-import { TailSpin } from 'react-loader-spinner';
 
 const HeroBlock = ({ formBlockRef }) => {
   const { smallMobileWidth, desktopWidth, windowWidth } = useWindowSize();

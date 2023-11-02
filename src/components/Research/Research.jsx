@@ -9,20 +9,16 @@ const Research = () => {
   const { windowWidth } = useWindowSize();
   const arrAnimation = [
     {
-      subTitle: '65 млрд рублей',
-      text: windowWidth <= 500 ? <>ущерб от IT-преступлений <br/> в России в 2022 г.</> : <>ущерб от IT-преступлений в России в 2022 г.</>,
+      subTitle: '359 000',
+      text: 'вредоносных адресов',
     },
     {
-      subTitle: '300 000',
-      text: 'новых вредоносных программ создаётся ежедневно',
+      subTitle: '138 700',
+      text: 'рекламных скриптов',
     },
     {
-      subTitle: '92%',
-      text: 'вредоносных программ распространяется через e-mail',
-    },
-    {
-      subTitle: '4,1 млн',
-      text: 'интернет-сайтов заражены вредоносным ПО',
+      subTitle: '35 600',
+      text: 'трекинговых ресурсов',
     },
   ];
 
@@ -34,10 +30,7 @@ const Research = () => {
           <div className={Styles.WrapperTop}>
             <div className={Styles.Left}>
               <h2 className={Styles.Title}>
-                Кибератаки <br/>
-                на&nbsp;бизнес:<br/>
-                масштабы
-                и&nbsp;потери
+                Защищаем от&nbsp;известных и&nbsp;новых<br/> угроз и&nbsp;постоянно <br/> пополняем базу
               </h2>
             </div>
             <div className={Styles.Right}>
@@ -54,7 +47,9 @@ const Research = () => {
             </div>
           </div>
           <div className={Styles.WrapperBottom}>
-            <p>*По данным <a target={'_blank'} href="https://www.packetlabs.net/posts/239-cybersecurity-statistics-2023/">Packetlabs</a> и <a target={'_blank'} href="https://www.vedomosti.ru/technology/news/2023/03/03/965181-chislo-kiberatak">«Ведомостей»</a></p>
+            <p>Статистика с&nbsp;апреля по&nbsp;октябрь 2023&nbsp;г. По&nbsp;данным <a href="" target={'_blank'}>
+              центра <br/> инноваций Future Crew
+            </a>, активность сбора информации о&nbsp;действиях <br/> посетителей веб-сайтов выросла вдвое с&nbsp;2021&nbsp;г.</p>
           </div>
         </div>
       </div>
