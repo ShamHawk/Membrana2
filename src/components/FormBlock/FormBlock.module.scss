@@ -51,20 +51,21 @@
 }
 
 .Title_two {
-
+width: 100%;
     @media (min-width: $media-tablet-landscape) {
         //max-width: 60%;
+
     }
 
     h2 {
-        line-height: 40px;
+        line-height: 47px;
 
         @media (min-width: $media-tablet) {
             line-height: 75px;
         }
 
         @media (min-width: $media-tablet-landscape) {
-            line-height: 90px;
+            line-height: 120px;
         }
     }
 }
@@ -106,9 +107,13 @@
 //}
 
 .Form {
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
 
     .FormContainer {
-        margin-bottom: 24px;
+        margin-bottom: 28px;
         width: 519px;
         display: flex;
         justify-content:center;
@@ -139,6 +144,8 @@
 
 .FormWrapper {
     position: relative;
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 100%;
     z-index: 0;
@@ -171,7 +178,6 @@
         border-radius: 579px;
         background: #DF96FF;
         filter: blur(300px);
-        //-webkit-transform: translate3d(0,0,0);
         width: 500px;
         height: 500px;
 
@@ -181,41 +187,43 @@
         }
     }
 }
+.CheckBoxContainer {
+    display: flex;
+    justify-content: flex-start;
+    color: #868686;
+    margin-bottom: 40px;
+    .textApprove {
+        max-width: 388px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
+.ButtonContainer {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    .Btn {
+        font-size: 13px;
+        padding: 6px 18px;
+        cursor: pointer;
+        color: white;
+        border: none;
+        z-index: 5;
+        align-items: center;
+        border-radius: 16px;
+        background: #5f43e3;
+        transition: 0.2s ease;
 
-//.FormBlur {
-//    position: absolute;
-//    bottom: -300px;
-//    left: 0;
-//    width: 100%;
-//
-//    &::before {
-//        position: absolute;
-//        content: '';
-//        bottom: 500px;
-//        left: -200px;
-//        border-radius: 899px;
-//        background: #000;
-//        filter: blur(300px);
-//        //-webkit-transform: translate3d(0,0,0);
-//        width: 899px;
-//        height: 899px;
-//
-//        @media (min-width: $media-tablet) {
-//            bottom: 0;
-//            left: 200px;
-//        }
-//    }
-//
-//    &::after {
-//        position: absolute;
-//        content: '';
-//        bottom: 100px;
-//        right: -300px;
-//        border-radius: 899px;
-//        background: #000;
-//        filter: blur(300px);
-//        //transform: translate3d(0, 0, 0);
-//        width: 899px;
-//        height: 899px;
-//    }
-//}
+        &:hover {
+            background: #432DC9;
+        }
+
+        @media (min-width: $media-tablet) {
+            padding: 8px 45px;
+            font-size: 18px;
+        }
+    }
+}
+
+
+

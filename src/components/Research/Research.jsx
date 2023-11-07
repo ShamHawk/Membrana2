@@ -1,7 +1,6 @@
 import Container from '../ui/Container/Container';
 import { useWindowSize } from '../../hooks/useWindowSize';
 import Styles from './Research.module.scss';
-import { useEffect, useState } from 'react';
 
 
 
@@ -36,7 +35,7 @@ const Research = () => {
             <div className={Styles.Right}>
               {arrAnimation.map((obj,index) => {
                  return <div key={index} className={Styles.RightContainer}>
-                   <p className={Styles.SubTitle}>
+                   <p className={Styles.SubTitle} >
                      {obj.subTitle}
                    </p>
                    <p className={Styles.Text}>
@@ -47,9 +46,15 @@ const Research = () => {
             </div>
           </div>
           <div className={Styles.WrapperBottom}>
-            <p>Статистика с&nbsp;апреля по&nbsp;октябрь 2023&nbsp;г. По&nbsp;данным <a href="" target={'_blank'}>
+            {/*<p>Статистика с&nbsp;апреля по&nbsp;октябрь 2023&nbsp;г. По&nbsp;данным <a href="" target={'_blank'}>*/}
+            {/*  центра <br/> инноваций Future Crew*/}
+            {/*</a>, активность сбора информации о&nbsp;действиях <br/> посетителей веб-сайтов выросла вдвое с&nbsp;2021&nbsp;г.</p>*/}
+            {windowWidth <= 500 ? <p>Статистика с&nbsp;апреля по&nbsp;октябрь 2023&nbsp;г. По&nbsp;данным <a href="" target={'_blank'}>
               центра <br/> инноваций Future Crew
-            </a>, активность сбора информации о&nbsp;действиях <br/> посетителей веб-сайтов выросла вдвое с&nbsp;2021&nbsp;г.</p>
+            </a>, <br/>активность сбора информации о&nbsp;действиях посетителей веб-сайтов выросла вдвое с&nbsp;2021&nbsp;г.</p>
+                : <p>Статистика с&nbsp;апреля по&nbsp;октябрь 2023&nbsp;г. По&nbsp;данным <a href="" target={'_blank'}>
+              центра <br/> инноваций Future Crew
+            </a>, активность сбора информации о&nbsp;действиях <br/> посетителей веб-сайтов выросла вдвое с&nbsp;2021&nbsp;г.</p> }
           </div>
         </div>
       </div>

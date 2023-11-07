@@ -1,0 +1,91 @@
+@import "@/assets/styles/variables.scss";
+@import "@/assets/styles/index.scss";
+
+.CheckBox {
+  z-index: 10;
+  input {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    max-width: 18px;
+    height: 18px;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+
+    &.Disabled {
+      pointer-events: none;
+      opacity: 0.5;
+    }
+
+    &:checked {
+      position: relative;
+      border: 1.5px solid gray;
+      background: gray;
+
+      &::before {
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 8px;
+        height: 8px;
+        //background: url("/checkbox-check.svg") no-repeat;
+        background: rebeccapurple;
+      }
+    }
+
+    &:focus {
+      opacity: 0.8;
+      border: 1px solid rgba(black, 0.8);
+    }
+  }
+}
+
+
+
+.Radio {
+  input {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    max-width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+
+    &.Disabled {
+      pointer-events: none;
+      opacity: 0.5;
+    }
+
+
+    &:checked {
+      position: relative;
+      border: 1px solid gray;
+      background: gray;
+
+      &::before {
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 50%;
+        border-radius: 50%;
+        background: white;
+      }
+    }
+
+    &:focus {
+      opacity: 0.8;
+      border: 1px solid rgba(black, 0.8);
+    }
+
+  }
+}

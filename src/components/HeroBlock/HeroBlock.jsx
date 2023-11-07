@@ -44,7 +44,7 @@ const HeroBlock = ({ formBlockRef }) => {
       </video>
       <div className={Styles.Wrapper}>
         <p className={Styles.SubTitle}>
-          Премиум-связь <br />и защита данных команды
+          Премиум-связь <br />и защита приватности
         </p>
         {smallMobileWidth && (
           <div className={Styles.Stick}>
