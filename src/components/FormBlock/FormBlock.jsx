@@ -44,6 +44,8 @@ const BlockContent = ({ formBlockRef }) => {
             id='digital_highway'
             data-bo-theme={'dark'}
             data-product='PL0146'
+            data-bo-subline={''}
+            data-bo-header={''}
             // data-bo-custom-styles="tb"
             data-vitrine='membrana'
             data-region='77'
