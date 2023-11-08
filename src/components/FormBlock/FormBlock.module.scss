@@ -191,11 +191,15 @@ display: flex;
     display: flex;
     justify-content: flex-start;
     color: #868686;
+    align-items: center;
+    align-self: flex-start;
+
     margin-bottom: 40px;
     .textApprove {
         max-width: 388px;
         font-size: 12px;
         font-weight: 400;
+        margin-left: 14px;
     }
 }
 .ButtonContainer {
