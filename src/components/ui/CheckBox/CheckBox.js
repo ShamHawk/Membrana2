@@ -3,29 +3,18 @@ import classNames from 'classnames';
 
 import Styles from './CheckBox.module.scss';
 
-const CheckBox = ({ type = 'checkbox', name = '', disabled = false, checked = false, ariaLabel = '' }) => {
-    const [isChecked, setIsChecked] = useState(checked);
-
-    useEffect(() => {
-        setIsChecked(checked);
-    }, [checked]);
-
-    const handleChange = () => {
-        if (!disabled) {
-            setIsChecked((prev) => !prev);
-        }
-    };
+const CheckBox = ({ ariaLabel = '', id, register }) => {
+    const [isChecked, setIsChecked] = useState(false);
 
     return (
-        <div className={classNames(type === 'radio' ? Styles.Radio : Styles.CheckBox)}>
+        <div className={Styles.CheckBox}>
             <input
-                className={disabled ? Styles.Disabled : null}
-                type={type}
-                name={name}
-                checked={isChecked}
-                onChange={handleChange}
-                disabled={disabled}
                 aria-label={ariaLabel}
+                type='checkbox'
+                checked={isChecked}
+                id={id}
+                {...register(id)}
+                onChange={() => setIsChecked((prev) => !prev)}
             />
 
         </div>
