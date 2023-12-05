@@ -20,11 +20,11 @@ const BlockContent = ({ formBlockRef }) => {
   return (
       <div className={Styles.Block} ref={formBlockRef}>
         <div className={classNames(Styles.Title, Styles.Title_one)}>
-          <h2>Ваши данные —<br/> это ваша собственность</h2>
+          <h2>Обеспечивает безопасность<br/> и сохранность данных</h2>
         </div>
         <div className={classNames(Styles.Subtitle, Styles.Subtitle_one)}>
-            {windowWidth <= 500 ? <p>Мы гарантируем, что они <br/> не используются для монетизации <br/> и не передаются третьим лицам</p> :
-                <p>Мы гарантируем, что они не используются для монетизации и не передаются третьим лицам.</p>}
+            {windowWidth <= 500 ? <p>Membrana позволяет минизимировать риски утечек коммерческой информации</p> :
+                <p>Membrana позволяет минизимировать риски утечек коммерческой информации</p>}
         </div>
 
 
@@ -46,7 +46,7 @@ const BlockContent = ({ formBlockRef }) => {
             data-product='PL0146'
             data-bo-subline={''}
             data-bo-header={''}
-            // data-bo-custom-styles="tb"
+            data-bo-custom-styles="membrana"
             data-vitrine='membrana'
             data-region='77'
           />

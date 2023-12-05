@@ -45,7 +45,7 @@ const HeroBlock = ({ formBlockRef }) => {
       </video>
       <div className={Styles.Wrapper}>
         <p className={Styles.SubTitle}>
-          Премиум-связь <br />и защита данных команды
+            Всё под контролем c Membrana: <br/> связь, данные, баланс работы <br/> и отдыха команды
         </p>
         {smallMobileWidth && (
           <div className={Styles.Stick}>
@@ -56,5 +56,4 @@ const HeroBlock = ({ formBlockRef }) => {
     </div>
   );
 };
-
 export default HeroBlock;
