@@ -233,11 +233,13 @@
         text-decoration: underline;
         color: inherit;
     }
+    p:first-child {
+        margin-top: 26px;
+    }
     p {
         color: #8884A0;
         font-size: 16px;
         max-width: 190px;
-        margin-top: 26px;
         position: relative;
         z-index: 10;
 

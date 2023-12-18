@@ -44,7 +44,10 @@ const BlockContent = ({ formBlockRef }) => {
             id='digital_highway'
             data-bo-theme={'dark'}
             data-product='PL0146'
+            data-bo-hide-extra={'comment attachment email'}
             data-bo-subline={''}
+            data-bo-required-inn={'true'}
+            data-bo-required-name={'true'}
             data-bo-header={''}
             data-bo-custom-styles="membrana"
             data-vitrine='membrana'
@@ -55,5 +58,7 @@ const BlockContent = ({ formBlockRef }) => {
     </div>
   );
 };
+
+
 
 export default BlockContent;

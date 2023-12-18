@@ -13,7 +13,7 @@
 .Wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: left;
   width: 100%;
 
   @media (min-width: $media-tablet-landscape) {
@@ -29,7 +29,7 @@
 .RightLink {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
 
   @media (min-width: $media-tablet) {
     flex-direction: row;
@@ -54,4 +54,10 @@
   a {
     text-decoration: underline;
   }
+}
+.footerText {
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+  opacity: 0.5;
 }

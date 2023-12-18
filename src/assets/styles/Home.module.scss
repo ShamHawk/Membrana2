@@ -9,13 +9,15 @@
 
 .Title {
   max-width: 300px;
-  margin: 0 auto 56px auto !important;
+  //margin: 0 auto 56px auto !important;
+  margin-bottom: 56px !important;
   z-index: 2;
   position: relative;
 
   @media (min-width: $media-tablet) {
     margin: 0;
     max-width: 600px;
+    margin: 0 auto 56px auto !important;
   }
 
   @media (min-width: $media-tablet-landscape) {
@@ -25,19 +27,20 @@
   h1 {
     font-family: $font-base;
     color: transparent;
-    background: conic-gradient(from 270deg at 4.57% 52.44%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg);
+    background:conic-gradient(from 270deg at 1.57% 52.44%, #FFF 0deg, rgba(255, 255, 255, 0.9) 36.8159258366deg, rgba(255, 255, 255, 0) 360deg);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 40px;
-    line-height: 34px;
+    line-height: 42px;
     font-weight: 400;
-    text-align: center;
+    text-align: left;
 
 
     @media (min-width: $media-tablet) {
       font-size: 72px;
       line-height: 68px;
+      text-align: center;
     }
 
     @media (min-width: $media-tablet-landscape) {

@@ -54,7 +54,8 @@ const Research = () => {
             </div>
           </div>
           <div className={Styles.WrapperBottom}>
-            <p>*По данным <a target={'_blank'} href="https://www.packetlabs.net/posts/239-cybersecurity-statistics-2023/">Packetlabs</a> и <a target={'_blank'} href="https://www.vedomosti.ru/technology/news/2023/03/03/965181-chislo-kiberatak">«Ведомостей»</a></p>
+            <p>* По&nbsp;данным&nbsp; <a target={'_blank'} href="https://tass.ru/obschestvo/16094089">ТАСС</a> за&nbsp;начало 2022&nbsp;г. Дата обращения: 07.12.2023</p><br/>
+            <p>** По&nbsp;данным&nbsp; <a target={'_blank'} href="https://www.packetlabs.net/posts/239-cybersecurity-statistics-2023/">Packetlabs</a> за&nbsp;2023&nbsp;г. Дата обращения: 07.12.2023</p>
           </div>
         </div>
       </div>

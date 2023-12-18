@@ -18,7 +18,7 @@ const BlockContent = () => {
             >
               Политика обработки персональных данных
             </a>
-            <a href={'https://futurecrew.ru/soglasie_na_obrabotky_personalnyh_dannyh.pdf'} target={'_blank'} rel='noopener'>
+            <a href={'https://moskva.mts.ru/personal/cookie'} target={'_blank'} rel='noopener'>
               Политика обработки файлов cookie
             </a>
           </div>
@@ -29,6 +29,7 @@ const BlockContent = () => {
             <p>© 2023. Все права защищены</p>
           </div>
         </div>
+        <p className={Styles.footerText}>Сайт и&nbsp;опубликованная на&nbsp;нём информация о&nbsp;характеристиках и&nbsp;условиях приобретения тарифа &laquo;Membrana&raquo; не&nbsp;являются публичной офертой и&nbsp;могут быть изменены. Окончательные условия приобретения и&nbsp;характеристики тарифа &laquo;Membrana&raquo; определяются Пользовательским соглашением.</p>
       </div>
     </Container>
   );

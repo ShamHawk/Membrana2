@@ -5,14 +5,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     margin-bottom: 120px;
     font-family: $font-base;
+    @media (min-width: $media-tablet) {
+        align-items: center;
+    }
 }
 
 .Title {
     text-align: center;
-    margin: 0 auto 32px auto;
+    //margin: 0 auto 32px auto;
+    margin-bottom: 32px;
     z-index: 1;
     position: relative;
     max-width: 310px;
@@ -20,12 +24,13 @@
 
     @media (min-width: $media-tablet) {
         max-width: 100%;
+        margin: 0 auto 32px auto;
     }
 
     h2 {
         color: transparent;
         font-size: 40px;
-        line-height: 34px;
+        line-height: 44px;
         font-weight: 400;
         background-image: conic-gradient(from -87deg at 8.22% 55.88%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg);
         background-size: 100%;
@@ -34,10 +39,12 @@
         -webkit-text-fill-color: transparent;
         background-position: top;
         background-repeat: no-repeat;
+        text-align: left;
 
         @media (min-width: $media-tablet) {
             font-size: 72px;
             line-height: 68px;
+            text-align: center;
         }
 
         @media (min-width: $media-tablet-landscape) {
@@ -54,10 +61,11 @@
     }
 
     h2 {
-        line-height: 40px;
-
+        line-height: 44px;
+        text-align: left;
         @media (min-width: $media-tablet) {
             line-height: 75px;
+            text-align: center;
         }
 
         @media (min-width: $media-tablet-landscape) {
@@ -73,9 +81,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    text-align: center;
-
     p {
         //max-width: 500px;
         font-size: 16px;
@@ -83,9 +88,11 @@
         font-weight: 400;
         line-height: normal;
         color: #868686;
+        text-align: left;
 
         @media (min-width: $media-tablet) {
             font-size: 18px;
+            text-align: center;
         }
     }
 }
