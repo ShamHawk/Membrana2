@@ -8,18 +8,19 @@
 }
 
 .Title {
-  max-width: 300px;
-  margin: 0 auto 56px auto !important;
+  //max-width: 300px;
+  margin-bottom: 56px ;
   z-index: 2;
   position: relative;
 
   @media (min-width: $media-tablet) {
     margin: 0;
-    max-width: 600px;
+    //max-width: 600px;
   }
 
   @media (min-width: $media-tablet-landscape) {
     max-width: 100%;
+    margin: 0 auto 56px auto !important;
   }
 
   h1 {
@@ -29,20 +30,21 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 40px;
+    font-size: 24px;
     line-height: 34px;
     font-weight: 400;
-    text-align: center;
+    text-align: left;
 
 
     @media (min-width: $media-tablet) {
-      font-size: 72px;
-      line-height: 68px;
+      font-size: 40px;
+      line-height: 48px;
     }
 
     @media (min-width: $media-tablet-landscape) {
-      font-size: 100px;
-      line-height: 100px;
+      font-size: 74px;
+      line-height: 78px;
+      text-align: center;
     }
 
   }

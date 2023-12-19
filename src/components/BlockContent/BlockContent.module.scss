@@ -35,9 +35,9 @@
   //max-width: 800px;
   order: -1;
 
-  @media (min-width: 500px) {
-    align-items: center;
-  }
+  //@media (min-width: 500px) {
+  //  align-items: center;
+  //}
 
 
   @media (min-width: $media-tablet) {
@@ -56,7 +56,7 @@ align-self: center;
 
 .Title {
   margin-bottom: 24px;
-  max-width: 325px;
+  //max-width: 325px;
   width: 100%;
 
   @media (min-width: $media-tablet) {
@@ -108,6 +108,7 @@ align-self: center;
     line-height: normal;
     color: #fff;
     opacity: 0.5;
+    //text-align: left;
 
     @media (min-width: $media-tablet) {
       font-size: 18px;

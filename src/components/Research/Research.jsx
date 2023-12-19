@@ -8,15 +8,15 @@ const Research = () => {
   const { windowWidth } = useWindowSize();
   const arrAnimation = [
     {
-      subTitle: '359 000',
+      subTitle: '1 047 044',
       text: 'вредоносных адресов',
     },
     {
-      subTitle: '138 700',
+      subTitle: '134 560',
       text: 'рекламных скриптов',
     },
     {
-      subTitle: '35 600',
+      subTitle: '55 885',
       text: 'трекинговых ресурсов',
     },
   ];
@@ -49,12 +49,12 @@ const Research = () => {
             {/*<p>Статистика с&nbsp;апреля по&nbsp;октябрь 2023&nbsp;г. По&nbsp;данным <a href="" target={'_blank'}>*/}
             {/*  центра <br/> инноваций Future Crew*/}
             {/*</a>, активность сбора информации о&nbsp;действиях <br/> посетителей веб-сайтов выросла вдвое с&nbsp;2021&nbsp;г.</p>*/}
-            {windowWidth <= 500 ? <p>Статистика с&nbsp;апреля по&nbsp;октябрь 2023&nbsp;г. По&nbsp;данным <a href="" target={'_blank'}>
+            {windowWidth <= 500 ? <p>Статистика с&nbsp;апреля по&nbsp;ноябрь 2023&nbsp;г. По&nbsp;данным <a href="" target={'_blank'}>
               центра <br/> инноваций Future Crew
             </a>, <br/>активность сбора информации о&nbsp;действиях посетителей веб-сайтов выросла вдвое с&nbsp;2021&nbsp;г.</p>
-                : <p>Статистика с&nbsp;апреля по&nbsp;октябрь 2023&nbsp;г. По&nbsp;данным <a href="" target={'_blank'}>
+                : <p>Статистика с&nbsp;апреля по&nbsp;ноябрь 2023&nbsp;г. По&nbsp;данным <a href="" target={'_blank'}>
               центра <br/> инноваций Future Crew
-            </a>, активность сбора информации о&nbsp;действиях <br/> посетителей веб-сайтов выросла вдвое с&nbsp;2021&nbsp;г.</p> }
+            </a>, активность сбора информации о&nbsp;действиях  посетителей веб-сайтов выросла вдвое с&nbsp;2021&nbsp;г.</p> }
           </div>
         </div>
       </div>

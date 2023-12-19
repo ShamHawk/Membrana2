@@ -5,14 +5,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     margin-bottom: 120px;
     font-family: $font-base;
+    @media (min-width: $media-tablet-landscape) {
+        align-items: center;
+    }
 }
 
 .Title {
     text-align: center;
-    margin: 0 auto 32px auto;
+    margin-bottom: 32px;
     z-index: 1;
     position: relative;
     max-width: 310px;
@@ -20,6 +22,9 @@
 
     @media (min-width: $media-tablet) {
         max-width: 100%;
+    }
+    @media (min-width: $media-tablet-landscape) {
+        margin: 0 auto 32px auto;
     }
 
     h2 {
@@ -34,6 +39,7 @@
         -webkit-text-fill-color: transparent;
         background-position: top;
         background-repeat: no-repeat;
+        text-align: left;
 
         @media (min-width: $media-tablet) {
             font-size: 72px;
@@ -43,6 +49,7 @@
         @media (min-width: $media-tablet-landscape) {
             font-size: 100px;
             line-height: 85px;
+            text-align: center;
         }
     }
 }
@@ -76,10 +83,11 @@ width: 100%;
     margin-bottom: 60px;
     display: flex;
     align-items: center;
-    justify-content: center;
 
-    text-align: center;
-
+    @media (min-width: $media-tablet-landscape) {
+        text-align: center;
+        justify-content: center;
+    }
     p {
         //max-width: 500px;
         font-size: 16px;
@@ -107,20 +115,22 @@ width: 100%;
 //}
 
 .Form {
-display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    @media (min-width: $media-tablet-landscape) {
     max-width: 600px;
-
+    }
     .FormContainer {
-
         margin-bottom: 28px;
-        max-width: 519px;
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content:center;
         position: relative;
+        @media (min-width: $media-tablet-landscape) {
+            max-width: 519px;
+        }
         .FormInput {
             width: 100%;
             font-size: 18px;
@@ -155,6 +165,13 @@ display: flex;
     width: 100%;
     height: 100%;
     z-index: 0;
+    .formBlock {
+        width: 100%;
+        @media (min-width: $media-tablet-landscape) {
+            display: flex;
+            justify-content: center;
+        }
+    }
 
     &:before {
         position: absolute;
@@ -244,7 +261,7 @@ display: flex;
 
 .CheckBox {
     z-index: 10;
-    width: 20px;
+    min-width: 20px;
     input {
         -webkit-appearance: none;
         appearance: none;

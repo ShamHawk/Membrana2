@@ -163,9 +163,10 @@
 .Title {
     font-family: $font-base;
     font-weight: normal;
-    font-size: 40px;
-    line-height: 41px;
-
+    //font-size: 40px;
+    //line-height: 41px;
+    font-size: 24px;
+    line-height: 28px;
     position: relative;
     z-index: 2;
 
@@ -243,7 +244,7 @@
     }
     p {
         color: #8884A0;
-        font-size: 16px;
+        font-size: 14px;
 
         margin-top: 26px;
         position: relative;
@@ -251,6 +252,7 @@
 
         @media (min-width: $media-tablet-landscape) {
             max-width: 100%;
+            font-size: 16px;
             margin-top: 20px;
         }
     }

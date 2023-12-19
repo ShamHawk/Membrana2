@@ -64,15 +64,29 @@
     @media (min-width: 440px) {
         position: absolute;
         top: 50%;
-        right: 25%;
+        right: 16%;
         opacity: 0.8;
-        text-align: left;
+        //text-align: left;
     }
-
+    @media (max-width: 530px) {
+        right: 2%;
+    }
+    @media (min-width: 620px) {
+        position: absolute;
+        top: 50%;
+        right: 21%;
+        font-size: 20px;
+    }
     @media (min-width: $media-tablet) {
         position: absolute;
         top: 50%;
-        right: 38%;
+        right: 21%;
+        font-size: 20px;
+    }
+    @media (min-width: $media-tablet-landscape) {
+        position: absolute;
+        top: 50%;
+        right: 28%;
         font-size: 20px;
     }
 }

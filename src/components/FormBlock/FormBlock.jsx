@@ -91,64 +91,62 @@ const BlockContent = ({ formBlockRef }) => {
 
               {/*{windowWidth <= 500 ?  <p>Заполните форму — и мы с вами <br/> свяжемся. Покажем возможности <br/> для компаний и организуем  <br/>демо Membrana</p> : <p>Заполните форму — и мы с вами  свяжемся. Покажем возможности <br/> для компаний и организуем демо Membrana</p>}*/}
               <p>
-                  Заполните форму&nbsp;&mdash; и&nbsp;мы&nbsp;с&nbsp;вами свяжемся.<br/>
-                  Первая тысяча пользователей получит кастомную SIM-карту<br/>
-                  Membrana в&nbsp;эксклюзивном конверте от&nbsp;нашей команды
+                  Заполните форму и&nbsp;мы&nbsp;свяжемся с&nbsp;вами после старта продаж. Первая тысяча пользователей получит эксклюзивную SIM-карту Membrana от&nbsp;нашей команды
               </p>
           </div>
         </div>
 
           <div className={Styles.FormWrapper}>
-              {/*<form onSubmit={handleSubmit(formSubmit)}>*/}
-              {/*    <div className={Styles.Form}>*/}
-              {/*        <div className={ classNames(errors['name'] ? Styles.errorsInput : null,Styles.FormContainer)}>*/}
-              {/*            <input id={'name'} {...register("name")} type={"text"} placeholder={'ФИО*'} className={Styles.FormInput}/>*/}
-              {/*            {errors['name'] && <div className={Styles.errorText}>{  errors['name']?.message}</div>}*/}
-              {/*        </div>*/}
-              {/*        <div  className={ classNames(errors['tel'] ? Styles.errorsInput : null,Styles.FormContainer)}>*/}
-              {/*            /!*<input id={'tel'} {...register("tel")} type={"text"} placeholder={'Номер для связи*'} className={Styles.FormInput}/>*!/*/}
-              {/*            <InputMask*/}
-              {/*                mask='+7 (999) 999-99-99'*/}
-              {/*                maskChar=' '*/}
-              {/*                id={'phone'}*/}
-              {/*                {...register("phone")}*/}
-              {/*                placeholder={'Номер телефона*'}*/}
-              {/*                className={Styles.FormInput}*/}
-              {/*            />*/}
-              {/*            {errors['tel'] && <div className={Styles.errorText}>{  errors['tel']?.message}</div>}*/}
-              {/*        </div>*/}
-              {/*        <div className={ classNames(errors['name'] ? Styles.errorsInput : null,Styles.FormContainer)}>*/}
-              {/*            <input id={'email'} {...register("email")} type={"text"} placeholder={'Почта*'} className={Styles.FormInput}/>*/}
-              {/*            {errors['email'] && <div className={Styles.errorText}>{  errors['email']?.message}</div>}*/}
-              {/*        </div>*/}
-              {/*        <div className={Styles.FormContainer}>*/}
-              {/*            <input id={'message'} {...register("message")} type={"text"} placeholder={'Комментарий'} className={Styles.FormInput}/>*/}
-              {/*        </div>*/}
-              {/*        <div  className={Styles.CheckBoxContainer}>*/}
-              {/*            <div style={{display:"flex"}}>*/}
-              {/*                <div className={Styles.CheckBox}>*/}
-              {/*                    <input*/}
-              {/*                        type='checkbox'*/}
-              {/*                        checked={isChecked}*/}
-              {/*                        id={'agreement'}*/}
-              {/*                        {...register('agreement')}*/}
-              {/*                        onClick={() => setIsChecked(prev => !prev)}*/}
-              {/*                        // onChange={}*/}
-              {/*                    />*/}
+              <form className={Styles.formBlock}  onSubmit={handleSubmit(formSubmit)}>
+                  <div className={Styles.Form}>
+                      <div className={ classNames(errors['name'] ? Styles.errorsInput : null,Styles.FormContainer)}>
+                          <input id={'name'} {...register("name")} type={"text"} placeholder={'ФИО*'} className={Styles.FormInput}/>
+                          {errors['name'] && <div className={Styles.errorText}>{  errors['name']?.message}</div>}
+                      </div>
+                      <div  className={ classNames(errors['tel'] ? Styles.errorsInput : null,Styles.FormContainer)}>
+                          {/*<input id={'tel'} {...register("tel")} type={"text"} placeholder={'Номер для связи*'} className={Styles.FormInput}/>*/}
+                          <InputMask
+                              mask='+7 (999) 999-99-99'
+                              maskChar=' '
+                              id={'phone'}
+                              {...register("phone")}
+                              placeholder={'Номер телефона*'}
+                              className={Styles.FormInput}
+                          />
+                          {errors['tel'] && <div className={Styles.errorText}>{  errors['tel']?.message}</div>}
+                      </div>
+                      <div className={ classNames(errors['name'] ? Styles.errorsInput : null,Styles.FormContainer)}>
+                          <input id={'email'} {...register("email")} type={"text"} placeholder={'Почта*'} className={Styles.FormInput}/>
+                          {errors['email'] && <div className={Styles.errorText}>{  errors['email']?.message}</div>}
+                      </div>
+                      <div className={Styles.FormContainer}>
+                          <input id={'message'} {...register("message")} type={"text"} placeholder={'Комментарий'} className={Styles.FormInput}/>
+                      </div>
+                      <div  className={Styles.CheckBoxContainer}>
+                          <div style={{display:"flex"}}>
+                              <div className={Styles.CheckBox}>
+                                  <input
+                                      type='checkbox'
+                                      checked={isChecked}
+                                      id={'agreement'}
+                                      {...register('agreement')}
+                                      onClick={() => setIsChecked(prev => !prev)}
+                                      // onChange={}
+                                  />
 
-              {/*                </div>*/}
-              {/*                <p className={Styles.textApprove}>Я&nbsp;выражаю своё согласие на&nbsp;обработку персональных данных, а&nbsp;также подтверждаю факт ознакомления с&nbsp;Политикой обработки персональных данных</p>*/}
-              {/*            </div>*/}
+                              </div>
+                              <p className={Styles.textApprove}>Я&nbsp;выражаю своё согласие на&nbsp;обработку персональных данных, а&nbsp;также подтверждаю факт ознакомления с&nbsp;Политикой обработки персональных данных</p>
+                          </div>
 
-              {/*            {errors['agreement'] && <div className={Styles.errorText}>{  errors['checkbox']?.message}</div>}*/}
-              {/*        </div>*/}
-              {/*        <div className={Styles.ButtonContainer}>§*/}
-              {/*            <button type={'submit'} className={Styles.Btn} >*/}
-              {/*                отправить*/}
-              {/*            </button>*/}
-              {/*        </div>*/}
-              {/*    </div>*/}
-              {/*</form>*/}
+                          {errors['agreement'] && <div className={Styles.errorText}>{  errors['checkbox']?.message}</div>}
+                      </div>
+                      <div className={Styles.ButtonContainer}>§
+                          <button type={'submit'} className={Styles.Btn} >
+                              отправить
+                          </button>
+                      </div>
+                  </div>
+              </form>
       </div>
     </div>
   );
