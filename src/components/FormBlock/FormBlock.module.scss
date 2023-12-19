@@ -8,7 +8,7 @@
     align-items: baseline;
     margin-bottom: 120px;
     font-family: $font-base;
-    @media (min-width: $media-tablet) {
+    @media (min-width: $media-tablet-landscape) {
         align-items: center;
     }
 }
@@ -92,8 +92,8 @@
 
         @media (min-width: $media-tablet) {
             font-size: 18px;
-            text-align: center;
         }
+
     }
 }
 

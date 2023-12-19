@@ -96,7 +96,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: left;
 
     p {
         max-width: 500px;
@@ -106,9 +106,9 @@
         line-height: normal;
         color: #868686;
 
-
         @media (min-width: $media-tablet) {
             font-size: 18px;
+            text-align: center;
         }
     }
 }
