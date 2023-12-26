@@ -2,6 +2,7 @@ import Header from '../Header/Header';
 import { useWindowSize } from '../../hooks/useWindowSize';
 import Styles from './HeroBlock.module.scss';
 import { useEffect, useState } from 'react';
+import SoundButton from "../ui/SoundButton/SoundButton";
 
 const HeroBlock = ({ formBlockRef }) => {
   const { smallMobileWidth, desktopWidth, windowWidth } = useWindowSize();
@@ -52,6 +53,7 @@ const HeroBlock = ({ formBlockRef }) => {
           </div>
         )}
       </div>
+        <SoundButton />
     </div>
   );
 };

@@ -2,13 +2,16 @@
 
 .Block {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column-reverse;
+  justify-content: center;
   font-family: $font-base;
   width: 100%;
   margin-bottom: 64px;
   position: relative;
   background: #010101;
+  @media (min-width: $media-tablet-landscape) {
+    align-items: center;
+  }
 
   &:nth-child(2n + 1) .Left {
     order: 0;
@@ -32,6 +35,7 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  max-width: fit-content;
   //max-width: 800px;
   order: -1;
 
@@ -48,9 +52,15 @@
 .Right {
 margin: 0 auto;
 align-self: center;
+margin-bottom: 44px;
   @media (min-width: $media-tablet) {
-    width: 60%;
+    //width: 60%;
+    width: 100%;
+    max-width: fit-content;
     margin: 0;
+  }
+  @media (min-width: $media-tablet-landscape) {
+    margin-bottom: 0px;
   }
 }
 
@@ -68,21 +78,20 @@ align-self: center;
     margin-bottom: 48px;
   }
 
-  h2 {
-    color: transparent;
+  h3 {
     font-size: 28px;
     line-height: 35px;
     font-weight: 400;
-    background-size: 100%;
+    color: transparent;
+    //background: conic-gradient(from 270deg at 4.57% 52.44%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg);
+    background: linear-gradient(90deg, #FFF -5.87%, rgba(255, 255, 255, 0.90) 6.23%, rgba(255, 255, 255, 0.00) 112.47%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-position: top;
-    background-repeat: no-repeat;
 
     @media (min-width: $media-tablet) {
       font-size: 41px;
-      line-height: 34px;
+      line-height: 50px;
     }
 
     @media (min-width: $media-tablet-landscape) {
@@ -97,11 +106,15 @@ align-self: center;
   position: relative;
   z-index: 2;
 
+
+
   @media (min-width: $media-tablet) {
     margin: 0;
+    max-width: 550px;
+    margin-left: 4px;
   }
 
-  p {
+  p,.ulText {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;

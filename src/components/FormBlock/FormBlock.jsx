@@ -18,9 +18,10 @@ const BlockContent = ({ formBlockRef }) => {
     const instance = axios.create({
         headers: {
             'Access-Control-Allow-Origin': '*',
+            "Access-Control-Allow-Headers": "Access-Control-Allow-Headers",
             'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
         },
-        withCredentials: true,
+        withCredentials: false,
     });
 
 
@@ -29,25 +30,68 @@ const BlockContent = ({ formBlockRef }) => {
         return cleanedValue;
     };
 
-     const schemaForm = yup.object().shape({
+    //  const schemaForm = yup.object().shape({
+    //     name: yup
+    //         .string()
+    //         .required('Введите имя')
+    //         .matches(/^([^0-9]*)$/, 'Имя не должно содержать цифр'),
+    //      phone: yup.string().min(12, 'Введите корректный телефон').transform(cleanPhoneNumber),
+    //     email: yup.string().required('Введите почту').email('Ведите корректную почту'),
+    //      message: yup.string(),
+    //      agreement: yup.boolean().oneOf([true], 'обязательное поле'),
+    // });
+
+    const schemaForm = yup.object().shape({
         name: yup
             .string()
             .required('Введите имя')
             .matches(/^([^0-9]*)$/, 'Имя не должно содержать цифр'),
-         phone: yup.string().min(12, 'Введите корректный телефон').transform(cleanPhoneNumber),
+        phone: yup.string().min(12, 'Введите корректный телефон').transform(cleanPhoneNumber),
         email: yup.string().required('Введите почту').email('Ведите корректную почту'),
-         message: yup.string(),
-         agreement: yup.boolean().oneOf([true], 'обязательное поле'),
+        message: yup.string(),
+        agreement: yup.boolean().oneOf([true], 'обязательное поле'),
     });
+
+
     // const formSubmit = (data) => {
     //     // const newData = JSON.parse(data)
     //     axios.post(data)
     //     console.log(data)
     // }
 
+
+const test =  {
+    "apikey" : "18WH7YhvxJb26UVZSIJhozKpThuhP7k7TnERRxnHCQMecr9bjrbbAi9zRDa3mo5bP1RtWtA"
+    ,"action" : "member.set"
+    ,"email": "trohin.danil2015@yandex.ru"
+    ,"addr_type" : "email"
+    ,"source" : "81.23.182.239"
+    ,"newbie.confirm": "0"
+    ,"datakey" : [
+        [ "base.firstName", "set", "dima" ]
+    ]
+    ,"return_fresh_obj" : "0"
+}
+
     const formSubmit = (data) => {
+    const distData =  Object.values(data)
+        console.log(distData);
+    const email = distData[2]
+    const name = distData[4]
+        const newData =  {
+            "apikey" : "18WH7YhvxJb26UVZSIJhozKpThuhP7k7TnERRxnHCQMecr9bjrbbAi9zRDa3mo5bP1RtWtA"
+            ,"action" : "member.set"
+            ,"email": email
+            ,"addr_type" : "email"
+            ,"source" : "81.23.182.239"
+            ,"newbie.confirm": "0"
+            ,"datakey" : [
+                [ "base.firstName", "set", name ]
+            ]
+            ,"return_fresh_obj" : "0"
+        }
         return instance
-            .post('https://sendsay.ru/backend/tilda/1QEeXj5ALOZM3KoBqYbsSLP1Kq1YM55pFB1i4sb4', {data})
+            .post('https://api.sendsay.ru/general/api/v100/json/x_1702990490671778', {newData} )
             .then((response) => {
                 console.log(response)
             })
@@ -55,7 +99,10 @@ const BlockContent = ({ formBlockRef }) => {
                 console.error('Ошибка при отправке запроса formSubmits:', error);
                 throw error;
             });
-        // console.log(data)
+
+        // console.log('data',data)
+        // console.log('newData',newData)
+
     }
 
     const {
@@ -69,17 +116,18 @@ const BlockContent = ({ formBlockRef }) => {
 
 
   return (
-      <div className={Styles.Block} ref={formBlockRef}>
+      <div className={Styles.Block} >
         <div className={classNames(Styles.Title, Styles.Title_one)}>
           <h2>Ваши данные —<br/> это ваша собственность</h2>
         </div>
         <div className={classNames(Styles.Subtitle, Styles.Subtitle_one)}>
-            {windowWidth <= 500 ? <p>Мы гарантируем, что они <br/> не используются для монетизации <br/> и не передаются третьим лицам</p> :
-                <p>Мы гарантируем, что они не используются для монетизации и не передаются третьим лицам.</p>}
+
+            {windowWidth <= 500 ? <p>Мы&nbsp;гарантируем, что они не&nbsp;используются для монетизации и&nbsp;не&nbsp;передаются третьим лицам</p> :
+                <p>Мы&nbsp;гарантируем, что они не&nbsp;используются для монетизации <br/> и&nbsp;не&nbsp;передаются третьим лицам</p>}
         </div>
 
 
-        <div className={Styles.HeadBlock}>
+        <div className={Styles.HeadBlock} ref={formBlockRef} >
           <div className={classNames(Styles.Title, Styles.Title_two)}>
               {windowWidth <= 500   ?<h2>
                   Вступайте в&nbsp;закрытый клуб Membrana
@@ -87,66 +135,68 @@ const BlockContent = ({ formBlockRef }) => {
                   Вступайте в&nbsp;закрытый <br/> клуб Membrana
               </h2>}
           </div>
-          <div className={classNames(Styles.Subtitle, Styles.Subtitle_twoz)}>
+          <div className={classNames(Styles.Subtitle, Styles.Subtitle_two)}>
 
-              {/*{windowWidth <= 500 ?  <p>Заполните форму — и мы с вами <br/> свяжемся. Покажем возможности <br/> для компаний и организуем  <br/>демо Membrana</p> : <p>Заполните форму — и мы с вами  свяжемся. Покажем возможности <br/> для компаний и организуем демо Membrana</p>}*/}
-              <p>
-                  Заполните форму и&nbsp;мы&nbsp;свяжемся с&nbsp;вами после старта продаж. Первая тысяча пользователей получит эксклюзивную SIM-карту Membrana от&nbsp;нашей команды
-              </p>
+              {windowWidth <= 500 ?  <p>Заполните форму&nbsp;&mdash; и&nbsp;мы&nbsp;с&nbsp;вами свяжемся. Первая тысяча пользователей получит кастомную SIM-карту Membrana в&nbsp;эксклюзивном конверте от&nbsp;нашей команды </p> : <p>Заполните форму&nbsp;&mdash; и&nbsp;мы&nbsp;с&nbsp;вами свяжемся.<br/> Первая тысяча пользователей получит кастомную SIM-карту <br/> Membrana в&nbsp;эксклюзивном конверте от&nbsp;нашей команды</p>}
+              {/*<p>*/}
+              {/*    Заполните форму&nbsp;&mdash; и&nbsp;мы&nbsp;с&nbsp;вами свяжемся. Первая тысяча пользователей получит кастомную SIM-карту Membrana в&nbsp;эксклюзивном конверте от&nbsp;нашей команды*/}
+              {/*</p>*/}
           </div>
         </div>
 
-          <div className={Styles.FormWrapper}>
-              <form className={Styles.formBlock}  onSubmit={handleSubmit(formSubmit)}>
-                  <div className={Styles.Form}>
-                      <div className={ classNames(errors['name'] ? Styles.errorsInput : null,Styles.FormContainer)}>
-                          <input id={'name'} {...register("name")} type={"text"} placeholder={'ФИО*'} className={Styles.FormInput}/>
-                          {errors['name'] && <div className={Styles.errorText}>{  errors['name']?.message}</div>}
-                      </div>
-                      <div  className={ classNames(errors['tel'] ? Styles.errorsInput : null,Styles.FormContainer)}>
-                          {/*<input id={'tel'} {...register("tel")} type={"text"} placeholder={'Номер для связи*'} className={Styles.FormInput}/>*/}
-                          <InputMask
-                              mask='+7 (999) 999-99-99'
-                              maskChar=' '
-                              id={'phone'}
-                              {...register("phone")}
-                              placeholder={'Номер телефона*'}
-                              className={Styles.FormInput}
-                          />
-                          {errors['tel'] && <div className={Styles.errorText}>{  errors['tel']?.message}</div>}
-                      </div>
-                      <div className={ classNames(errors['name'] ? Styles.errorsInput : null,Styles.FormContainer)}>
-                          <input id={'email'} {...register("email")} type={"text"} placeholder={'Почта*'} className={Styles.FormInput}/>
-                          {errors['email'] && <div className={Styles.errorText}>{  errors['email']?.message}</div>}
-                      </div>
-                      <div className={Styles.FormContainer}>
-                          <input id={'message'} {...register("message")} type={"text"} placeholder={'Комментарий'} className={Styles.FormInput}/>
-                      </div>
-                      <div  className={Styles.CheckBoxContainer}>
-                          <div style={{display:"flex"}}>
-                              <div className={Styles.CheckBox}>
-                                  <input
-                                      type='checkbox'
-                                      checked={isChecked}
-                                      id={'agreement'}
-                                      {...register('agreement')}
-                                      onClick={() => setIsChecked(prev => !prev)}
-                                      // onChange={}
-                                  />
+          <div className={Styles.FormWrapper} >
+              {/*<form className={Styles.formBlock}  onSubmit={handleSubmit(formSubmit)}>*/}
+              {/*    <div className={Styles.Form}>*/}
+              {/*        <div className={ classNames(errors['name'] ? Styles.errorsInput : null,Styles.FormContainer)}>*/}
+              {/*            <input id={'name'} {...register("name")} type={"text"} placeholder={'ФИО*'} className={Styles.FormInput}/>*/}
+              {/*            {errors['name'] && <div className={Styles.errorText}>{  errors['name']?.message}</div>}*/}
+              {/*        </div>*/}
+              {/*        <div  className={ classNames(errors['tel'] ? Styles.errorsInput : null,Styles.FormContainer)}>*/}
+              {/*            /!*<input id={'tel'} {...register("tel")} type={"text"} placeholder={'Номер для связи*'} className={Styles.FormInput}/>*!/*/}
+              {/*            <InputMask*/}
+              {/*                mask='+7 (999) 999-99-99'*/}
+              {/*                maskChar=' '*/}
+              {/*                id={'phone'}*/}
+              {/*                {...register("phone")}*/}
+              {/*                placeholder={'Номер телефона*'}*/}
+              {/*                className={Styles.FormInput}*/}
+              {/*            />*/}
+              {/*            {errors['tel'] && <div className={Styles.errorText}>{  errors['tel']?.message}</div>}*/}
+              {/*        </div>*/}
+              {/*        <div className={ classNames(errors['name'] ? Styles.errorsInput : null,Styles.FormContainer)}>*/}
+              {/*            <input id={'email'} {...register("email")} type={"text"} placeholder={'Почта*'} className={Styles.FormInput}/>*/}
+              {/*            {errors['email'] && <div className={Styles.errorText}>{  errors['email']?.message}</div>}*/}
+              {/*        </div>*/}
+              {/*        <div className={Styles.FormContainer}>*/}
+              {/*            <input id={'message'} {...register("message")} type={"text"} placeholder={'Комментарий'} className={Styles.FormInput}/>*/}
+              {/*        </div>*/}
+              {/*        <div  className={Styles.CheckBoxContainer}>*/}
+              {/*            <div style={{display:"flex"}}>*/}
+              {/*                <div className={Styles.CheckBox}>*/}
+              {/*                    <input*/}
+              {/*                        type='checkbox'*/}
+              {/*                        checked={isChecked}*/}
+              {/*                        id={'agreement'}*/}
+              {/*                        {...register('agreement')}*/}
+              {/*                        onClick={() => setIsChecked(prev => !prev)}*/}
+              {/*                        // onChange={}*/}
+              {/*                    />*/}
 
-                              </div>
-                              <p className={Styles.textApprove}>Я&nbsp;выражаю своё согласие на&nbsp;обработку персональных данных, а&nbsp;также подтверждаю факт ознакомления с&nbsp;Политикой обработки персональных данных</p>
-                          </div>
+              {/*                </div>*/}
+              {/*                <p className={Styles.textApprove}>Я&nbsp;выражаю своё согласие на&nbsp;обработку персональных данных, а&nbsp;также подтверждаю факт ознакомления с&nbsp;Политикой обработки персональных данных</p>*/}
+              {/*            </div>*/}
 
-                          {errors['agreement'] && <div className={Styles.errorText}>{  errors['checkbox']?.message}</div>}
-                      </div>
-                      <div className={Styles.ButtonContainer}>§
-                          <button type={'submit'} className={Styles.Btn} >
-                              отправить
-                          </button>
-                      </div>
-                  </div>
-              </form>
+              {/*            {errors['agreement'] && <div className={Styles.errorText}>{  errors['checkbox']?.message}</div>}*/}
+              {/*        </div>*/}
+              {/*        <div className={Styles.ButtonContainer}>§*/}
+              {/*            <button type={'submit'} className={Styles.Btn} >*/}
+              {/*                отправить*/}
+              {/*            </button>*/}
+              {/*        </div>*/}
+              {/*    </div>*/}
+              {/*</form>*/}
+              {/*<div className={Styles.FormSendsey} data-sendsay-form-embedded="x_1702990490671778/1"></div>*/}
+              <div  className={Styles.FormSendsey} data-sendsay-form-embedded="mts_sendmail/6"></div>
       </div>
     </div>
   );

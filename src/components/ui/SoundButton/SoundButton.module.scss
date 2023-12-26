@@ -1,12 +1,13 @@
 @import "@/assets/styles/variables.scss";
 
 .BtnWrapper {
-  position: fixed;
+  //position: fixed;
+  position: absolute;
   bottom: 30px;
   right: 30px;
   display: flex;
   align-items: center;
-  z-index: 100;
+  z-index: 4;
 
 
   @media (min-width: $media-tablet) {
@@ -45,7 +46,7 @@
   align-items: center;
 
   position: relative;
-  z-index: 10;
+  z-index: 3;
 }
 
 

@@ -116,7 +116,7 @@ const BlockContent = () => {
     //   ),
     // },
     {
-      title: <span>Как работает сервис "Голос"?</span>,
+      title: <span>Как работает сервис Голос?</span>,
       content: (
         <div>
           <p>
@@ -226,7 +226,7 @@ const BlockContent = () => {
       </div>
       <div className={Styles.HeadBlock}>
         <div className={classNames(Styles.Title, Styles.TitleTwo)}>
-          <h2>Как все устроено</h2>
+          <h2>Как всё устроено</h2>
         </div>
       </div>
       <div className={Styles.Faq}>

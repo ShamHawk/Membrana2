@@ -29,10 +29,10 @@
 
     h2 {
         color: transparent;
-        font-size: 40px;
+        font-size: 32px;
         line-height: 34px;
         font-weight: 400;
-        background-image: conic-gradient(from -87deg at 8.22% 55.88%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg);
+        background: linear-gradient(91deg, #FFF -16.56%, rgba(255, 255, 255, 0.90) -0.25%, rgba(255, 255, 255, 0.00) 142.87%);
         background-size: 100%;
         background-clip: text;
         -webkit-background-clip: text;
@@ -47,8 +47,8 @@
         }
 
         @media (min-width: $media-tablet-landscape) {
-            font-size: 100px;
-            line-height: 85px;
+            font-size: 90px;
+            line-height: 90px;
             text-align: center;
         }
     }
@@ -65,14 +65,14 @@ width: 100%;
     }
 
     h2 {
-        line-height: 47px;
+        line-height: 34px;
 
         @media (min-width: $media-tablet) {
             line-height: 75px;
         }
 
         @media (min-width: $media-tablet-landscape) {
-            line-height: 120px;
+            line-height: 90px;
         }
     }
 }
@@ -83,6 +83,7 @@ width: 100%;
     margin-bottom: 60px;
     display: flex;
     align-items: center;
+    //max-width: 660px;
 
     @media (min-width: $media-tablet-landscape) {
         text-align: center;
@@ -94,7 +95,9 @@ width: 100%;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        color: #868686;
+        //color: #868686;
+        color: #FFF;
+        opacity: 0.5;
 
         @media (min-width: $media-tablet) {
             font-size: 18px;
@@ -161,10 +164,14 @@ width: 100%;
 .FormWrapper {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     width: 100%;
     height: 100%;
     z-index: 0;
+    @media (min-width: $media-tablet-landscape) {
+
+        justify-content: center;
+    }
     .formBlock {
         width: 100%;
         @media (min-width: $media-tablet-landscape) {
@@ -214,7 +221,8 @@ width: 100%;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    color: #868686;
+    color: #fff;
+    opacity: 0.5;
 
     align-self: flex-start;
 
@@ -304,4 +312,53 @@ width: 100%;
     }
 }
 
+.FormSendsey {
+    display: flex;
+    justify-content: flex-start;
+    background-color: transparent!important;
+    @media (min-width: $media-tablet-landscape) {
+        justify-content: center;
+    }
+}
 
+.FormSendsey > div * {
+    background-color: transparent!important;
+}
+.FormSendsey > div {
+    background-color: transparent!important;
+}
+.FormSendsey > div > div > div > div > div > input {
+    border: none!important;
+    //border-bottom: 1px solid white!important;
+    color: white!important;
+    }
+.FormSendsey > div > div > div > div > div {
+    position: relative;
+}
+.FormSendsey > div > div > div > div > div:after {
+     content: " ";
+     height: 1px;
+     width: 100%;
+     background: linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+     position: absolute;
+     top: 60px;
+}
+.FormSendsey > div > div > div > div > div:last-child:after {
+    display: none;
+}
+.FormSendsey > div > div > div > div > div:last-child {
+    background-color: #5f43e3!important;
+    border-radius: 16px!important;
+    max-width: 300px!important;
+    height: 44px!important;
+    //padding: 0px!important;
+    @media (min-width: $media-tablet-landscape) {
+        width: 200px!important;
+    }
+}
+.FormSendsey > div > div > div > div > div:last-child > input {
+    border-bottom: none!important;
+}
+.sendsay-column {
+    background-color: transparent!important;
+}

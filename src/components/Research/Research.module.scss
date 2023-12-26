@@ -171,7 +171,9 @@
     z-index: 2;
 
     //background-image: conic-gradient(from 267deg at 6.96% 50%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg);
-    background-image:  conic-gradient(from 255deg at 0.92% 38.56%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg);
+    //background-image:  conic-gradient(from 255deg at 0.92% 38.56%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg);
+    //background-image: conic-gradient(from 255deg at -1.08% 38.56%, #FFF 0deg, rgba(255, 255, 255, 0.9) 36.8159258366deg, rgba(255, 255, 255, 0) 360deg);
+    background: linear-gradient(147deg, #FFF -10.51%, rgba(255, 255, 255, 0.00) 159.69%);
     color: transparent;
     background-size: 100%;
     background-clip: text;
@@ -198,29 +200,31 @@
 .SubTitle {
     font-size: 32px;
     line-height: 27px;
-    //color: #D9D9D9;
+    color: #FFFFFF;
     margin-bottom: 16px;
     position: relative;
-    color: transparent;
-    background-size: 100%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-position: top;
-    background-repeat: no-repeat;
+    //color: transparent;
+    //background-size: 100%;
+    //background-clip: text;
+    //-webkit-background-clip: text;
+    //-webkit-text-fill-color: transparent;
+    //background-position: top;
+    //background-repeat: no-repeat;
+    //opacity: 0.8;
     z-index: 2;
-    background-image: conic-gradient(from 194deg at 27.44% 100%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg);
+    //background-image: conic-gradient(from 194deg at 27.44% 100%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg);
     @media (min-width: $media-tablet) {
         font-size: 40px;
         line-height: 34px;
-        background-image: conic-gradient(from 194deg at 27.44% 100%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg);
-        color: transparent;
-        background-size: 100%;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-position: top;
-        background-repeat: no-repeat;
+        //background-image: conic-gradient(from 194deg at 27.44% 100%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg);
+        color: #FFFFFF;
+        //background-size: 100%;
+        //background-clip: text;
+        //-webkit-background-clip: text;
+        //-webkit-text-fill-color: transparent;
+        //background-position: top;
+        //background-repeat: no-repeat;
+
     }
 
     @media (min-width: $media-tablet-landscape) {
@@ -233,8 +237,8 @@
     line-height: normal;
     position: relative;
     z-index: 12;
-
-
+    color: #FFFFFF;
+    //opacity: 0.8;
 }
 
 .WrapperBottom {
@@ -243,8 +247,9 @@
         color: inherit;
     }
     p {
-        color: #8884A0;
-        font-size: 14px;
+        //color: #8884A0;
+        color: rgba(255, 255, 255, 0.50);
+        font-size: 12px;
 
         margin-top: 26px;
         position: relative;
@@ -252,8 +257,8 @@
 
         @media (min-width: $media-tablet-landscape) {
             max-width: 100%;
-            font-size: 16px;
-            margin-top: 20px;
+            //font-size: 16px;
+            margin-top: -38px;
         }
     }
 }
