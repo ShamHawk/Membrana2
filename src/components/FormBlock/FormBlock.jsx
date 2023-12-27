@@ -197,6 +197,7 @@ const test =  {
               {/*</form>*/}
               {/*<div className={Styles.FormSendsey} data-sendsay-form-embedded="x_1702990490671778/1"></div>*/}
               <div  className={Styles.FormSendsey} data-sendsay-form-embedded="mts_sendmail/6"></div>
+              {/*<div className={Styles.FormSendsey} data-sendsay-form-embedded="x_1702990490671778/1"></div>*/}
       </div>
     </div>
   );

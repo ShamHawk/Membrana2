@@ -12,7 +12,8 @@ const BlockContent = ({ title, text, widthVideo, heightVideo, gradient, video, c
     <div className={Styles.Block}>
       <div className={Styles.Left}>
         <div className={Styles.Title}>
-          <h3 style={{ background: {gradient},   WebkitBackgroundClip: "text", backgroundClip: "text" }}>{title}</h3>
+            {/*backgroundClip: "text"*/}
+            <h3 style={{ background: {gradient},   WebkitBackgroundClip: "text"}}>{title}</h3>
         </div>
         <div className={Styles.Text}>
             {ul ? <div className={Styles.ulText}>{mobileWidth ? text[0] : text[1]}</div> : <p>{mobileWidth ? text[0] : text[1]}</p>}

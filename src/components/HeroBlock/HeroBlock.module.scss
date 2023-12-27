@@ -59,39 +59,46 @@
 .SubTitle {
     font-size: 16px;
     color: #fff;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    width: 100%;
+    opacity: 0.8;
+    top: -21%;
+    position: absolute;
+    @media (max-width: 370px) {
+        //position: absolute;
+        top: -30%;
 
-
+        //text-align: left;
+    }
     @media (min-width: 440px) {
-        position: absolute;
-        top: 50%;
-        right: 16%;
-        opacity: 0.8;
+        //position: absolute;
+        top: -16%;
+
         //text-align: left;
     }
     @media (max-width: 530px) {
         right: 2%;
     }
     @media (min-width: 620px) {
-        position: absolute;
-        top: 50%;
-        right: 21%;
+        //position: absolute;
+        top: -41%;
+        //right: 21%;
         font-size: 20px;
     }
     @media (min-width: $media-tablet) {
-        position: absolute;
-        top: 50%;
-        right: 21%;
+        //position: absolute;
+        top: -41%;
+        //right: 21%;
         font-size: 20px;
-        text-align: center;
-    }
-    @media (min-width: 1100px) {
-        text-align: center;
+        //text-align: center;
     }
     @media (min-width: $media-tablet-landscape) {
-        position: absolute;
-        text-align: left;
-        top: 50%;
-        right: 30%;
+        //position: absolute;
+        //text-align: left;
+        top: -41%;
+        //right: 30%;
         font-size: 20px;
     }
 }
