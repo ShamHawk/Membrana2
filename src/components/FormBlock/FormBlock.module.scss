@@ -320,7 +320,9 @@ width: 100%;
         justify-content: center;
     }
 }
-
+.FormSendsey > div {
+    padding: 5px!important;
+}
 .FormSendsey > div * {
     background-color: transparent!important;
 }
@@ -341,7 +343,7 @@ width: 100%;
      width: 100%;
      background: linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
      position: absolute;
-     top: 60px;
+     top: 54px;
 }
 .FormSendsey > div > div > div > div > div:last-child:after {
     display: none;
@@ -370,6 +372,7 @@ width: 100%;
 .FormSendsey > div > div > div > div > div:nth-child(4) > label {
     display: none;
 }
+
 .FormSendsey > div > div > div > div > div:nth-child(4):after {
     display: none;
 }
@@ -383,6 +386,8 @@ width: 100%;
     font-family: Manrope;
     font-size: 16px;
     opacity: 0.5;
+    position: relative;
+    top: -5px;
 }
 .FormSendsey > div > div > div > div > div:nth-child(5) > div > div > label {
     color: #FFF;
@@ -404,6 +409,9 @@ width: 100%;
 //}
 .FormSendsey > div > div > div > div > div:last-child > input {
     border-bottom: none!important;
+    font-size: 18px!important;
+    position:relative;
+    top: -5px;
 }
 .sendsay-column {
     background-color: transparent!important;
