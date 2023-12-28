@@ -6,7 +6,6 @@
   justify-content: center;
   font-family: $font-base;
   width: 100%;
-  margin-bottom: 64px;
   position: relative;
   background: #010101;
   @media (min-width: $media-tablet-landscape) {
@@ -52,7 +51,7 @@
 .Right {
 margin: 0 auto;
 align-self: center;
-margin-bottom: 44px;
+margin-bottom: 10px;
   @media (min-width: $media-tablet) {
     //width: 60%;
     width: 100%;
@@ -149,6 +148,9 @@ margin-bottom: 44px;
   transform: translate3d(0, 0, 0);
   z-index: 1;
   display: none;
+  @-moz-document url-prefix() {
+    opacity: 0.1;
+  }
 
   @media (min-width: $media-tablet-landscape) {
     display: block;

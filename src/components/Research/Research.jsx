@@ -29,7 +29,7 @@ const Research = () => {
           <div className={Styles.WrapperTop}>
             <div className={Styles.Left}>
               <h2 className={Styles.Title}>
-                Защищаем от&nbsp;известных и&nbsp;новых<br/> угроз и&nbsp;постоянно <br/> пополняем базу
+                Защищаем от&nbsp;известных и&nbsp;новых угроз и&nbsp;постоянно <br/> пополняем базу
               </h2>
             </div>
             <div className={Styles.Right}>

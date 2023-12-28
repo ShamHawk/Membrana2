@@ -21,6 +21,14 @@
                 border-radius: 899px;
                 background: #2D2D2D;
                 filter: blur(300px);
+                -webkit-filter: blur(300px);
+                -moz-filter: blur(300px);
+                -o-filter: blur(300px);
+                -ms-filter: blur(300px);
+                @-moz-document url-prefix() {
+                    opacity: 0.1;
+                }
+
             }
         }
     }

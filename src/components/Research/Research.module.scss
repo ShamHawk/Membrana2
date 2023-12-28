@@ -17,6 +17,9 @@
             height: 800px;
             border-radius: 899px;
             filter: blur(300px);
+            @-moz-document url-prefix() {
+                opacity: 0.1;
+            }
             background: #2D2D2D;
             transform: translate3d(0, 0, 0);
             z-index: 1;
@@ -34,6 +37,9 @@
             background: #070707;
             transform: translate3d(0, 0, 0);
             filter: blur(110px);
+            @-moz-document url-prefix() {
+                opacity: 0.1;
+            }
             z-index: 0;
         }
     }
@@ -71,6 +77,9 @@
         width: 666px;
         height: 400px;
         z-index: 0;
+        @-moz-document url-prefix() {
+            opacity: 0.1;
+        }
 
 
         @media (min-width: 500px) {
@@ -135,7 +144,7 @@
 
 .Right {
     color: white;
-    opacity: 0.5;
+    //opacity: 0.5;
     //max-width: 377px;
     height: fit-content;
     display: flex;
@@ -200,30 +209,20 @@
 .SubTitle {
     font-size: 32px;
     line-height: 27px;
-    color: #FFFFFF;
+    //color: #FFFFFF;
     margin-bottom: 16px;
     position: relative;
-    //color: transparent;
-    //background-size: 100%;
-    //background-clip: text;
-    //-webkit-background-clip: text;
-    //-webkit-text-fill-color: transparent;
-    //background-position: top;
-    //background-repeat: no-repeat;
-    //opacity: 0.8;
-    z-index: 2;
-    //background-image: conic-gradient(from 194deg at 27.44% 100%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg);
+    background: linear-gradient(82deg, #FFF -0.35%, rgba(255, 255, 255, 0.90) 10.14%, rgba(255, 255, 255, 0.00) 102.21%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 3;
     @media (min-width: $media-tablet) {
         font-size: 40px;
         line-height: 34px;
-        //background-image: conic-gradient(from 194deg at 27.44% 100%, #FFF 0deg, rgba(255, 255, 255, 0.90) 36.81592583656311deg, rgba(255, 255, 255, 0.00) 360deg);
         color: #FFFFFF;
-        //background-size: 100%;
-        //background-clip: text;
-        //-webkit-background-clip: text;
-        //-webkit-text-fill-color: transparent;
-        //background-position: top;
-        //background-repeat: no-repeat;
+
 
     }
 
