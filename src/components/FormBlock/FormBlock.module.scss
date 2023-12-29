@@ -213,12 +213,14 @@ width: 100%;
         filter: blur(300px);
         width: 500px;
         height: 500px;
+        display: none;
         @-moz-document url-prefix() {
             opacity: 0.1;
         }
         @media (min-width: $media-tablet) {
-            top: -200px;
-            right: -200px;
+            //top: -200px;
+            //right: -200px;
+            display: block;
         }
     }
 }
