@@ -376,8 +376,19 @@ width: 100%;
 .FormSendsey > div > div > div > div > div:nth-child(3) > label {
     display: none;
 }
-
-.FormSendsey > div > div > div > div > div:nth-child(7) {
+.FormSendsey > div > div > div > div > div:nth-child(1) > div,
+.FormSendsey > div > div > div > div > div:nth-child(2) > div,
+.FormSendsey > div > div > div > div > div:nth-child(3) > div,
+.FormSendsey > div > div > div > div > div:nth-child(4) > div:nth-child(3),
+//.FormSendsey > div > div > div > div > div:nth-child(5) > div:nth-child(3),
+//.FormSendsey > div > div > div > div > div:nth-child(5) > div,
+{
+    position: absolute;
+}
+.FormSendsey > div > div > div > div > div:nth-child(5) > div:nth-child(3) {
+    margin-bottom: 10px;
+}
+.FormSendsey > div > div > div > div > div:nth-child(8) {
     background-color: #5f43e3!important;
     border-radius: 16px!important;
     max-width: 300px!important;
@@ -388,6 +399,28 @@ width: 100%;
         width: 200px!important;
     }
 }
+.FormSendsey > div > div > div > div > div:nth-child(6)  {
+    color: #FFF;
+    font-family: Manrope!important;
+    font-size: 11px;
+    opacity: 0.5;
+    width: 100%;
+    max-width: 461px;
+    position: absolute;
+    top: 173px;
+    left: 33px;
+    z-index: 100;
+    padding-right: 33px;
+    //top: -6px;
+    //position: relative;
+}
+
+.FormSendsey > div > div > div > div > div:nth-child(6) > a  {
+    color: #FFF;
+    text-decoration: none;
+    z-index: 5;
+    text-decoration: underline;
+}
 .FormSendsey > div > div > div > div > div:nth-child(4) > label {
     display: none;
 }
@@ -397,49 +430,138 @@ width: 100%;
 }
 .FormSendsey > div > div > div > div > div:nth-child(4) > div > div > input {
     margin-right: 14px;
-    width: 15px!important;
-    height: 15px!important;
+    width: 19px!important;
+    height: 19px!important;
 }
 
 .FormSendsey > div > div > div > div > div:nth-child(5) > div > div > input {
     margin-right: 14px;
-    width: 15px!important;
-    height: 15px!important;
+    width: 19px!important;
+    height: 19px!important;
 }
 
 .FormSendsey > div > div > div > div > div:nth-child(4) > div > div > label {
     color: #FFF;
     font-family: Manrope!important;
-    font-size: 16px;
+    font-size: 11px;
     opacity: 0.5;
     width: 100%;
     position: relative;
-    top: -2px;
+    top: -6px;
+    //display: none;
+    opacity: 0;
+    z-index: 3;
+}
+.FormCheckLabel {
+    z-index: 10;
 }
 .FormSendsey > div > div > div > div > div:nth-child(5) > div > div > label {
     color: #FFF;
     font-family: Manrope!important;
-    font-size: 16px;
+    font-size: 11px;
     opacity: 0.5;
     width: 100%;
     position: relative;
-    top: -2px;
+    top: -8px;
 }
 .FormSendsey > div > div > div > div > div:nth-child(5):after {
     display: none;
 }
+.FormSendsey > .FormCheckLabel {
+    z-index: 20;
+}
 .FormSendsey > div > div > div > div > div:nth-child(5) > label {
     display: none;
 }
-//.FormSendsey > div > div > div > div > div:nth-child(6) {
-//    display: none;
-//}
+.FormSendsey > div > div > div > div > div:nth-child(6):after {
+    display: none;
+}
 .FormSendsey > div > div > div > div > div:last-child > input {
     border-bottom: none!important;
     font-size: 18px!important;
     position:relative;
     top: -5px;
 }
+.FormSendsey > div > div > div > div  {
+overflow: hidden;
+}
+.FormSendsey > div {
+    overflow: hidden;
+}
 .sendsay-column {
     background-color: transparent!important;
 }
+
+
+
+
+
+
+
+//.newForm {
+//    display: flex;
+//    flex-direction: column;
+//    color: white;
+//    font-family: $font-base;
+//    max-width: 550px;
+//    ;
+//}
+//
+//.newForm__input {
+//    width: 100%;
+//    font-family: $font-base;
+//    //background-color: transparent;
+//    border: none;
+//    font-size: 18px;
+//    color: black;
+//    z-index: 20;
+//    margin-bottom: 40px;
+//    position: relative;
+//}
+//.newForm__labelInput {
+//    z-index: 20;
+//    position: relative;
+//}
+//.newForm__labelInput:after {
+//    content: " ";
+//    height: 1px;
+//    width: 100%;
+//    background: linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+//    position: absolute;
+//    top: 30px;
+//    left: 0px;
+//}
+//.newForm__input:focus {
+//
+//    //outline: none;
+//}
+//.newForm__label {
+//    font-family: $font-base;
+//    color: #FFF;
+//    margin-bottom: 25px;
+//    font-size: 12px;
+//}
+//.newForm__inputNone {
+//    display: none;
+//}
+//.newForm__checkBox {
+//    margin-left: 0px;
+//    margin-right: 14px;
+//}
+//.newForm__button {
+//    width: 200px;
+//    color: #FFFFFF;
+//    font-size: 16px;
+//    font-family: $font-base;
+//    background-color: #5F43E3;
+//    border: none;
+//    border-radius: 35px;
+//    padding: 9px 0px;
+//    margin-top: 20px;
+//    @media (min-width: $media-phone) {
+//        width: 300px;
+//    }
+//}
+//
+//
+
