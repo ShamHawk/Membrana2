@@ -31,6 +31,7 @@ const blockContentArr = [
     id: 1,
     circlePosition: [-280, 'auto', 'auto', -150],
     circleSize: [613, 613],
+    styles:[{marginLeft:"0px"},{marginLeft: "160px"}]
   },
   {
     title: (
@@ -54,6 +55,7 @@ const blockContentArr = [
     id: 2,
     circlePosition: [-300, -300, 'auto', 'auto'],
     circleSize: [725, 725],
+    styles:[{marginRight:"0px"},{marginRight: "160px"}]
   },
   {
     title: (
@@ -77,6 +79,7 @@ const blockContentArr = [
     id: 3,
     circlePosition: [-150, 'auto', 'auto', -800],
     circleSize: [900, 900],
+    styles:[{marginRight:"0px"},{marginLeft: "120px"}]
   },
   {
     title: <>Ваш второй Голос</>,
@@ -94,6 +97,7 @@ const blockContentArr = [
     gradient:
       'linear-gradient(269deg, #FFF 1.16%, rgba(255, 255, 255, 0.90) 18.67%, rgba(255, 255, 255, 0.00) 172.36%);',
     id: 4,
+    styles:[{marginLeft:"0px"},{marginRight:"160px"}]
   },
   {
     title: <span className={Styles.TitleString_4}>Маскировка IP</span>,
@@ -113,10 +117,8 @@ const blockContentArr = [
     id: 5,
     circlePosition: [250, 'auto', 'auto', -800],
     circleSize: [755, 755],
+    styles:[{marginLeft:"0px"},{marginLeft:"160px"}]
   },
-
-
-
   {
     title: (
       <span>
@@ -146,6 +148,7 @@ const blockContentArr = [
     circlePosition: [-350, -400, 'auto', 'auto'],
     circleSize: [697, 697],
     ul: true,
+    styles:[{marginLeft:"0px"},{marginLeft:"-50px"}]
   },
 ];
 
@@ -175,6 +178,7 @@ function App() {
               circlePosition={item.circlePosition}
               circleSize={item.circleSize}
               ul={item.ul}
+              styles={item.styles}
             />
           ))}
           <FormBlock formBlockRef={formBlockRef} />

@@ -19,7 +19,6 @@ const Header = ({ formBlockRef }) => {
         <div className={Styles.Wrapper}>
           <div className={Styles.Logo} onClick={scrollToTop}>
             <img className={Styles.LogoIcon} src={'img/logo/logo.svg'} alt='Logo icon' width={'100%'} height={'100%'} />
-
           </div>
           <a className={Styles.Btn} onClick={scrollToFormBlock}>
             оставить заявку

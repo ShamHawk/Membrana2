@@ -5,12 +5,12 @@ import Styles from './BlockContent.module.scss';
 import { useWindowSize } from '../../hooks/useWindowSize';
 
 
-const BlockContent = ({ title, text, widthVideo, heightVideo, gradient, video, circlePosition, circleSize,ul }) => {
-  const { mobileWidth, smallMobileWidth } = useWindowSize();
+const BlockContent = ({ title, text, widthVideo, heightVideo, gradient, video, circlePosition, circleSize,ul,styles }) => {
+  const { mobileWidth, smallMobileWidth, miniDesk,windowWidth } = useWindowSize();
 
   return (
     <div className={Styles.Block}>
-      <div className={Styles.Left}>
+      <div className={Styles.Left} style={styles ? windowWidth > 1150 ? styles[0] : null : null}>
         <div className={Styles.Title}>
             {/*backgroundClip: "text"*/}
             <h3 style={{ background: {gradient},   WebkitBackgroundClip: "text"}}>{title}</h3>
@@ -19,7 +19,7 @@ const BlockContent = ({ title, text, widthVideo, heightVideo, gradient, video, c
             {ul ? <div className={Styles.ulText}>{mobileWidth ? text[0] : text[1]}</div> : <p>{mobileWidth ? text[0] : text[1]}</p>}
         </div>
       </div>
-      <div className={Styles.Right}>
+      <div className={Styles.Right} style={styles ? windowWidth > 1150 ?  styles[1] : null : null}>
         <video
           autoPlay='1'
           loop

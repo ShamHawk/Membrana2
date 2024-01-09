@@ -54,7 +54,9 @@
     }
 }
 .Title_one {
-
+ @media (min-width: $media-tablet-landscape) {
+     margin-top: 40px
+ };
 }
 
 .Title_two {
