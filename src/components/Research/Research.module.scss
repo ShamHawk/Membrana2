@@ -17,22 +17,22 @@
     //}
 
     @media (min-width: $media-tablet-landscape) {
-        &::before {
-            content: '';
-            position: absolute;
-            right: -40%;
-            top: -70%;
-            width: 800px;
-            height: 800px;
-            border-radius: 899px;
-            filter: blur(300px);
-            @-moz-document url-prefix() {
-                opacity: 0.1;
-            }
-            background: #2D2D2D;
-            transform: translate3d(0, 0, 0);
-            z-index: 1;
-        }
+        //&::before {
+        //    content: '';
+        //    position: absolute;
+        //    right: -40%;
+        //    top: -70%;
+        //    width: 800px;
+        //    height: 800px;
+        //    border-radius: 899px;
+        //    filter: blur(300px);
+        //    @-moz-document url-prefix() {
+        //        opacity: 0.1;
+        //    }
+        //    background: #2D2D2D;
+        //    transform: translate3d(0, 0, 0);
+        //    z-index: 1;
+        //}
 
 
         &::after {

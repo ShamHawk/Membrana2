@@ -121,8 +121,6 @@ const test =  {
             {windowWidth <= 500 ? <p>Мы&nbsp;гарантируем, что они не&nbsp;используются для монетизации и&nbsp;не&nbsp;передаются третьим лицам</p> :
                 <p>Мы&nbsp;гарантируем, что они не&nbsp;используются для монетизации <br/> и&nbsp;не&nbsp;передаются третьим лицам</p>}
         </div>
-
-
         <div className={Styles.HeadBlock} ref={formBlockRef} >
           <div className={classNames(Styles.Title, Styles.Title_two)}>
               {windowWidth <= 500   ?<h2>
