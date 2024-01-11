@@ -5,16 +5,10 @@
     position: relative;
     z-index: 2;
     margin-bottom: 120px;
-    //@media (max-width: $media-tablet-landscape) {
-    //    &::after {
-    //        content: " ";
-    //        position: absolute;
-    //        top: 1px;
-    //        width: 100%;
-    //        max-width: 880px;
-    //        background-image: url("../../assets/img/middleBg.png");
-    //    }
-    //}
+
+    @media (max-width: $media-tablet) {
+        margin-bottom: 90px;
+    }
 
     @media (min-width: $media-tablet-landscape) {
         //&::before {

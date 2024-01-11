@@ -86,7 +86,7 @@
     }
 }
 .Title_one {
-    @media (max-width: 590px) {
+    @media (max-width: $media-tablet) {
         margin-top: 74px;
     }
  @media (min-width: $media-tablet-landscape) {
