@@ -8,9 +8,13 @@
   width: 100%;
   position: relative;
   background: #010101;
+  @media (max-width: $media-tablet) {
+    margin-bottom: 40px;
+  }
   @media (min-width: $media-tablet-landscape) {
     align-items: center;
   }
+
 
   &:nth-child(2n + 1) .Left {
     order: 0;

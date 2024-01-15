@@ -148,7 +148,8 @@ const blockContentArr = [
     circlePosition: [-350, -400, 'auto', 'auto'],
     circleSize: [697, 697],
     ul: true,
-    styles:[{marginLeft:"0px"},{marginLeft:"-50px"}]
+    styles:[{marginLeft:"0px"},{marginLeft:"-50px"}],
+    lastBlock: true
   },
 ];
 
@@ -179,6 +180,7 @@ function App() {
               circleSize={item.circleSize}
               ul={item.ul}
               styles={item.styles}
+              lastBlock={item.lastBlock}
             />
           ))}
           <FormBlock formBlockRef={formBlockRef} />

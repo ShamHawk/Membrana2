@@ -5,11 +5,11 @@ import Styles from './BlockContent.module.scss';
 import { useWindowSize } from '../../hooks/useWindowSize';
 
 
-const BlockContent = ({ title, text, widthVideo, heightVideo, gradient, video, circlePosition, circleSize,ul,styles }) => {
+const BlockContent = ({ title, text, widthVideo, heightVideo, gradient, video, circlePosition, circleSize,ul,styles,lastBlock }) => {
   const { mobileWidth, smallMobileWidth, miniDesk,windowWidth } = useWindowSize();
 
   return (
-    <div className={Styles.Block}>
+    <div className={Styles.Block} style={lastBlock ? {marginBottom:"0px"} : null}>
       <div className={Styles.Left} style={styles ? windowWidth > 1150 ? styles[0] : null : null}>
         <div className={Styles.Title}>
             {/*backgroundClip: "text"*/}

@@ -26,7 +26,7 @@ const BlockContent = () => {
             <a href={'https://futurecrew.ru/'} target={'_blank'} rel='noopener'>
               Продукт разработан командой FutureCrew
             </a>
-            <p>© 2023. Все права защищены</p>
+            <p>© 2024. Все права защищены</p>
           </div>
         </div>
         <p className={Styles.footerText}>
