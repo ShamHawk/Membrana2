@@ -20,6 +20,7 @@ function SoundButton() {
         audio.pause();
       } else {
         audio.play();
+        window.umami.track('sound_on')
       }
     }
 

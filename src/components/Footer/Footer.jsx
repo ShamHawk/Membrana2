@@ -23,7 +23,7 @@ const BlockContent = () => {
             </a>
           </div>
           <div className={Styles.RightLink}>
-            <a href={'https://futurecrew.ru/'} target={'_blank'} rel='noopener'>
+            <a href={'https://futurecrew.ru/'} target={'_blank'} rel='noopener' data-umami-event='link_futurecrew'>
               Продукт разработан командой FutureCrew
             </a>
             <p>© 2024. Все права защищены</p>

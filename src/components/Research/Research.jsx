@@ -49,7 +49,7 @@ const Research = () => {
             {/*<p>Статистика с&nbsp;апреля по&nbsp;октябрь 2023&nbsp;г. По&nbsp;данным <a href="" target={'_blank'}>*/}
             {/*  центра <br/> инноваций Future Crew*/}
             {/*</a>, активность сбора информации о&nbsp;действиях <br/> посетителей веб-сайтов выросла вдвое с&nbsp;2021&nbsp;г.</p>*/}
-            {windowWidth <= 500 ? <p>Статистика с&nbsp;апреля по&nbsp;ноябрь 2023&nbsp;г. По&nbsp;данным <a href="https://futurecrew.ru/" target={'_blank'}>
+            {windowWidth <= 500 ? <p>Статистика с&nbsp;апреля по&nbsp;ноябрь 2023&nbsp;г. По&nbsp;данным <a href="https://futurecrew.ru/" target={'_blank'} data-umami-event='link_futurecrew'>
               центра инноваций Future Crew
             </a>, активность сбора информации о&nbsp;действиях посетителей веб-сайтов выросла вдвое с&nbsp;2021&nbsp;г.</p>
                 : <p>Статистика с&nbsp;апреля по&nbsp;ноябрь 2023&nbsp;г. По&nbsp;данным <a href="https://futurecrew.ru/" target={'_blank'}>

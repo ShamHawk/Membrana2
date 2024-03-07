@@ -2,7 +2,7 @@ import React from 'react';
 import Styles from '../FagBlock.module.scss';
 const FagItem = ({ title, content, onItemClick, isActive }) => {
   return (
-    <div className={Styles.FaqBlock}>
+    <div className={Styles.FaqBlock} data-umami-event="info_open">
       <div className={Styles.FaqTitle} onClick={onItemClick}>
         <p className={Styles.FaqText}>{title}</p>
         <div className={Styles.IconBg}>

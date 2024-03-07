@@ -196,9 +196,9 @@ const BlockContent = () => {
     {
       title: 'Техподдержка',
       content: (
-        <div>
+        <div onCopy={() => window.umami.track('email_support_copy')}>
           По всем вопросам:{' '}
-          <a style={{ color: 'inherit', textDecoration: 'underline' }} href={'https://futurecrew.ru/'} target={'_blank'} rel='noreferrer'>
+          <a style={{ color: 'inherit', textDecoration: 'underline' }} href={'https://futurecrew.ru/'} target={'_blank'} rel='noreferrer' data-umami-event="email_support">
             futurecrew@mts.ru
           </a>
         </div>

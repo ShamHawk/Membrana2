@@ -9,11 +9,12 @@ import '@assets/styles/index.scss';
 import Styles from '@assets/styles/Home.module.scss';
 import FormBlock from './components/FormBlock/FormBlock';
 import { useRef } from 'react';
+import jqueryScrolldepth from 'scroll-depth';
 
 const blockContentArr = [
   {
     title: (
-        <span>Вредоносный <br/>трафик – мимо</span>
+      <span>Вредоносный <br />трафик – мимо</span>
     ),
     text: [
       <span>
@@ -27,11 +28,11 @@ const blockContentArr = [
     videoHeight: 440,
     video: 'https://storage.yandexcloud.net/cdn.tsekh.design/Membrana/benefits/1_Privacy-Secure.mp4#t=0.001',
     gradient:
-    'linear-gradient(90deg, #FFF -5.87%, rgba(255, 255, 255, 0.90) 6.23%, rgba(255, 255, 255, 0.00) 112.47%);',
+      'linear-gradient(90deg, #FFF -5.87%, rgba(255, 255, 255, 0.90) 6.23%, rgba(255, 255, 255, 0.00) 112.47%);',
     id: 1,
     circlePosition: [-280, 'auto', 'auto', -150],
     circleSize: [613, 613],
-    styles:[{marginLeft:"0px"},{marginLeft: "160px"}]
+    styles: [{ marginLeft: "0px" }, { marginLeft: "160px" }]
   },
   {
     title: (
@@ -41,10 +42,10 @@ const blockContentArr = [
     ),
     text: [
       <span>
-       Membrana проверяет звонки и&nbsp;блокирует спам сразу, чтобы вы&nbsp;не&nbsp;тратили на&nbsp;него время. Лишние уведомления вас не&nbsp;побеспокоят
+        Membrana проверяет звонки и&nbsp;блокирует спам сразу, чтобы вы&nbsp;не&nbsp;тратили на&nbsp;него время. Лишние уведомления вас не&nbsp;побеспокоят
       </span>,
       <span>
-       Membrana проверяет звонки и&nbsp;блокирует спам сразу, чтобы вы&nbsp;не&nbsp;тратили на&nbsp;него время. Лишние уведомления вас не&nbsp;побеспокоят
+        Membrana проверяет звонки и&nbsp;блокирует спам сразу, чтобы вы&nbsp;не&nbsp;тратили на&nbsp;него время. Лишние уведомления вас не&nbsp;побеспокоят
       </span>,
     ],
     videoWidth: 494,
@@ -55,7 +56,7 @@ const blockContentArr = [
     id: 2,
     circlePosition: [-300, -300, 'auto', 'auto'],
     circleSize: [725, 725],
-    styles:[{marginRight:"0px"},{marginRight: "160px"}]
+    styles: [{ marginRight: "0px" }, { marginRight: "160px" }]
   },
   {
     title: (
@@ -77,13 +78,13 @@ const blockContentArr = [
     id: 3,
     circlePosition: [-150, 'auto', 'auto', -800],
     circleSize: [900, 900],
-    styles:[{marginRight:"0px"},{marginLeft: "120px"}]
+    styles: [{ marginRight: "0px" }, { marginLeft: "120px" }]
   },
   {
     title: <>Ваш второй Голос</>,
     text: [
       <span>
-       Сервис Голос определит важные звонки. Если вашему близкому прямо сейчас нужен ответ, то&nbsp;он&nbsp;сразу&nbsp;же вас соединит. На&nbsp;несрочные звонки ответит сам и&nbsp;сохранит для вас расшифровку диалога в&nbsp;приложении
+        Сервис Голос определит важные звонки. Если вашему близкому прямо сейчас нужен ответ, то&nbsp;он&nbsp;сразу&nbsp;же вас соединит. На&nbsp;несрочные звонки ответит сам и&nbsp;сохранит для вас расшифровку диалога в&nbsp;приложении
       </span>,
       <span>
         Сервис Голос определит важные звонки. Если вашему близкому прямо сейчас нужен ответ, то&nbsp;он&nbsp;сразу&nbsp;же вас соединит. На&nbsp;несрочные звонки ответит сам и&nbsp;сохранит для вас расшифровку диалога в&nbsp;приложении
@@ -95,16 +96,16 @@ const blockContentArr = [
     gradient:
       'linear-gradient(269deg, #FFF 1.16%, rgba(255, 255, 255, 0.90) 18.67%, rgba(255, 255, 255, 0.00) 172.36%);',
     id: 4,
-    styles:[{marginLeft:"0px"},{marginRight:"160px"}]
+    styles: [{ marginLeft: "0px" }, { marginRight: "160px" }]
   },
   {
     title: <span className={Styles.TitleString_4}>Маскировка IP</span>,
     text: [
       <span>
-     Получите доступ к&nbsp;любимому зарубежному контенту по&nbsp;безопасному каналу. Меняйте свой текущий&nbsp;IP при посещении ресурсов, все данные шифруются и&nbsp;не&nbsp;передаются третьим компаниям
+        Получите доступ к&nbsp;любимому зарубежному контенту по&nbsp;безопасному каналу. Меняйте свой текущий&nbsp;IP при посещении ресурсов, все данные шифруются и&nbsp;не&nbsp;передаются третьим компаниям
       </span>,
       <span>
-     Получите доступ к&nbsp;любимому зарубежному контенту по&nbsp;безопасному каналу. Меняйте свой текущий&nbsp;IP при посещении ресурсов, все данные шифруются и&nbsp;не&nbsp;передаются третьим компаниям
+        Получите доступ к&nbsp;любимому зарубежному контенту по&nbsp;безопасному каналу. Меняйте свой текущий&nbsp;IP при посещении ресурсов, все данные шифруются и&nbsp;не&nbsp;передаются третьим компаниям
       </span>,
     ],
     videoWidth: 378,
@@ -115,7 +116,7 @@ const blockContentArr = [
     id: 5,
     circlePosition: [250, 'auto', 'auto', -800],
     circleSize: [755, 755],
-    styles:[{marginLeft:"0px"},{marginLeft:"160px"}]
+    styles: [{ marginLeft: "0px" }, { marginLeft: "160px" }]
   },
   {
     title: (
@@ -124,17 +125,17 @@ const blockContentArr = [
       </span>
     ),
     text: [
-       <ul style={{marginLeft:'15px'}}>
-           <li>Безлимитный интернет</li>
-           <li>Безлимитные звонки на&nbsp;МТС и&nbsp;5000 минут для других операторов</li>
-           <li>Высокая скорость и&nbsp;качественная связь: дома, в&nbsp;дороге, на&nbsp;концерте</li>
-       </ul>
+      <ul style={{ marginLeft: '15px' }}>
+        <li>Безлимитный интернет</li>
+        <li>Безлимитные звонки на&nbsp;МТС и&nbsp;5000 минут для других операторов</li>
+        <li>Высокая скорость и&nbsp;качественная связь: дома, в&nbsp;дороге, на&nbsp;концерте</li>
+      </ul>
       ,
-        <ul style={{marginLeft:'15px'}}>
-           <li>Безлимитный интернет</li>
-           <li>Безлимитные звонки на&nbsp;МТС и&nbsp;5000 минут для других операторов</li>
-           <li>Высокая скорость и&nbsp;качественная связь: дома, в&nbsp;дороге, на&nbsp;концерте</li>
-       </ul>
+      <ul style={{ marginLeft: '15px' }}>
+        <li>Безлимитный интернет</li>
+        <li>Безлимитные звонки на&nbsp;МТС и&nbsp;5000 минут для других операторов</li>
+        <li>Высокая скорость и&nbsp;качественная связь: дома, в&nbsp;дороге, на&nbsp;концерте</li>
+      </ul>
       ,
     ],
     videoWidth: 554,
@@ -146,13 +147,29 @@ const blockContentArr = [
     circlePosition: [-350, -400, 'auto', 'auto'],
     circleSize: [697, 697],
     ul: true,
-    styles:[{marginLeft:"0px"},{marginLeft:"-50px"}],
+    styles: [{ marginLeft: "0px" }, { marginLeft: "-50px" }],
     lastBlock: true
   },
 ];
 
 function App() {
   const formBlockRef = useRef(null);
+
+  jqueryScrolldepth({
+    eventHandler: function (data) {
+      if (data.eventLabel == "25%") {
+        window.umami.track('scroll_fc_25')
+      } else if (data.eventLabel == "50%") {
+        window.umami.track('scroll_fc_50')
+      } else if (data.eventLabel == "75%") {
+        window.umami.track('scroll_fc_75')
+      } else {
+        window.umami.track('scroll_fc_100')
+      } 
+    },
+    pixelDepth: false,
+    userTiming: false,
+  });
 
   return (
     <main className={Styles.Block}>
@@ -162,7 +179,7 @@ function App() {
       <Container>
         <div>
           <div className={Styles.Title}>
-            <h2>Баланс работы и&nbsp;отдыха.<br/>Ничего лишнего</h2>
+            <h2>Баланс работы и&nbsp;отдыха.<br />Ничего лишнего</h2>
           </div>
           {blockContentArr.map((item, index) => (
             <BlockContent
