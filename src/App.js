@@ -152,8 +152,26 @@ const blockContentArr = [
   },
 ];
 
+
 function App() {
   const formBlockRef = useRef(null);
+
+  window.onload = function () {
+    const inputsArray = [...document.querySelectorAll('.sendsay-input')]
+    console.log(inputsArray)
+    inputsArray.map((input) => {
+      input.addEventListener('change', () => {
+        window.umami.track('start_filling_form')
+        // console.log('start_filling_form')
+      })
+    })
+    const button = document.querySelector('.sendsay-button').firstChild
+    console.log(button)
+    button.addEventListener('click', () => {
+      window.umami.track('send_form')
+      // console.log('send_form')
+    })
+  }
 
   jqueryScrolldepth({
     eventHandler: function (data) {
@@ -165,7 +183,7 @@ function App() {
         window.umami.track('scroll_fc_75')
       } else {
         window.umami.track('scroll_fc_100')
-      } 
+      }
     },
     pixelDepth: false,
     userTiming: false,
