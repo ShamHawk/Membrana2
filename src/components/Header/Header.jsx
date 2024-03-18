@@ -31,9 +31,9 @@ const Header = ({ formBlockRef }) => {
               <img className={Styles.LogoIcon} src={'img/logo/logo.svg'} alt='Logo icon' width={'100%'} height={'100%'} />
             </div>
             <div className={Styles.navContainer}>
-              {windowWidth < 400 ? null : <div className={Styles.Btn} onClick={scrollToFormBlock} data-umami-event="open_form">
+                <div className={Styles.Btn} onClick={scrollToFormBlock} data-umami-event="open_form">
                 оставить заявку
-              </div>}
+              </div>
 
              <div className={Styles.btnBurgerContainer}  onClick={toggleMobileNav}>
                <button
@@ -53,12 +53,6 @@ const Header = ({ formBlockRef }) => {
                 </div>
 
                 <a className={Styles.link} href="https://business.membrana.me/" data-umami-event="link_membrana">Membrana для бизнеса</a>
-
-                {
-                  windowWidth < 400 ?   <div className={classNames(Styles.Btn,Styles.btnBurger )} onClick={scrollToFormBlock} data-umami-event="open_form">
-                    оставить заявку
-                  </div> : null
-                }
               </div>
             </div>
 
