@@ -49,11 +49,7 @@ const HeroBlock = ({ formBlockRef }) => {
           </p> : <p className={Styles.SubTitle}>
               Уберите лишнее и&nbsp;сфокусируйтесь на&nbsp;важном с&nbsp;премиум-сервисом Membrana
           </p> }
-        {/*{smallMobileWidth && (*/}
-        {/*  <div className={Styles.Stick}>*/}
-        {/*    <div className={Styles.SmallerStick}></div>*/}
-        {/*  </div>*/}
-        {/*)}*/}
+
       </div>
         <SoundButton />
     </div>
