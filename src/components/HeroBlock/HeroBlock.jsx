@@ -44,7 +44,7 @@ const HeroBlock = ({ formBlockRef }) => {
         {srcVideo}
       </video>
       <div className={Styles.Wrapper}>
-          {windowWidth > 1000 ? <p className={Styles.SubTitle}>
+          {windowWidth > 500 ? <p className={Styles.SubTitle}>
               Уберите лишнее и&nbsp;сфокусируйтесь на&nbsp;важном <br/>с&nbsp;премиум-сервисом Membrana
           </p> : <p className={Styles.SubTitle}>
               Уберите лишнее и&nbsp;сфокусируйтесь на&nbsp;важном с&nbsp;премиум-сервисом Membrana
